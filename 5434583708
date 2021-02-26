@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+-- Baseplate Sword Fight Script
 
 local ScreenGui = Instance.new("ScreenGui")
 local UI = Instance.new("ImageLabel")
