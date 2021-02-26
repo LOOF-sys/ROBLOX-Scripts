@@ -1,0 +1,17 @@
+if game.GameId == "5434583708" then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/ROBLOX-Scripts/main/Baseplate%20Sword%20Fight%20Script", true))()
+else
+    warn("Not Sword Game")
+end
+
+if game.GameId == "5610197459" then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/ROBLOX-Scripts/main/gang%20up%20on%20people%20simulator%20main", true))()
+else
+    warn("Not gang up on people simulator")
+end
+
+if game.GameId == "3101667897" then
+    warn("Legends of Speed Script Is Currently Unavaliable")
+else
+    warn("Not Legends of Speed")
+end
