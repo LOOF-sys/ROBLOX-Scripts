@@ -4,30 +4,54 @@
 -- Instances:
 
 local MainGui = Instance.new("ScreenGui")
+local OpenUI = Instance.new("TextButton")
 local UI = Instance.new("ImageLabel")
 local AntiGravityOn = Instance.new("TextButton")
 local AntiGravityOff = Instance.new("TextButton")
 local Title = Instance.new("TextLabel")
 local TopBorder = Instance.new("Frame")
-local AntiGravityOnDetector = Instance.new("TextLabel")
-local GodeModeOnDetector = Instance.new("TextLabel")
-local BypassACOnDetector = Instance.new("TextLabel")
 local Close = Instance.new("TextButton")
 local GodModeOn = Instance.new("TextButton")
-local AntiCheatBypass = Instance.new("TextButton")
-local OpenUI = Instance.new("TextButton")
+local WalkSpeed = Instance.new("TextButton")
+local JumpPower = Instance.new("TextButton")
+local Gravity = Instance.new("TextButton")
+local Tp_To_Player = Instance.new("TextButton")
+local WalkSpeed_Value = Instance.new("TextBox")
+local JumpPower_Value = Instance.new("TextBox")
+local Gravity_Value = Instance.new("TextBox")
+local Tp_To_Player_Value = Instance.new("TextBox")
+local Tween_To_Plr = Instance.new("TextButton")
+local Tween_To_Value = Instance.new("TextBox")
+local Settings = Instance.new("TextButton")
+local Loop_Kill_Plr = Instance.new("TextButton")
+local JumpPower_Value_2 = Instance.new("TextBox")
+local Tween_Speed_Value = Instance.new("TextBox")
+local BypassAC = Instance.new("TextButton")
 
 --Properties:
 
 MainGui.Name = "MainGui"
 MainGui.Parent = game.CoreGui
 
+OpenUI.Name = "OpenUI"
+OpenUI.Parent = MainGui
+OpenUI.BackgroundColor3 = Color3.fromRGB(238, 170, 255)
+OpenUI.BorderSizePixel = 3
+OpenUI.Position = UDim2.new(-0.000426456332, 0, 0.525122643, 0)
+OpenUI.Size = UDim2.new(0.088008441, 0, 0.0515197366, 0)
+OpenUI.Visible = false
+OpenUI.Font = Enum.Font.PermanentMarker
+OpenUI.Text = "Open"
+OpenUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenUI.TextSize = 44.000
+OpenUI.TextWrapped = true
+
 UI.Name = "UI"
 UI.Parent = MainGui
 UI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 UI.BackgroundTransparency = 1.000
-UI.Position = UDim2.new(0.566549778, 0, 0.520681262, 0)
-UI.Size = UDim2.new(0.36491254, 0, 0.284671724, 0)
+UI.Position = UDim2.new(0.504706144, 0, 0.589734912, 0)
+UI.Size = UDim2.new(0.345075965, 0, 0.351167947, 0)
 UI.Image = "rbxassetid://3570695787"
 UI.ImageColor3 = Color3.fromRGB(139, 215, 255)
 UI.ScaleType = Enum.ScaleType.Slice
@@ -39,8 +63,8 @@ AntiGravityOn.Parent = UI
 AntiGravityOn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AntiGravityOn.BackgroundTransparency = 0.500
 AntiGravityOn.BorderSizePixel = 5
-AntiGravityOn.Position = UDim2.new(0.374986827, 0, 0.62301594, 0)
-AntiGravityOn.Size = UDim2.new(0.301582277, 0, 0.257936507, 0)
+AntiGravityOn.Position = UDim2.new(0.64208883, 0, 0.856331408, 0)
+AntiGravityOn.Size = UDim2.new(0.322780848, 0, 0.0902410299, 0)
 AntiGravityOn.Font = Enum.Font.PermanentMarker
 AntiGravityOn.Text = "Anti Gravity Gun [On]"
 AntiGravityOn.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -51,8 +75,8 @@ AntiGravityOff.Parent = UI
 AntiGravityOff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AntiGravityOff.BackgroundTransparency = 0.500
 AntiGravityOff.BorderSizePixel = 5
-AntiGravityOff.Position = UDim2.new(0.0196078345, 0, 0.62301594, 0)
-AntiGravityOff.Size = UDim2.new(0.330312639, 0, 0.257936507, 0)
+AntiGravityOff.Position = UDim2.new(0.640725613, 0, 0.710509181, 0)
+AntiGravityOff.Size = UDim2.new(0.330312639, 0, 0.0938865915, 0)
 AntiGravityOff.Font = Enum.Font.PermanentMarker
 AntiGravityOff.Text = "Anti Gravity Gun [Off]"
 AntiGravityOff.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -75,39 +99,6 @@ TopBorder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TopBorder.Position = UDim2.new(0, 0, 0.162698418, 0)
 TopBorder.Size = UDim2.new(0.999999821, 0, 0, 0)
 
-AntiGravityOnDetector.Name = "AntiGravityOnDetector"
-AntiGravityOnDetector.Parent = UI
-AntiGravityOnDetector.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AntiGravityOnDetector.BackgroundTransparency = 1.000
-AntiGravityOnDetector.Position = UDim2.new(0.284124374, 0, 0.234724939, 0)
-AntiGravityOnDetector.Size = UDim2.new(0.431372583, 0, 0.0595238097, 0)
-AntiGravityOnDetector.Font = Enum.Font.LuckiestGuy
-AntiGravityOnDetector.Text = "Anti Gravity Gun = Off"
-AntiGravityOnDetector.TextColor3 = Color3.fromRGB(0, 0, 0)
-AntiGravityOnDetector.TextSize = 30.000
-
-GodeModeOnDetector.Name = "GodeModeOnDetector"
-GodeModeOnDetector.Parent = UI
-GodeModeOnDetector.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GodeModeOnDetector.BackgroundTransparency = 1.000
-GodeModeOnDetector.Position = UDim2.new(0.269004047, 0, 0.348788649, 0)
-GodeModeOnDetector.Size = UDim2.new(0.431372583, 0, 0.0595238097, 0)
-GodeModeOnDetector.Font = Enum.Font.LuckiestGuy
-GodeModeOnDetector.Text = "God Mode = Off"
-GodeModeOnDetector.TextColor3 = Color3.fromRGB(0, 0, 0)
-GodeModeOnDetector.TextSize = 30.000
-
-BypassACOnDetector.Name = "BypassACOnDetector"
-BypassACOnDetector.Parent = UI
-BypassACOnDetector.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BypassACOnDetector.BackgroundTransparency = 1.000
-BypassACOnDetector.Position = UDim2.new(0.284124374, 0, 0.467656016, 0)
-BypassACOnDetector.Size = UDim2.new(0.431372583, 0, 0.0595238097, 0)
-BypassACOnDetector.Font = Enum.Font.LuckiestGuy
-BypassACOnDetector.Text = "Bypass AntiCheat = off"
-BypassACOnDetector.TextColor3 = Color3.fromRGB(0, 0, 0)
-BypassACOnDetector.TextSize = 30.000
-
 Close.Name = "Close"
 Close.Parent = UI
 Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -123,125 +114,217 @@ GodModeOn.Name = "GodModeOn"
 GodModeOn.Parent = UI
 GodModeOn.BackgroundColor3 = Color3.fromRGB(204, 142, 255)
 GodModeOn.BorderSizePixel = 2
-GodModeOn.Position = UDim2.new(0.745983899, 0, 0.0109660504, 0)
-GodModeOn.Size = UDim2.new(0.228306472, 0, 0.138888896, 0)
+GodModeOn.Position = UDim2.new(0.640725553, 0, 0.576027155, 0)
+GodModeOn.Size = UDim2.new(0.329324931, 0, 0.0914966837, 0)
 GodModeOn.Font = Enum.Font.Michroma
 GodModeOn.Text = "God Mode"
 GodModeOn.TextColor3 = Color3.fromRGB(0, 0, 0)
 GodModeOn.TextSize = 24.000
 
-AntiCheatBypass.Name = "AntiCheatBypass"
-AntiCheatBypass.Parent = UI
-AntiCheatBypass.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AntiCheatBypass.BackgroundTransparency = 0.500
-AntiCheatBypass.BorderSizePixel = 5
-AntiCheatBypass.Position = UDim2.new(0.70059824, 0, 0.62301594, 0)
-AntiCheatBypass.Size = UDim2.new(0.27369231, 0, 0.257936507, 0)
-AntiCheatBypass.Font = Enum.Font.PermanentMarker
-AntiCheatBypass.Text = "Bypass AC"
-AntiCheatBypass.TextColor3 = Color3.fromRGB(0, 0, 0)
-AntiCheatBypass.TextSize = 40.000
+WalkSpeed.Name = "WalkSpeed"
+WalkSpeed.Parent = UI
+WalkSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WalkSpeed.BackgroundTransparency = 0.500
+WalkSpeed.BorderSizePixel = 5
+WalkSpeed.Position = UDim2.new(0.0294503327, 0, 0.856331348, 0)
+WalkSpeed.Size = UDim2.new(0.19134976, 0, 0.0902410299, 0)
+WalkSpeed.Font = Enum.Font.PermanentMarker
+WalkSpeed.Text = "WalkSpeed"
+WalkSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeed.TextSize = 19.000
 
-OpenUI.Name = "OpenUI"
-OpenUI.Parent = MainGui
-OpenUI.BackgroundColor3 = Color3.fromRGB(238, 170, 255)
-OpenUI.BorderSizePixel = 3
-OpenUI.Position = UDim2.new(-0.000426456332, 0, 0.525122643, 0)
-OpenUI.Size = UDim2.new(0.088008441, 0, 0.0515197366, 0)
-OpenUI.Visible = false
-OpenUI.Font = Enum.Font.PermanentMarker
-OpenUI.Text = "Open"
-OpenUI.TextColor3 = Color3.fromRGB(0, 0, 0)
-OpenUI.TextSize = 44.000
-OpenUI.TextWrapped = true
+JumpPower.Name = "JumpPower"
+JumpPower.Parent = UI
+JumpPower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpPower.BackgroundTransparency = 0.500
+JumpPower.BorderSizePixel = 5
+JumpPower.Position = UDim2.new(0.0294503327, 0, 0.71415472, 0)
+JumpPower.Size = UDim2.new(0.19134976, 0, 0.0902410299, 0)
+JumpPower.Font = Enum.Font.PermanentMarker
+JumpPower.Text = "JumpPower"
+JumpPower.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpPower.TextSize = 19.000
+
+Gravity.Name = "Gravity"
+Gravity.Parent = UI
+Gravity.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gravity.BackgroundTransparency = 0.500
+Gravity.BorderSizePixel = 5
+Gravity.Position = UDim2.new(0.0294503327, 0, 0.575623631, 0)
+Gravity.Size = UDim2.new(0.19134976, 0, 0.0902410299, 0)
+Gravity.Font = Enum.Font.PermanentMarker
+Gravity.Text = "Gravity\\"
+Gravity.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gravity.TextSize = 19.000
+
+Tp_To_Player.Name = "Tp_To_Player"
+Tp_To_Player.Parent = UI
+Tp_To_Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tp_To_Player.BackgroundTransparency = 0.500
+Tp_To_Player.BorderSizePixel = 5
+Tp_To_Player.Position = UDim2.new(0.0294503327, 0, 0.429801434, 0)
+Tp_To_Player.Size = UDim2.new(0.19134976, 0, 0.0902410299, 0)
+Tp_To_Player.Font = Enum.Font.PermanentMarker
+Tp_To_Player.Text = "Tp To Player"
+Tp_To_Player.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tp_To_Player.TextSize = 19.000
+
+WalkSpeed_Value.Name = "WalkSpeed_Value"
+WalkSpeed_Value.Parent = UI
+WalkSpeed_Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WalkSpeed_Value.Position = UDim2.new(0.250142962, 0, 0.853089333, 0)
+WalkSpeed_Value.Size = UDim2.new(0.256502599, 0, 0.0898375064, 0)
+WalkSpeed_Value.Font = Enum.Font.SourceSans
+WalkSpeed_Value.Text = "WalkSpeed Here"
+WalkSpeed_Value.TextColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeed_Value.TextSize = 14.000
+
+JumpPower_Value.Name = "JumpPower_Value"
+JumpPower_Value.Parent = UI
+JumpPower_Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpPower_Value.Position = UDim2.new(0.250142962, 0, 0.710912704, 0)
+JumpPower_Value.Size = UDim2.new(0.256502599, 0, 0.0898375064, 0)
+JumpPower_Value.Font = Enum.Font.SourceSans
+JumpPower_Value.Text = "JumpPower Here"
+JumpPower_Value.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpPower_Value.TextSize = 14.000
+
+Gravity_Value.Name = "Gravity_Value"
+Gravity_Value.Parent = UI
+Gravity_Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gravity_Value.Position = UDim2.new(0.250142962, 0, 0.572381616, 0)
+Gravity_Value.Size = UDim2.new(0.256502599, 0, 0.0898375064, 0)
+Gravity_Value.Font = Enum.Font.SourceSans
+Gravity_Value.Text = "Gravity Here"
+Gravity_Value.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gravity_Value.TextSize = 14.000
+
+Tp_To_Player_Value.Name = "Tp_To_Player_Value"
+Tp_To_Player_Value.Parent = UI
+Tp_To_Player_Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tp_To_Player_Value.Position = UDim2.new(0.250142962, 0, 0.426559418, 0)
+Tp_To_Player_Value.Size = UDim2.new(0.256502599, 0, 0.0898375064, 0)
+Tp_To_Player_Value.Font = Enum.Font.SourceSans
+Tp_To_Player_Value.Text = "Tp Plr Name Here"
+Tp_To_Player_Value.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tp_To_Player_Value.TextSize = 14.000
+
+Tween_To_Plr.Name = "Tween_To_Plr"
+Tween_To_Plr.Parent = UI
+Tween_To_Plr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tween_To_Plr.BackgroundTransparency = 0.500
+Tween_To_Plr.BorderSizePixel = 5
+Tween_To_Plr.Position = UDim2.new(0.0294503327, 0, 0.287624776, 0)
+Tween_To_Plr.Size = UDim2.new(0.19134976, 0, 0.0902410299, 0)
+Tween_To_Plr.Font = Enum.Font.PermanentMarker
+Tween_To_Plr.Text = "Tween To Plr"
+Tween_To_Plr.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tween_To_Plr.TextSize = 18.000
+
+Tween_To_Value.Name = "Tween_To_Value"
+Tween_To_Value.Parent = UI
+Tween_To_Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tween_To_Value.Position = UDim2.new(0.250142962, 0, 0.284382761, 0)
+Tween_To_Value.Size = UDim2.new(0.256502599, 0, 0.0898375064, 0)
+Tween_To_Value.Font = Enum.Font.SourceSans
+Tween_To_Value.Text = "raw Lua to targets Cframe"
+Tween_To_Value.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tween_To_Value.TextSize = 14.000
+
+Settings.Name = "Settings"
+Settings.Parent = UI
+Settings.BackgroundColor3 = Color3.fromRGB(204, 142, 255)
+Settings.BorderSizePixel = 2
+Settings.Position = UDim2.new(0.755197823, 0, 0.0328394771, 0)
+Settings.Size = UDim2.new(0.229691669, 0, 0.0914966837, 0)
+Settings.Font = Enum.Font.Michroma
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(0, 0, 0)
+Settings.TextSize = 24.000
+
+Loop_Kill_Plr.Name = "Loop_Kill_Plr"
+Loop_Kill_Plr.Parent = UI
+Loop_Kill_Plr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loop_Kill_Plr.BackgroundTransparency = 0.500
+Loop_Kill_Plr.BorderSizePixel = 5
+Loop_Kill_Plr.Position = UDim2.new(0.55093497, 0, 0.196485937, 0)
+Loop_Kill_Plr.Size = UDim2.new(0.420103252, 0, 0.0902410299, 0)
+Loop_Kill_Plr.Font = Enum.Font.PermanentMarker
+Loop_Kill_Plr.Text = "Loop Kill Infected Player"
+Loop_Kill_Plr.TextColor3 = Color3.fromRGB(0, 0, 0)
+Loop_Kill_Plr.TextSize = 18.000
+
+JumpPower_Value_2.Name = "JumpPower_Value"
+JumpPower_Value_2.Parent = UI
+JumpPower_Value_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpPower_Value_2.Position = UDim2.new(0.55093497, 0, 0.324483901, 0)
+JumpPower_Value_2.Size = UDim2.new(0.420103252, 0, 0.0898375139, 0)
+JumpPower_Value_2.Font = Enum.Font.SourceSans
+JumpPower_Value_2.Text = ""
+JumpPower_Value_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpPower_Value_2.TextSize = 14.000
+
+Tween_Speed_Value.Name = "Tween_Speed_Value"
+Tween_Speed_Value.Parent = UI
+Tween_Speed_Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tween_Speed_Value.Position = UDim2.new(0.02543821, 0, 0.196485922, 0)
+Tween_Speed_Value.Size = UDim2.new(0.256502599, 0, 0.053785488, 0)
+Tween_Speed_Value.Font = Enum.Font.SourceSans
+Tween_Speed_Value.Text = "Tween Speed"
+Tween_Speed_Value.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tween_Speed_Value.TextSize = 14.000
+
+BypassAC.Name = "Bypass A-C"
+BypassAC.Parent = UI
+BypassAC.BackgroundColor3 = Color3.fromRGB(204, 142, 255)
+BypassAC.BorderSizePixel = 2
+BypassAC.Position = UDim2.new(0.640725553, 0, 0.452078283, 0)
+BypassAC.Size = UDim2.new(0.329324931, 0, 0.0914966837, 0)
+BypassAC.Font = Enum.Font.Michroma
+BypassAC.Text = "Bypass A-C"
+BypassAC.TextColor3 = Color3.fromRGB(0, 0, 0)
+BypassAC.TextSize = 24.000
 
 -- Scripts:
 
-local function KXHXV_fake_script() -- AntiGravityOn.LocalScript 
-	local script = Instance.new('LocalScript', AntiGravityOn)
+local function IRIAXL_fake_script() -- OpenUI.LocalScript 
+	local script = Instance.new('LocalScript', OpenUI)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.AntiGravityOnDetector.Text = "Anti Gravity Gun = On"
-		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+		script.Parent.Visible = false
+		script.Parent.Parent.UI.Visible = true
 	end)
 end
-coroutine.wrap(KXHXV_fake_script)()
-local function TJWZKKH_fake_script() -- AntiGravityOff.LocalScript 
-	local script = Instance.new('LocalScript', AntiGravityOff)
+coroutine.wrap(IRIAXL_fake_script)()
+local function PHHVN_fake_script() -- MainGui.GodModeChecker 
+	local script = Instance.new('LocalScript', MainGui)
 
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.AntiGravityOnDetector.Text = "Anti Gravity Gun = Off"
-		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-	end)
-end
-coroutine.wrap(TJWZKKH_fake_script)()
-local function VJQH_fake_script() -- AntiGravityOnDetector.LocalScript 
-	local script = Instance.new('LocalScript', AntiGravityOnDetector)
-
-	local CCf =  true
+	local run = true
 	
-	if CCf == true then
-		while true do wait()
-		wait(120)
-		script.Parent.Text = "Reloading..."
-		wait(0.2)
-		script.Parent.Text = "..."
-		wait(0.3)
-		script.Parent.Text = "Reloaded!"
-		wait(0.2)
-		script.Parent.Text = "Anti Gravity Gun = Off"
-			wait(0.3)
+	while run == true do wait(.5)
+		if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+			script.Parent.UI.GodeModeOnDetector.Text = "Gode Mode = Off"
 		end
 	end
 end
-coroutine.wrap(VJQH_fake_script)()
-local function UWJF_fake_script() -- GodeModeOnDetector.LocalScript 
-	local script = Instance.new('LocalScript', GodeModeOnDetector)
+coroutine.wrap(PHHVN_fake_script)()
+local function XNXIE_fake_script() -- AntiGravityOn.LocalScript 
+	local script = Instance.new('LocalScript', AntiGravityOn)
 
-	local Fire2 = true
-	
-	if Fire2 == true then
-			script.Parent.Parent.GodModeOn.MouseButton1Down:Connect(function()
-			wait(0.5)
-			script.Parent.Text = "Checking if Synapse X..."
-			wait(0.2)
-			script.Parent.Text = "Bypassing AntiCheat..."
-			wait(0.5)
-			script.Parent.Text = "Loading..."
-			wait(0.2)
-			script.Parent.Text = "Enabling God Mode..."
-			wait(0.1)
-			script.Parent.Text = "Gode Mode = On"
-		end)
-	end
-end
-coroutine.wrap(UWJF_fake_script)()
-local function QXRRLIG_fake_script() -- BypassACOnDetector.LocalScript 
-	local script = Instance.new('LocalScript', BypassACOnDetector)
-
-	script.Parent.Parent.AntiCheatBypass.MouseButton1Down:Connect(function()
-		wait(0.1)
-		script.Parent.Text = "Checking If Synapse..."
-		wait(0.2)
-		script.Parent.Text = "Bypassing Anti-Cheat..."
-		wait(0.3)
-		script.Parent.Text = "Bypassing 1ojX4YGYd5AnOyHpAPTq_MODULE..."
-		wait(0.1)
-		script.Parent.Text = "Bypassing zxEoqAUtKAoqouQX97za_NODE..."
-		wait(0.3)
-		script.Parent.Text = "Debugging..."
-		wait(0.1)
-		script.Parent.Text = "ANTI_TIMER_AUBDkbZc8QkSERD1AItq..."
-		wait(0.2)
-		script.Parent.Text = "Bypass Anti-Cheat = On"
-		wait(1)
-		script.Parent.Text = "Loading mMHPy2BSBaMWyw47JUoA_NODE.json..."
-		wait(0.5)
-		script.Parent.Text = "Bypass Anti-Cheat = On"
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 	end)
 end
-coroutine.wrap(QXRRLIG_fake_script)()
-local function UTPZOSE_fake_script() -- Close.LocalScript 
+coroutine.wrap(XNXIE_fake_script)()
+local function TMREUL_fake_script() -- AntiGravityOff.LocalScript 
+	local script = Instance.new('LocalScript', AntiGravityOff)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+	end)
+end
+coroutine.wrap(TMREUL_fake_script)()
+local function FUNPG_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -249,8 +332,8 @@ local function UTPZOSE_fake_script() -- Close.LocalScript
 		script.Parent.Parent.Parent.OpenUI.Visible = true
 	end)
 end
-coroutine.wrap(UTPZOSE_fake_script)()
-local function OEDP_fake_script() -- GodModeOn.LocalScript 
+coroutine.wrap(FUNPG_fake_script)()
+local function ZWSR_fake_script() -- GodModeOn.LocalScript 
 	local script = Instance.new('LocalScript', GodModeOn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -287,48 +370,195 @@ local function OEDP_fake_script() -- GodModeOn.LocalScript
 	
 		RunServx:Play()
 		PTX:Destroy()
-		script.Parent.Parent.GodeModeOnDetector.Text = "God Mode = On"
-		while true do wait(.5)
-			game.Players.LocalPlayer.Character.Input.Disabled = true
-			game.Players.LocalPlayer.Character:WaitForChild("ManScript"):Destroy()
-			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 30
-			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+		game.Players.LocalPlayer.Character.Input.Disabled = true
+		game.Players.LocalPlayer.Character:WaitForChild("ManScript"):Destroy()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 30
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+	end)
+end
+coroutine.wrap(ZWSR_fake_script)()
+local function AOVBW_fake_script() -- WalkSpeed.LocalScript 
+	local script = Instance.new('LocalScript', WalkSpeed)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.Parent.WalkSpeed_Value.Text
+	end)
+end
+coroutine.wrap(AOVBW_fake_script)()
+local function SFOJVD_fake_script() -- JumpPower.LocalScript 
+	local script = Instance.new('LocalScript', JumpPower)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = script.Parent.Parent.JumpPower_Value.Text
+	end)
+end
+coroutine.wrap(SFOJVD_fake_script)()
+local function TJMJ_fake_script() -- Tp_To_Player.LocalScript 
+	local script = Instance.new('LocalScript', Tp_To_Player)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local Player = game.Players.LocalPlayer
+		
+		for i,v in pairs(game.Players:GetChildren()) do
+			if v.Name == script.Parent.Parent.Tp_To_Player_Value.Text then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+			end
 		end
 	end)
 end
-coroutine.wrap(OEDP_fake_script)()
-local function JMDLC_fake_script() -- AntiCheatBypass.LocalScript 
-	local script = Instance.new('LocalScript', AntiCheatBypass)
+coroutine.wrap(TJMJ_fake_script)()
+local function HTHRA_fake_script() -- Tween_To_Plr.LocalScript 
+	local script = Instance.new('LocalScript', Tween_To_Plr)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		while true do wait(.5)
-			game.Players.LocalPlayer.Character.input:Destroy()
-			game.Players.LocalPlayer.Character.Input.Disabled = true
-			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 30
-			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-			game.Players.LocalPlayer.Character:WaitForChild("ManScript"):Destroy()
-		end
-	end)
-end
-coroutine.wrap(JMDLC_fake_script)()
-local function VVSBPWK_fake_script() -- OpenUI.LocalScript 
-	local script = Instance.new('LocalScript', OpenUI)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Visible = false
-		script.Parent.Parent.UI.Visible = true
-	end)
-end
-coroutine.wrap(VVSBPWK_fake_script)()
-local function BVYREVU_fake_script() -- MainGui.GodModeChecker 
-	local script = Instance.new('LocalScript', MainGui)
-
-	local run = true
+		local TweenService = game:GetService("TweenService")
+		local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
 	
-	while run == true do wait(.5)
-		if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
-			script.Parent.UI.GodeModeOnDetector.Text = "Gode Mode = Off"
-		end
-	end
+		local Info = TweenInfo.new(
+			script.Parent.Parent.Tween_Speed_Value.Text,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.InOut,
+			0,
+			false,
+			1
+		)
+	
+		local Fire = 
+			{
+				CFrame = script.Parent.Parent.Tween_To_Plr.Text
+			}
+	
+		local RunServx = TweenService:Create(target, Info, Fire)
+	
+		RunServx:Play()
+	end)
 end
-coroutine.wrap(BVYREVU_fake_script)()
+coroutine.wrap(HTHRA_fake_script)()
+local function DOXUTJ_fake_script() -- Loop_Kill_Plr.LocalScript 
+	local script = Instance.new('LocalScript', Loop_Kill_Plr)
+
+	_G.Run = true
+	script.Parent.MouseButton1Down:Connect(function()
+		_G.Run = true
+		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			if v.Name == "Bat" then
+				game.Players.LocalPlayer.Backpack.Bat.Handle.Mesh:Destroy()
+				game.Players.LocalPlayer.Backpack.Bat.Handle = Vector3.new(1,1,3)
+				game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+			else
+				warn("Tool Already Equipped or is missing")
+				game.Players.LocalPlayer.Character.Bat.Handle.Mesh:Destroy()
+				game.Players.LocalPlayer.Character.Bat.Handle.Size = Vector3.new(1, 1, 3)
+			end
+		end
+		for i,v in pairs(game.Players:GetChildren()) do
+			if v.Name == script.Parent.Parent.Loop_Kill_Plr.Text then
+				game.Players.LocalPlayer.Character.Bat.Handle.Position = v.Character.HumanoidRootPart.Position
+			end
+		end
+	
+		while _G.Run == true do wait()
+			for i,v in pairs(game.Players.LocalPlayer:GetChildren()) do
+				if v.Name == "Humanoid" then
+					if v.Health == 0 then
+						warn("Player Died")
+						print("Attempting to sustain Errors")
+						wait(6)
+						for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+							if v.Name == "Bat" then
+								game.Players.LocalPlayer.Backpack.Bat.Handle.Mesh:Destroy()
+								game.Players.LocalPlayer.Backpack.Bat.Handle = Vector3.new(1,1,3)
+								game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+							else
+								warn("Tool Already Equipped or is missing")
+								game.Players.LocalPlayer.Character.Bat.Handle.Mesh:Destroy()
+								game.Players.LocalPlayer.Character.Bat.Handle.Size = Vector3.new(1, 1, 3)
+							end
+						end
+						for i,v in pairs(game.Players:GetChildren()) do
+							if v.Name == script.Parent.Parent.Loop_Kill_Plr.Text then
+								game.Players.LocalPlayer.Character.Bat.Handle.Position = v.Character.HumanoidRootPart.Position
+							end
+						end
+					end
+				end
+			end
+		end
+	end)
+	
+	script.Parent.MouseButton2Down:Connect(function()
+		_G.Run = false
+	end)
+end
+coroutine.wrap(DOXUTJ_fake_script)()
+local function NLTZQJF_fake_script() -- BypassAC.LocalScript 
+	local script = Instance.new('LocalScript', BypassAC)
+
+	_G.Run = true
+	script.Parent.MouseButton1Down:Connect(function()
+		while _G.Run == true do wait()
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == "Humanoid" then
+				if v.Health == 0 then
+					warn("Player has Died")
+					print("Resetting A-C Bypass...")
+					wait(5.5)
+					for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+						if v.Name == "Input" then
+							v.Disabled = true
+						end
+						if v.Name == "input" then
+							v:Destroy()
+						end
+					end
+				end
+			end
+			end
+		end
+	end)
+end
+coroutine.wrap(NLTZQJF_fake_script)()
+local function BNAD_fake_script() -- UI.Draggable 
+	local script = Instance.new('LocalScript', UI)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(BNAD_fake_script)()
