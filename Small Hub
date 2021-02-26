@@ -15,3 +15,9 @@ if game.GameId == "3101667897" then
 else
     warn("Not Legends of Speed")
 end
+
+if game.GameId == "6241352887" then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/ROBLOX-Scripts/main/Manly%20Infection", true))()
+else
+    warn("This is not Manly Infection")
+end
