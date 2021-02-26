@@ -1,23 +1,23 @@
-if game.GameId == "5434583708" then
+if game.PlaceId == 5434583708 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/ROBLOX-Scripts/main/Baseplate%20Sword%20Fight%20Script", true))()
 else
     warn("Not Sword Game")
 end
 
-if game.GameId == "5610197459" then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/ROBLOX-Scripts/main/gang%20up%20on%20people%20simulator%20main", true))()
+if game.PlaceId == 3101667897 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/ROBLOX-Scripts/main/Legends_Of_Speed_GUI", true))()
 else
-    warn("Not gang up on people simulator")
+    warn("This is not legends of speed")
 end
 
-if game.GameId == "3101667897" then
-    warn("Legends of Speed Script Is Currently Unavaliable")
-else
-    warn("Not Legends of Speed")
-end
-
-if game.GameId == "6241352887" then
+if game.PlaceId == 6241352887 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/ROBLOX-Scripts/main/Manly%20Infection", true))()
 else
-    warn("This is not Manly Infection")
+    warn("This is not manly Infection")
+end
+
+if game.PlaceId == 5610197459 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/ROBLOX-Scripts/main/gang%20up%20on%20people%20simulator%20main", true))()
+else
+    warn("This is not gang up on people simulator")
 end
