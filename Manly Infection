@@ -1,0 +1,792 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local UI = Instance.new("ImageLabel")
+local God_Mode = Instance.new("TextButton")
+local TextButton_Roundify_12px = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local Kill_Bot = Instance.new("TextButton")
+local TextButton_Roundify_12px_2 = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Sword_Reach = Instance.new("TextButton")
+local TextButton_Roundify_12px_3 = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Block_AntiCheat_Remote = Instance.new("TextButton")
+local TextButton_Roundify_12px_4 = Instance.new("ImageLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local WalkSpeed_Value = Instance.new("TextBox")
+local WalkSpeed = Instance.new("TextButton")
+local TextButton_Roundify_12px_5 = Instance.new("ImageLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local Gravity = Instance.new("TextButton")
+local TextButton_Roundify_12px_6 = Instance.new("ImageLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local Gravity_Value = Instance.new("TextBox")
+local Sword_Auto_Equip = Instance.new("TextButton")
+local TextButton_Roundify_12px_7 = Instance.new("ImageLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local Infinite_Yield = Instance.new("TextButton")
+local TextButton_Roundify_12px_8 = Instance.new("ImageLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local TextLabel_9 = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local Bot_Kill_Value = Instance.new("TextBox")
+local OpenUI = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+UI.Name = "UI"
+UI.Parent = ScreenGui
+UI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UI.BackgroundTransparency = 1.000
+UI.Position = UDim2.new(0.621936977, 0, 0.593350291, 0)
+UI.Size = UDim2.new(0.333722323, 0, 0.358056396, 0)
+UI.Image = "rbxassetid://3570695787"
+UI.ImageColor3 = Color3.fromRGB(16, 16, 16)
+UI.ScaleType = Enum.ScaleType.Slice
+UI.SliceCenter = Rect.new(100, 100, 100, 100)
+UI.SliceScale = 0.120
+
+God_Mode.Name = "God_Mode"
+God_Mode.Parent = UI
+God_Mode.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+God_Mode.BackgroundTransparency = 1.000
+God_Mode.BorderSizePixel = 0
+God_Mode.Position = UDim2.new(0.0207852162, 0, 0.787999868, 0)
+God_Mode.Size = UDim2.new(0.371824414, 0, 0.175999969, 0)
+God_Mode.Font = Enum.Font.PermanentMarker
+God_Mode.Text = "God Mode"
+God_Mode.TextColor3 = Color3.fromRGB(190, 190, 190)
+God_Mode.TextSize = 33.000
+
+TextButton_Roundify_12px.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px.Parent = God_Mode
+TextButton_Roundify_12px.Active = true
+TextButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px.BackgroundTransparency = 1.000
+TextButton_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px.Selectable = true
+TextButton_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px.ImageColor3 = Color3.fromRGB(75, 75, 75)
+TextButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px.SliceScale = 0.120
+
+TextLabel.Parent = TextButton_Roundify_12px
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.366459638, 0, 0.340909094, 0)
+TextLabel.Size = UDim2.new(0.173913047, 0, 0.318181813, 0)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "God Mode"
+TextLabel.TextColor3 = Color3.fromRGB(213, 213, 213)
+TextLabel.TextSize = 30.000
+
+Kill_Bot.Name = "Kill_Bot"
+Kill_Bot.Parent = UI
+Kill_Bot.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Kill_Bot.BackgroundTransparency = 1.000
+Kill_Bot.BorderSizePixel = 0
+Kill_Bot.Position = UDim2.new(0.0207852162, 0, 0.579999924, 0)
+Kill_Bot.Size = UDim2.new(0.371824414, 0, 0.175999969, 0)
+Kill_Bot.Font = Enum.Font.PermanentMarker
+Kill_Bot.Text = "God Mode"
+Kill_Bot.TextColor3 = Color3.fromRGB(190, 190, 190)
+Kill_Bot.TextSize = 33.000
+
+TextButton_Roundify_12px_2.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_2.Parent = Kill_Bot
+TextButton_Roundify_12px_2.Active = true
+TextButton_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_2.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_2.Position = UDim2.new(0.49999997, 0, 0.5, 0)
+TextButton_Roundify_12px_2.Selectable = true
+TextButton_Roundify_12px_2.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_2.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_2.ImageColor3 = Color3.fromRGB(75, 75, 75)
+TextButton_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_2.SliceScale = 0.120
+
+TextLabel_2.Parent = TextButton_Roundify_12px_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.409937888, 0, 0.340909094, 0)
+TextLabel_2.Size = UDim2.new(0.173913047, 0, 0.318181813, 0)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "Open Source Loop Kill"
+TextLabel_2.TextColor3 = Color3.fromRGB(213, 213, 213)
+TextLabel_2.TextSize = 17.000
+
+Sword_Reach.Name = "Sword_Reach"
+Sword_Reach.Parent = UI
+Sword_Reach.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Sword_Reach.BackgroundTransparency = 1.000
+Sword_Reach.BorderSizePixel = 0
+Sword_Reach.Position = UDim2.new(0.0207852162, 0, 0.375999957, 0)
+Sword_Reach.Size = UDim2.new(0.371824414, 0, 0.175999969, 0)
+Sword_Reach.Font = Enum.Font.PermanentMarker
+Sword_Reach.Text = "Reach"
+Sword_Reach.TextColor3 = Color3.fromRGB(190, 190, 190)
+Sword_Reach.TextSize = 33.000
+
+TextButton_Roundify_12px_3.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_3.Parent = Sword_Reach
+TextButton_Roundify_12px_3.Active = true
+TextButton_Roundify_12px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_3.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_3.Position = UDim2.new(0.49999997, 0, 0.5, 0)
+TextButton_Roundify_12px_3.Selectable = true
+TextButton_Roundify_12px_3.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_3.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_3.ImageColor3 = Color3.fromRGB(75, 75, 75)
+TextButton_Roundify_12px_3.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_3.SliceScale = 0.120
+
+TextLabel_3.Parent = TextButton_Roundify_12px_3
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.409937888, 0, 0.340909094, 0)
+TextLabel_3.Size = UDim2.new(0.173913047, 0, 0.318181813, 0)
+TextLabel_3.Font = Enum.Font.SciFi
+TextLabel_3.Text = "Sword Reach"
+TextLabel_3.TextColor3 = Color3.fromRGB(213, 213, 213)
+TextLabel_3.TextSize = 28.000
+
+Block_AntiCheat_Remote.Name = "Block_AntiCheat_Remote"
+Block_AntiCheat_Remote.Parent = UI
+Block_AntiCheat_Remote.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Block_AntiCheat_Remote.BackgroundTransparency = 1.000
+Block_AntiCheat_Remote.BorderSizePixel = 0
+Block_AntiCheat_Remote.Position = UDim2.new(0.609699667, 0, 0.787999868, 0)
+Block_AntiCheat_Remote.Size = UDim2.new(0.371824414, 0, 0.175999969, 0)
+Block_AntiCheat_Remote.Font = Enum.Font.PermanentMarker
+Block_AntiCheat_Remote.Text = ""
+Block_AntiCheat_Remote.TextColor3 = Color3.fromRGB(190, 190, 190)
+Block_AntiCheat_Remote.TextSize = 33.000
+
+TextButton_Roundify_12px_4.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_4.Parent = Block_AntiCheat_Remote
+TextButton_Roundify_12px_4.Active = true
+TextButton_Roundify_12px_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_4.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_4.Position = UDim2.new(0.49999997, 0, 0.5, 0)
+TextButton_Roundify_12px_4.Selectable = true
+TextButton_Roundify_12px_4.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_4.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_4.ImageColor3 = Color3.fromRGB(75, 75, 75)
+TextButton_Roundify_12px_4.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_4.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_4.SliceScale = 0.120
+
+TextLabel_4.Parent = TextButton_Roundify_12px_4
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.409937888, 0, 0.340909094, 0)
+TextLabel_4.Size = UDim2.new(0.173913047, 0, 0.318181813, 0)
+TextLabel_4.Font = Enum.Font.SciFi
+TextLabel_4.Text = "Block AntiCheat Remote"
+TextLabel_4.TextColor3 = Color3.fromRGB(213, 213, 213)
+TextLabel_4.TextSize = 15.000
+
+WalkSpeed_Value.Name = "WalkSpeed_Value"
+WalkSpeed_Value.Parent = UI
+WalkSpeed_Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WalkSpeed_Value.Position = UDim2.new(0.400996, 0, 0.579222441, 0)
+WalkSpeed_Value.Size = UDim2.new(0.196105421, 0, 0.0767263398, 0)
+WalkSpeed_Value.Font = Enum.Font.SourceSans
+WalkSpeed_Value.Text = "Speed Here"
+WalkSpeed_Value.TextColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeed_Value.TextSize = 14.000
+
+WalkSpeed.Name = "WalkSpeed"
+WalkSpeed.Parent = UI
+WalkSpeed.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+WalkSpeed.BackgroundTransparency = 1.000
+WalkSpeed.BorderSizePixel = 0
+WalkSpeed.Position = UDim2.new(0.609699667, 0, 0.579999924, 0)
+WalkSpeed.Size = UDim2.new(0.371824414, 0, 0.175999969, 0)
+WalkSpeed.Font = Enum.Font.PermanentMarker
+WalkSpeed.Text = ""
+WalkSpeed.TextColor3 = Color3.fromRGB(190, 190, 190)
+WalkSpeed.TextSize = 33.000
+
+TextButton_Roundify_12px_5.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_5.Parent = WalkSpeed
+TextButton_Roundify_12px_5.Active = true
+TextButton_Roundify_12px_5.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_5.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_5.Position = UDim2.new(0.49999997, 0, 0.5, 0)
+TextButton_Roundify_12px_5.Selectable = true
+TextButton_Roundify_12px_5.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_5.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_5.ImageColor3 = Color3.fromRGB(75, 75, 75)
+TextButton_Roundify_12px_5.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_5.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_5.SliceScale = 0.120
+
+TextLabel_5.Parent = TextButton_Roundify_12px_5
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.409937888, 0, 0.340909094, 0)
+TextLabel_5.Size = UDim2.new(0.173913047, 0, 0.318181813, 0)
+TextLabel_5.Font = Enum.Font.SciFi
+TextLabel_5.Text = "WalkSpeed Hax"
+TextLabel_5.TextColor3 = Color3.fromRGB(213, 213, 213)
+TextLabel_5.TextSize = 20.000
+
+Gravity.Name = "Gravity"
+Gravity.Parent = UI
+Gravity.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Gravity.BackgroundTransparency = 1.000
+Gravity.BorderSizePixel = 0
+Gravity.Position = UDim2.new(0.609699667, 0, 0.171999991, 0)
+Gravity.Size = UDim2.new(0.371824414, 0, 0.175999969, 0)
+Gravity.Font = Enum.Font.PermanentMarker
+Gravity.Text = ""
+Gravity.TextColor3 = Color3.fromRGB(190, 190, 190)
+Gravity.TextSize = 33.000
+
+TextButton_Roundify_12px_6.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_6.Parent = Gravity
+TextButton_Roundify_12px_6.Active = true
+TextButton_Roundify_12px_6.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_6.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_6.Position = UDim2.new(0.49999997, 0, 0.5, 0)
+TextButton_Roundify_12px_6.Selectable = true
+TextButton_Roundify_12px_6.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_6.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_6.ImageColor3 = Color3.fromRGB(75, 75, 75)
+TextButton_Roundify_12px_6.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_6.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_6.SliceScale = 0.120
+
+TextLabel_6.Parent = TextButton_Roundify_12px_6
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.409937888, 0, 0.340909094, 0)
+TextLabel_6.Size = UDim2.new(0.173913047, 0, 0.318181813, 0)
+TextLabel_6.Font = Enum.Font.SciFi
+TextLabel_6.Text = "Gravity Mod"
+TextLabel_6.TextColor3 = Color3.fromRGB(213, 213, 213)
+TextLabel_6.TextSize = 30.000
+
+Gravity_Value.Name = "Gravity_Value"
+Gravity_Value.Parent = UI
+Gravity_Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gravity_Value.Position = UDim2.new(0.400996, 0, 0.219600946, 0)
+Gravity_Value.Size = UDim2.new(0.195059821, 0, 0.0767263398, 0)
+Gravity_Value.Font = Enum.Font.SourceSans
+Gravity_Value.Text = "Gravity Here"
+Gravity_Value.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gravity_Value.TextSize = 14.000
+
+Sword_Auto_Equip.Name = "Sword_Auto_Equip"
+Sword_Auto_Equip.Parent = UI
+Sword_Auto_Equip.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Sword_Auto_Equip.BackgroundTransparency = 1.000
+Sword_Auto_Equip.BorderSizePixel = 0
+Sword_Auto_Equip.Position = UDim2.new(0.0207852125, 0, 0.171999991, 0)
+Sword_Auto_Equip.Size = UDim2.new(0.371824414, 0, 0.175999969, 0)
+Sword_Auto_Equip.Font = Enum.Font.PermanentMarker
+Sword_Auto_Equip.Text = ""
+Sword_Auto_Equip.TextColor3 = Color3.fromRGB(190, 190, 190)
+Sword_Auto_Equip.TextSize = 33.000
+
+TextButton_Roundify_12px_7.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_7.Parent = Sword_Auto_Equip
+TextButton_Roundify_12px_7.Active = true
+TextButton_Roundify_12px_7.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_7.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_7.Position = UDim2.new(0.49999997, 0, 0.5, 0)
+TextButton_Roundify_12px_7.Selectable = true
+TextButton_Roundify_12px_7.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_7.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_7.ImageColor3 = Color3.fromRGB(75, 75, 75)
+TextButton_Roundify_12px_7.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_7.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_7.SliceScale = 0.120
+
+TextLabel_7.Parent = TextButton_Roundify_12px_7
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.409937888, 0, 0.340909094, 0)
+TextLabel_7.Size = UDim2.new(0.173913047, 0, 0.318181813, 0)
+TextLabel_7.Font = Enum.Font.SciFi
+TextLabel_7.Text = "Sword Botting"
+TextLabel_7.TextColor3 = Color3.fromRGB(213, 213, 213)
+TextLabel_7.TextSize = 25.000
+
+Infinite_Yield.Name = "Infinite_Yield"
+Infinite_Yield.Parent = UI
+Infinite_Yield.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Infinite_Yield.BackgroundTransparency = 1.000
+Infinite_Yield.BorderSizePixel = 0
+Infinite_Yield.Position = UDim2.new(0.609699667, 0, 0.375999957, 0)
+Infinite_Yield.Size = UDim2.new(0.371824414, 0, 0.175999969, 0)
+Infinite_Yield.Font = Enum.Font.PermanentMarker
+Infinite_Yield.Text = "God Mode"
+Infinite_Yield.TextColor3 = Color3.fromRGB(190, 190, 190)
+Infinite_Yield.TextSize = 33.000
+
+TextButton_Roundify_12px_8.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_8.Parent = Infinite_Yield
+TextButton_Roundify_12px_8.Active = true
+TextButton_Roundify_12px_8.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_8.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_8.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px_8.Selectable = true
+TextButton_Roundify_12px_8.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px_8.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_8.ImageColor3 = Color3.fromRGB(75, 75, 75)
+TextButton_Roundify_12px_8.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_8.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_8.SliceScale = 0.120
+
+TextLabel_8.Parent = TextButton_Roundify_12px_8
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.409937888, 0, 0.340909094, 0)
+TextLabel_8.Size = UDim2.new(0.173913047, 0, 0.318181813, 0)
+TextLabel_8.Font = Enum.Font.SciFi
+TextLabel_8.Text = "Infinite Yield"
+TextLabel_8.TextColor3 = Color3.fromRGB(213, 213, 213)
+TextLabel_8.TextSize = 30.000
+
+Frame.Parent = UI
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.131999999, 0)
+Frame.Size = UDim2.new(1, 0, 0.00399999926, 0)
+
+TextLabel_9.Parent = UI
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.39953804, 0, 0.0439999588, 0)
+TextLabel_9.Size = UDim2.new(0.147805989, 0, 0.0400000252, 0)
+TextLabel_9.Font = Enum.Font.SciFi
+TextLabel_9.Text = "Baseplate Sword Fighters"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextSize = 33.000
+
+Close.Name = "Close"
+Close.Parent = UI
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Size = UDim2.new(0.083140865, 0, 0.131999999, 0)
+Close.Font = Enum.Font.PermanentMarker
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 40.000
+
+TextLabel_10.Parent = UI
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(0.424942195, 0, 0.755999863, 0)
+TextLabel_10.Size = UDim2.new(0.147805989, 0, 0.0400000252, 0)
+TextLabel_10.Font = Enum.Font.SciFi
+TextLabel_10.Text = "Made By: "
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextSize = 15.000
+
+TextLabel_11.Parent = UI
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0.424942195, 0, 0.847999811, 0)
+TextLabel_11.Size = UDim2.new(0.147805989, 0, 0.0400000252, 0)
+TextLabel_11.Font = Enum.Font.SciFi
+TextLabel_11.Text = "IScripterV / "
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextSize = 15.000
+
+TextLabel_12.Parent = UI
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(0.424942195, 0, 0.923999846, 0)
+TextLabel_12.Size = UDim2.new(0.147805989, 0, 0.0400000252, 0)
+TextLabel_12.Font = Enum.Font.SciFi
+TextLabel_12.Text = "IScripterV#0972"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextSize = 15.000
+
+Bot_Kill_Value.Name = "Bot_Kill_Value"
+Bot_Kill_Value.Parent = UI
+Bot_Kill_Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bot_Kill_Value.Position = UDim2.new(0.400996, 0, 0.679222465, 0)
+Bot_Kill_Value.Size = UDim2.new(0.196105421, 0, 0.0767263398, 0)
+Bot_Kill_Value.Font = Enum.Font.SourceSans
+Bot_Kill_Value.Text = "Bot Kill plr name"
+Bot_Kill_Value.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bot_Kill_Value.TextSize = 14.000
+
+OpenUI.Name = "OpenUI"
+OpenUI.Parent = ScreenGui
+OpenUI.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+OpenUI.BorderSizePixel = 4
+OpenUI.Position = UDim2.new(0.0114503149, 0, 0.522015214, 0)
+OpenUI.Size = UDim2.new(0.071941115, 0, 0.0508747883, 0)
+OpenUI.Visible = false
+OpenUI.Text = "Open"
+OpenUI.TextColor3 = Color3.fromRGB(190, 190, 190)
+OpenUI.TextSize = 22.000
+
+-- Scripts:
+
+local function WSNTJA_fake_script() -- God_Mode.LocalScript 
+	local script = Instance.new('LocalScript', God_Mode)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		for i,v in pairs(game.workspace:GetChildren()) do
+			if v.Name == "Part" then
+				v:Destroy()
+			end
+		end
+	end)
+end
+coroutine.wrap(WSNTJA_fake_script)()
+local function TCBGF_fake_script() -- Kill_Bot.LocalScript 
+	local script = Instance.new('LocalScript', Kill_Bot)
+
+	_G.Run = true
+	script.Parent.MouseButton1Down:Connect(function()
+		_G.Run = true
+		while _G.Run == true do wait()
+		for i,v in pairs(game.Workspace:GetChildren()) do
+			if v.Name == script.Parent.Parent.Bot_Kill_Value.Text then
+				if game.Players.LocalPlayer.Character.Humanoid.Health <= 20 then
+					warn("Abort Kill Switch")
+				else
+					game.Players.LocalPlayer.Character:WaitForChild("Sword_0").Handle.Position = v:WaitForChild("HumanoidRootPart", 1000).Position
+					game.Players.LocalPlayer.Character.Sword_0:Activate()
+				end
+			end
+			end
+		end
+	end)
+	
+	script.Parent.MouseButton2Down:Connect(function()
+		_G.Run = false
+	end)
+	
+	script.Parent.Parent.Sword_Reach.MouseButton1Down:Connect(function()
+		_G.Run = false
+	end)
+end
+coroutine.wrap(TCBGF_fake_script)()
+local function WYOS_fake_script() -- Sword_Reach.LocalScript 
+	local script = Instance.new('LocalScript', Sword_Reach)
+
+	_G.Run = true
+	script.Parent.MouseButton1Down:Connect(function()
+		_G.Run = true
+		-- script
+		local P = game.Players
+		local LP = game.Players.LocalPlayer
+		local LPC = game.Players.LocalPlayer.Character
+		local Tool = LP.Backpack.Sword_0
+	
+		for i,v in pairs(LP.Backpack:GetChildren()) do
+			if v.Name == "Sword_0" then
+				LPC.Humanoid:EquipTool(Tool)
+				print("Equipping tool")
+				v.Handle.Mesh:Destroy()
+				v.Handle.Size = Vector3.new(0.1, 0.1, 350)
+			else
+				for i,v in pairs(LP.Character:GetChildren()) do
+					if v.Name == "Sword" then 
+						LPC.Sword.Handle.Mesh:Destroy()
+						LPC.Sword.Handle.Size = Vector3.new(0.1, 0.1, 350)
+					end
+				end
+			end
+	
+			while _G.Run == true do wait()
+				for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+					if v.Name == "Humanoid" then
+						if v.Health == 0 then
+							warn("Stopping All Functions")
+							warn("Waiting For Humanoid Death...")
+							warn("Player Has Died")
+							print("Reloading Assets...")
+							wait(4)
+							for x,q in pairs(LP.Backpack:GetChildren()) do
+								if q.Name == "Sword_0" then
+									game.Players.LocalPlayer.Character.Humanoid:EquipTool(q)
+									game.Players.LocalPlayer.Character.Sword_0.Handle.Mesh:Destroy()
+									game.Players.LocalPlayer.Character.Sword_0.Handle.Size = Vector3.new(0.1, 0.1, 350)
+								else
+									print("Sword Already Equipped")
+									game.Players.LocalPlayer.Character.Sword_0.Handle.Mesh:Destroy()
+									game.Players.LocalPlayer.Character.Sword_0.Handle.Size = Vector3.new(0.1, 0.1, 350)
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end)
+	
+	script.Parent.MouseButton2Down:Connect(function()
+		_G.Run = false
+	end)
+	
+	script.Parent.Parent.Sword_Auto_Equip.MouseButton1Down:Connect(function()
+		_G.Run = false
+	end)
+	
+	script.Parent.Parent.Kill_Bot.MouseButton1Down:Connect(function()
+		_G.Run = false
+	end)
+end
+coroutine.wrap(WYOS_fake_script)()
+local function XGMA_fake_script() -- WalkSpeed.LocalScript 
+	local script = Instance.new('LocalScript', WalkSpeed)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local U = game.Players.LocalPlayer.Character
+		U.Humanoid.WalkSpeed = script.Parent.Parent.WalkSpeed_Value.Text
+	end)
+end
+coroutine.wrap(XGMA_fake_script)()
+local function VUXW_fake_script() -- Gravity.LocalScript 
+	local script = Instance.new('LocalScript', Gravity)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Workspace.Gravity = script.Parent.Parent.Gravity_Value.Text
+	end)
+end
+coroutine.wrap(VUXW_fake_script)()
+local function BPAZEZY_fake_script() -- Sword_Auto_Equip.LocalScript 
+	local script = Instance.new('LocalScript', Sword_Auto_Equip)
+
+	_G.Run = true
+	script.Parent.MouseButton1Down:Connect(function()
+		_G.Run = true
+		-- script
+		local P = game.Players
+		local LP = game.Players.LocalPlayer
+		local LPC = game.Players.LocalPlayer.Character
+		local Tool = LP.Backpack.Sword_0
+	
+		for i,v in pairs(LP.Backpack:GetChildren()) do
+			if v.Name == "Sword_0" then
+				LPC.Humanoid:EquipTool(Tool)
+				print("Equipping tool")
+				v.Handle.Mesh:Destroy()
+				v.Handle.Size = Vector3.new(1, 1, 5)
+			else
+				for i,v in pairs(LP.Character:GetChildren()) do
+					if v.Name == "Sword" then 
+						LPC.Sword.Handle.Mesh:Destroy()
+						LPC.Sword.Handle.Size = Vector3.new(1, 1, 5)
+					end
+				end
+			end
+	
+			while _G.Run == true do wait()
+				for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+					if v.Name == "Humanoid" then
+						if v.Health == 0 then
+							warn("Stopping All Functions")
+							warn("Waiting For Humanoid Death...")
+							warn("Player Has Died")
+							print("Reloading Assets...")
+							wait(4)
+							for x,q in pairs(LP.Backpack:GetChildren()) do
+								if q.Name == "Sword_0" then
+									game.Players.LocalPlayer.Character.Humanoid:EquipTool(q)
+									game.Players.LocalPlayer.Character.Sword_0.Handle.Mesh:Destroy()
+									game.Players.LocalPlayer.Character.Sword_0.Handle.Size = Vector3.new(1, 1, 5)
+								else
+									print("Sword Already Equipped")
+									game.Players.LocalPlayer.Character.Sword_0.Handle.Mesh:Destroy()
+									game.Players.LocalPlayer.Character.Sword_0.Handle.Size = Vector3.new(1, 1, 5)
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end)
+	
+	script.Parent.MouseButton2Down:Connect(function()
+		_G.Run = false
+	end)
+	
+	script.Parent.Parent.Sword_Reach.MouseButton1Down:Connect(function()
+		_G.Run = false
+	end)
+	
+	script.Parent.Parent.Kill_Bot.MouseButton1Down:Connect(function()
+		_G.Run = false
+	end)
+end
+coroutine.wrap(BPAZEZY_fake_script)()
+local function IHXRQGK_fake_script() -- Infinite_Yield.LocalScript 
+	local script = Instance.new('LocalScript', Infinite_Yield)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		---------------------------------------------------------------
+		---------------------------------------------------------------
+		--  _____       __ _       _ _        __   ___      _     _  --
+		-- |_   _|     / _(_)     (_) |       \ \ / (_)    | |   | | --
+		--   | | _ __ | |_ _ _ __  _| |_ ___   \ V / _  ___| | __| | --
+		--   | || '_ \|  _| | '_ \| | __/ _ \   \ / | |/ _ \ |/ _` | --
+		--  _| || | | | | | | | | | | ||  __/   | | | |  __/ | (_| | --
+		--  \___/_| |_|_| |_|_| |_|_|\__\___|   \_/ |_|\___|_|\__,_| --
+		--                                                           --
+		---------------------------------------------------------------
+		---------------------------Edge-Moon---------------------------
+		---------------------------------------------------------------
+	
+		-- [[ use this script on prison life it works good af ]] --
+	
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(IHXRQGK_fake_script)()
+local function NTSHZ_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.OpenUI.Visible = true
+	end)
+end
+coroutine.wrap(NTSHZ_fake_script)()
+local function IHHCLYE_fake_script() -- UI.Draggable 
+	local script = Instance.new('LocalScript', UI)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(IHHCLYE_fake_script)()
+local function QVCRJA_fake_script() -- UI.AntiCheatBypass 
+	local script = Instance.new('LocalScript', UI)
+
+	while true do wait()
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == "Humanoid" then
+				if v.Health == 0 then
+					warn("Player Has Died")
+					print("Attempting to Repair Script Modules...")
+					wait(6)
+					for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+						if v.Name == "PlayerHealthbarGui" then
+							v.Disabled = true
+						end
+						if v.Name == "SkillRatingScript" then
+							v.Disabled = true
+						end
+						if v.Name == "StreaksScript" then
+							v.Disabled = true
+						end
+						if v.Name == "SwordConnectingScript" then
+							v.Disabled = true
+						end
+					end
+				else
+					for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+						if v.Name == "PlayerHealthbarGui" then
+							v.Disabled = true
+						end
+						if v.Name == "SkillRatingScript" then
+							v.Disabled = true
+						end
+						if v.Name == "StreaksScript" then
+							v.Disabled = true
+						end
+						if v.Name == "SwordConnectingScript" then
+							v.Disabled = true
+						end
+					end
+				end
+			end
+		end
+	end
+	
+	
+	
+end
+coroutine.wrap(QVCRJA_fake_script)()
+local function CSTR_fake_script() -- UI.Destroy_Kill_Bricks 
+	local script = Instance.new('LocalScript', UI)
+
+	for i,v in pairs(game.Workspace:GetChildren()) do
+		if v.Name == "Part" then
+			v:Destroy()
+		end
+		if v.Name == "Kill brick" then
+			v:Destroy()
+		end
+	end
+	
+end
+coroutine.wrap(CSTR_fake_script)()
+local function DWXUTYD_fake_script() -- OpenUI.LocalScript 
+	local script = Instance.new('LocalScript', OpenUI)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.UI.Visible = true
+		script.Parent.Visible = false
+	end)
+end
+coroutine.wrap(DWXUTYD_fake_script)()
