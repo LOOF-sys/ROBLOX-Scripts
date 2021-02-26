@@ -1,3 +1,5 @@
+-- Legends_Of_Speed_GUI
+
 game:GetService("Workspace").areaCircles.areaCircle:Destroy()
 game:GetService("Workspace").areaCircles.areaCircle:Destroy()
 -- Gui to Lua
