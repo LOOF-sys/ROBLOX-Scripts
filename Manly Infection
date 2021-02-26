@@ -287,7 +287,7 @@ BypassAC.TextSize = 24.000
 
 -- Scripts:
 
-local function IRIAXL_fake_script() -- OpenUI.LocalScript 
+local function MKGZYX_fake_script() -- OpenUI.LocalScript 
 	local script = Instance.new('LocalScript', OpenUI)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -295,8 +295,8 @@ local function IRIAXL_fake_script() -- OpenUI.LocalScript
 		script.Parent.Parent.UI.Visible = true
 	end)
 end
-coroutine.wrap(IRIAXL_fake_script)()
-local function PHHVN_fake_script() -- MainGui.GodModeChecker 
+coroutine.wrap(MKGZYX_fake_script)()
+local function FSAFXG_fake_script() -- MainGui.GodModeChecker 
 	local script = Instance.new('LocalScript', MainGui)
 
 	local run = true
@@ -307,24 +307,24 @@ local function PHHVN_fake_script() -- MainGui.GodModeChecker
 		end
 	end
 end
-coroutine.wrap(PHHVN_fake_script)()
-local function XNXIE_fake_script() -- AntiGravityOn.LocalScript 
+coroutine.wrap(FSAFXG_fake_script)()
+local function HPAJSQR_fake_script() -- AntiGravityOn.LocalScript 
 	local script = Instance.new('LocalScript', AntiGravityOn)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 	end)
 end
-coroutine.wrap(XNXIE_fake_script)()
-local function TMREUL_fake_script() -- AntiGravityOff.LocalScript 
+coroutine.wrap(HPAJSQR_fake_script)()
+local function EBEL_fake_script() -- AntiGravityOff.LocalScript 
 	local script = Instance.new('LocalScript', AntiGravityOff)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
 	end)
 end
-coroutine.wrap(TMREUL_fake_script)()
-local function FUNPG_fake_script() -- Close.LocalScript 
+coroutine.wrap(EBEL_fake_script)()
+local function RGGU_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -332,8 +332,8 @@ local function FUNPG_fake_script() -- Close.LocalScript
 		script.Parent.Parent.Parent.OpenUI.Visible = true
 	end)
 end
-coroutine.wrap(FUNPG_fake_script)()
-local function ZWSR_fake_script() -- GodModeOn.LocalScript 
+coroutine.wrap(RGGU_fake_script)()
+local function OTRKDAD_fake_script() -- GodModeOn.LocalScript 
 	local script = Instance.new('LocalScript', GodModeOn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -376,24 +376,24 @@ local function ZWSR_fake_script() -- GodModeOn.LocalScript
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 	end)
 end
-coroutine.wrap(ZWSR_fake_script)()
-local function AOVBW_fake_script() -- WalkSpeed.LocalScript 
+coroutine.wrap(OTRKDAD_fake_script)()
+local function DRPB_fake_script() -- WalkSpeed.LocalScript 
 	local script = Instance.new('LocalScript', WalkSpeed)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.Parent.WalkSpeed_Value.Text
 	end)
 end
-coroutine.wrap(AOVBW_fake_script)()
-local function SFOJVD_fake_script() -- JumpPower.LocalScript 
+coroutine.wrap(DRPB_fake_script)()
+local function DUBLMG_fake_script() -- JumpPower.LocalScript 
 	local script = Instance.new('LocalScript', JumpPower)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = script.Parent.Parent.JumpPower_Value.Text
 	end)
 end
-coroutine.wrap(SFOJVD_fake_script)()
-local function TJMJ_fake_script() -- Tp_To_Player.LocalScript 
+coroutine.wrap(DUBLMG_fake_script)()
+local function SZHZIA_fake_script() -- Tp_To_Player.LocalScript 
 	local script = Instance.new('LocalScript', Tp_To_Player)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -406,8 +406,8 @@ local function TJMJ_fake_script() -- Tp_To_Player.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TJMJ_fake_script)()
-local function HTHRA_fake_script() -- Tween_To_Plr.LocalScript 
+coroutine.wrap(SZHZIA_fake_script)()
+local function RQTNBC_fake_script() -- Tween_To_Plr.LocalScript 
 	local script = Instance.new('LocalScript', Tween_To_Plr)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -433,8 +433,8 @@ local function HTHRA_fake_script() -- Tween_To_Plr.LocalScript
 		RunServx:Play()
 	end)
 end
-coroutine.wrap(HTHRA_fake_script)()
-local function DOXUTJ_fake_script() -- Loop_Kill_Plr.LocalScript 
+coroutine.wrap(RQTNBC_fake_script)()
+local function XXDSDTG_fake_script() -- Loop_Kill_Plr.LocalScript 
 	local script = Instance.new('LocalScript', Loop_Kill_Plr)
 
 	_G.Run = true
@@ -443,7 +443,7 @@ local function DOXUTJ_fake_script() -- Loop_Kill_Plr.LocalScript
 		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 			if v.Name == "Bat" then
 				game.Players.LocalPlayer.Backpack.Bat.Handle.Mesh:Destroy()
-				game.Players.LocalPlayer.Backpack.Bat.Handle = Vector3.new(1,1,3)
+				game.Players.LocalPlayer.Backpack.Bat.Handle.Size = Vector3.new(1,1,3)
 				game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
 			else
 				warn("Tool Already Equipped or is missing")
@@ -453,7 +453,10 @@ local function DOXUTJ_fake_script() -- Loop_Kill_Plr.LocalScript
 		end
 		for i,v in pairs(game.Players:GetChildren()) do
 			if v.Name == script.Parent.Parent.Loop_Kill_Plr.Text then
-				game.Players.LocalPlayer.Character.Bat.Handle.Position = v.Character.HumanoidRootPart.Position
+				print("Searching")
+				game.Players.LocalPlayer.Character.Bat.Handle.CFrame = v.Character.HumanoidRootPart.CFrame
+			else
+				warn("Player Searcher V1 Failed to find player!")
 			end
 		end
 	
@@ -490,8 +493,8 @@ local function DOXUTJ_fake_script() -- Loop_Kill_Plr.LocalScript
 		_G.Run = false
 	end)
 end
-coroutine.wrap(DOXUTJ_fake_script)()
-local function NLTZQJF_fake_script() -- BypassAC.LocalScript 
+coroutine.wrap(XXDSDTG_fake_script)()
+local function JXSIIOR_fake_script() -- BypassAC.LocalScript 
 	local script = Instance.new('LocalScript', BypassAC)
 
 	_G.Run = true
@@ -517,8 +520,8 @@ local function NLTZQJF_fake_script() -- BypassAC.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NLTZQJF_fake_script)()
-local function BNAD_fake_script() -- UI.Draggable 
+coroutine.wrap(JXSIIOR_fake_script)()
+local function OJUSAIA_fake_script() -- UI.Draggable 
 	local script = Instance.new('LocalScript', UI)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -561,4 +564,4 @@ local function BNAD_fake_script() -- UI.Draggable
 		end
 	end)
 end
-coroutine.wrap(BNAD_fake_script)()
+coroutine.wrap(OJUSAIA_fake_script)()
