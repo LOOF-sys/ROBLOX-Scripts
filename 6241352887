@@ -1,6 +1,6 @@
 -- Manly Infection Script
 
-game.Players.LocalPlayer:Kick("Script is Patched and you have been kicked for the saftey of our users")
+warn("TAKE THIS WARNING SERIOUS || YOU ARE POTENTIALLY USING A PATCHED SCRIPT AND YOU HAVE A RISK OF GETTING BANNED || IF YOU ARE USING THIS ON YOUR MAIN EXIT THIS GAME NOW, UE THIS ON AN ALT AND DONT USE SPEED/JUMP POWER/GOD MODE/A-C BYPASS/LOOP KILL/GRAVITY AND SOME OTHERS I FORGOT. YOU HAVE BEEN WARNED")
 
 local MainGui = Instance.new("ScreenGui")
 local OpenUI = Instance.new("TextButton")
