@@ -17,12 +17,10 @@ local WalkSpeed_Value = Instance.new("TextBox")
 local JumpPower_Value = Instance.new("TextBox")
 local Gravity_Value = Instance.new("TextBox")
 local Tp_To_Player_Value = Instance.new("TextBox")
-local Tween_To_Plr = Instance.new("TextButton")
-local Tween_To_Value = Instance.new("TextBox")
+local Mod_Bat = Instance.new("TextButton")
 local Settings = Instance.new("TextButton")
 local Loop_Kill_Plr = Instance.new("TextButton")
 local JumpPower_Value_2 = Instance.new("TextBox")
-local Tween_Speed_Value = Instance.new("TextBox")
 local BypassAC = Instance.new("TextButton")
 
 --Properties:
@@ -206,27 +204,17 @@ Tp_To_Player_Value.Text = "Tp Plr Name Here"
 Tp_To_Player_Value.TextColor3 = Color3.fromRGB(0, 0, 0)
 Tp_To_Player_Value.TextSize = 14.000
 
-Tween_To_Plr.Name = "Tween_To_Plr"
-Tween_To_Plr.Parent = UI
-Tween_To_Plr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Tween_To_Plr.BackgroundTransparency = 0.500
-Tween_To_Plr.BorderSizePixel = 5
-Tween_To_Plr.Position = UDim2.new(0.0294503327, 0, 0.287624776, 0)
-Tween_To_Plr.Size = UDim2.new(0.19134976, 0, 0.0902410299, 0)
-Tween_To_Plr.Font = Enum.Font.PermanentMarker
-Tween_To_Plr.Text = "Tween To Plr"
-Tween_To_Plr.TextColor3 = Color3.fromRGB(0, 0, 0)
-Tween_To_Plr.TextSize = 18.000
-
-Tween_To_Value.Name = "Tween_To_Value"
-Tween_To_Value.Parent = UI
-Tween_To_Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Tween_To_Value.Position = UDim2.new(0.250142962, 0, 0.284382761, 0)
-Tween_To_Value.Size = UDim2.new(0.256502599, 0, 0.0898375064, 0)
-Tween_To_Value.Font = Enum.Font.SourceSans
-Tween_To_Value.Text = "raw Lua to targets Cframe"
-Tween_To_Value.TextColor3 = Color3.fromRGB(0, 0, 0)
-Tween_To_Value.TextSize = 14.000
+Mod_Bat.Name = "Mod_Bat"
+Mod_Bat.Parent = UI
+Mod_Bat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mod_Bat.BackgroundTransparency = 0.500
+Mod_Bat.BorderSizePixel = 5
+Mod_Bat.Position = UDim2.new(0.0294503327, 0, 0.287624776, 0)
+Mod_Bat.Size = UDim2.new(0.19134976, 0, 0.0902410299, 0)
+Mod_Bat.Font = Enum.Font.PermanentMarker
+Mod_Bat.Text = "Mod Bat"
+Mod_Bat.TextColor3 = Color3.fromRGB(0, 0, 0)
+Mod_Bat.TextSize = 18.000
 
 Settings.Name = "Settings"
 Settings.Parent = UI
@@ -261,16 +249,6 @@ JumpPower_Value_2.Text = ""
 JumpPower_Value_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 JumpPower_Value_2.TextSize = 14.000
 
-Tween_Speed_Value.Name = "Tween_Speed_Value"
-Tween_Speed_Value.Parent = UI
-Tween_Speed_Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Tween_Speed_Value.Position = UDim2.new(0.02543821, 0, 0.196485922, 0)
-Tween_Speed_Value.Size = UDim2.new(0.256502599, 0, 0.053785488, 0)
-Tween_Speed_Value.Font = Enum.Font.SourceSans
-Tween_Speed_Value.Text = "Tween Speed"
-Tween_Speed_Value.TextColor3 = Color3.fromRGB(0, 0, 0)
-Tween_Speed_Value.TextSize = 14.000
-
 BypassAC.Name = "Bypass A-C"
 BypassAC.Parent = UI
 BypassAC.BackgroundColor3 = Color3.fromRGB(204, 142, 255)
@@ -284,7 +262,7 @@ BypassAC.TextSize = 24.000
 
 -- Scripts:
 
-local function MKGZYX_fake_script() -- OpenUI.LocalScript 
+local function SEQLJJL_fake_script() -- OpenUI.LocalScript 
 	local script = Instance.new('LocalScript', OpenUI)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -292,36 +270,24 @@ local function MKGZYX_fake_script() -- OpenUI.LocalScript
 		script.Parent.Parent.UI.Visible = true
 	end)
 end
-coroutine.wrap(MKGZYX_fake_script)()
-local function FSAFXG_fake_script() -- MainGui.GodModeChecker 
-	local script = Instance.new('LocalScript', MainGui)
-
-	local run = true
-	
-	while run == true do wait(.5)
-		if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
-			script.Parent.UI.GodeModeOnDetector.Text = "Gode Mode = Off"
-		end
-	end
-end
-coroutine.wrap(FSAFXG_fake_script)()
-local function HPAJSQR_fake_script() -- AntiGravityOn.LocalScript 
+coroutine.wrap(SEQLJJL_fake_script)()
+local function ISBK_fake_script() -- AntiGravityOn.LocalScript 
 	local script = Instance.new('LocalScript', AntiGravityOn)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 	end)
 end
-coroutine.wrap(HPAJSQR_fake_script)()
-local function EBEL_fake_script() -- AntiGravityOff.LocalScript 
+coroutine.wrap(ISBK_fake_script)()
+local function KYELTO_fake_script() -- AntiGravityOff.LocalScript 
 	local script = Instance.new('LocalScript', AntiGravityOff)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
 	end)
 end
-coroutine.wrap(EBEL_fake_script)()
-local function RGGU_fake_script() -- Close.LocalScript 
+coroutine.wrap(KYELTO_fake_script)()
+local function DHTVYR_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -329,8 +295,8 @@ local function RGGU_fake_script() -- Close.LocalScript
 		script.Parent.Parent.Parent.OpenUI.Visible = true
 	end)
 end
-coroutine.wrap(RGGU_fake_script)()
-local function OTRKDAD_fake_script() -- GodModeOn.LocalScript 
+coroutine.wrap(DHTVYR_fake_script)()
+local function HUTD_fake_script() -- GodModeOn.LocalScript 
 	local script = Instance.new('LocalScript', GodModeOn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -373,24 +339,24 @@ local function OTRKDAD_fake_script() -- GodModeOn.LocalScript
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 	end)
 end
-coroutine.wrap(OTRKDAD_fake_script)()
-local function DRPB_fake_script() -- WalkSpeed.LocalScript 
+coroutine.wrap(HUTD_fake_script)()
+local function DJIIH_fake_script() -- WalkSpeed.LocalScript 
 	local script = Instance.new('LocalScript', WalkSpeed)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.Parent.WalkSpeed_Value.Text
 	end)
 end
-coroutine.wrap(DRPB_fake_script)()
-local function DUBLMG_fake_script() -- JumpPower.LocalScript 
+coroutine.wrap(DJIIH_fake_script)()
+local function AWII_fake_script() -- JumpPower.LocalScript 
 	local script = Instance.new('LocalScript', JumpPower)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = script.Parent.Parent.JumpPower_Value.Text
 	end)
 end
-coroutine.wrap(DUBLMG_fake_script)()
-local function SZHZIA_fake_script() -- Tp_To_Player.LocalScript 
+coroutine.wrap(AWII_fake_script)()
+local function SEWWTM_fake_script() -- Tp_To_Player.LocalScript 
 	local script = Instance.new('LocalScript', Tp_To_Player)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -403,122 +369,38 @@ local function SZHZIA_fake_script() -- Tp_To_Player.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SZHZIA_fake_script)()
-local function RQTNBC_fake_script() -- Tween_To_Plr.LocalScript 
-	local script = Instance.new('LocalScript', Tween_To_Plr)
+coroutine.wrap(SEWWTM_fake_script)()
+local function BDSUAQ_fake_script() -- Mod_Bat.LocalScript 
+	local script = Instance.new('LocalScript', Mod_Bat)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		local TweenService = game:GetService("TweenService")
-		local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
-	
-		local Info = TweenInfo.new(
-			script.Parent.Parent.Tween_Speed_Value.Text,
-			Enum.EasingStyle.Linear,
-			Enum.EasingDirection.InOut,
-			0,
-			false,
-			1
-		)
-	
-		local Fire = 
-			{
-				CFrame = script.Parent.Parent.Tween_To_Plr.Text
-			}
-	
-		local RunServx = TweenService:Create(target, Info, Fire)
-	
-		RunServx:Play()
-	end)
-end
-coroutine.wrap(RQTNBC_fake_script)()
-local function XXDSDTG_fake_script() -- Loop_Kill_Plr.LocalScript 
-	local script = Instance.new('LocalScript', Loop_Kill_Plr)
-
-	_G.Run = true
-	script.Parent.MouseButton1Down:Connect(function()
-		_G.Run = true
 		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			print(v)
 			if v.Name == "Bat" then
-				game.Players.LocalPlayer.Backpack.Bat.Handle.Mesh:Destroy()
-				game.Players.LocalPlayer.Backpack.Bat.Handle.Size = Vector3.new(1,1,3)
-				game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+				v.Handle.Massless = true
+				v.Handle.Mesh:Destroy()
+				v.Handle.Size = Vector3.new(10,10,50)
+				print("Modded")
 			else
-				warn("Tool Already Equipped or is missing")
-				game.Players.LocalPlayer.Character.Bat.Handle.Mesh:Destroy()
-				game.Players.LocalPlayer.Character.Bat.Handle.Size = Vector3.new(1, 1, 3)
-			end
-		end
-		for i,v in pairs(game.Players:GetChildren()) do
-			if v.Name == script.Parent.Parent.Loop_Kill_Plr.Text then
-				print("Searching")
-				game.Players.LocalPlayer.Character.Bat.Handle.CFrame = v.Character.HumanoidRootPart.CFrame
-			else
-				warn("Player Searcher V1 Failed to find player!")
-			end
-		end
-	
-		while _G.Run == true do wait()
-			for i,v in pairs(game.Players.LocalPlayer:GetChildren()) do
-				if v.Name == "Humanoid" then
-					if v.Health == 0 then
-						warn("Player Died")
-						print("Attempting to sustain Errors")
-						wait(6)
-						for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-							if v.Name == "Bat" then
-								game.Players.LocalPlayer.Backpack.Bat.Handle.Mesh:Destroy()
-								game.Players.LocalPlayer.Backpack.Bat.Handle = Vector3.new(1,1,3)
-								game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
-							else
-								warn("Tool Already Equipped or is missing")
-								game.Players.LocalPlayer.Character.Bat.Handle.Mesh:Destroy()
-								game.Players.LocalPlayer.Character.Bat.Handle.Size = Vector3.new(1, 1, 3)
-							end
-						end
-						for i,v in pairs(game.Players:GetChildren()) do
-							if v.Name == script.Parent.Parent.Loop_Kill_Plr.Text then
-								game.Players.LocalPlayer.Character.Bat.Handle.Position = v.Character.HumanoidRootPart.Position
-							end
-						end
+				warn("Players Bat Not In Inventory")
+				warn("Checking If Equipped...")
+				for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+					print(v)
+					if v.Name == "Bat" then
+						v.Handle.Massless = true
+						v.Handle.Mesh:Destroy()
+						v.Handle.Size = Vector3.new(3,3,20)
+						print("Modded")
+					else
+						warn("Bat Could Not Be Found || REPORT THIS ISSUE TO THE DISCORD")
 					end
 				end
 			end
 		end
 	end)
-	
-	script.Parent.MouseButton2Down:Connect(function()
-		_G.Run = false
-	end)
 end
-coroutine.wrap(XXDSDTG_fake_script)()
-local function JXSIIOR_fake_script() -- BypassAC.LocalScript 
-	local script = Instance.new('LocalScript', BypassAC)
-
-	_G.Run = true
-	script.Parent.MouseButton1Down:Connect(function()
-		while _G.Run == true do wait()
-		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-			if v.Name == "Humanoid" then
-				if v.Health == 0 then
-					warn("Player has Died")
-					print("Resetting A-C Bypass...")
-					wait(5.5)
-					for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-						if v.Name == "Input" then
-							v.Disabled = true
-						end
-						if v.Name == "input" then
-							v:Destroy()
-						end
-					end
-				end
-			end
-			end
-		end
-	end)
-end
-coroutine.wrap(JXSIIOR_fake_script)()
-local function OJUSAIA_fake_script() -- UI.Draggable 
+coroutine.wrap(BDSUAQ_fake_script)()
+local function CLFDVLQ_fake_script() -- UI.Draggable 
 	local script = Instance.new('LocalScript', UI)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -561,4 +443,84 @@ local function OJUSAIA_fake_script() -- UI.Draggable
 		end
 	end)
 end
-coroutine.wrap(OJUSAIA_fake_script)()
+coroutine.wrap(CLFDVLQ_fake_script)()
+local function MIFO_fake_script() -- Loop_Kill_Plr.LocalScript 
+	local script = Instance.new('LocalScript', Loop_Kill_Plr)
+
+	_G.Run = true
+	script.Parent.MouseButton1Down:Connect(function()
+		_G.Run = true
+		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			print(v)
+			if v.Name == "Bat" then
+				game.Players.LocalPlayer.Backpack.Bat.Handle.Mesh:Destroy()
+				game.Players.LocalPlayer.Backpack.Bat.Handle.Size = Vector3.new(1,1,3)
+				game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+			else
+				warn("Tool Already Equipped or is missing")
+				game.Players.LocalPlayer.Character.Bat.Handle.Mesh:Destroy()
+				game.Players.LocalPlayer.Character.Bat.Handle.Size = Vector3.new(1, 1, 3)
+			end
+		end
+		for i,v in pairs(game.Players:GetChildren()) do
+			print(v)
+			if v.Name == script.Parent.Parent.Loop_Kill_Plr.Text then
+				print("Searching")
+				game.Players.LocalPlayer.Character.Bat.Handle.CFrame = v.Character.HumanoidRootPart.CFrame
+			else
+				warn("Player Searcher V2 Failed to find player!")
+			end
+		end
+	
+		while _G.Run == true do wait()
+			for i,v in pairs(game.Players.LocalPlayer:GetChildren()) do
+				print(v)
+				if v.Name == "Humanoid" then
+					if v.Health == 0 then
+						warn("Player Died")
+						print("Attempting to sustain Errors")
+						wait(6)
+						for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+							print(v)
+							if v.Name == "Bat" then
+								game.Players.LocalPlayer.Backpack.Bat.Handle.Mesh:Destroy()
+								game.Players.LocalPlayer.Backpack.Bat.Handle = Vector3.new(1,1,3)
+								game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+							else
+								warn("Tool Already Equipped or is missing")
+								game.Players.LocalPlayer.Character.Bat.Handle.Mesh:Destroy()
+								game.Players.LocalPlayer.Character.Bat.Handle.Size = Vector3.new(1, 1, 3)
+							end
+						end
+						for i,v in pairs(game.Players:GetChildren()) do
+							print(v)
+							if v.Name == script.Parent.Parent.Loop_Kill_Plr.Text then
+								game.Players.LocalPlayer.Character.Bat.Handle.Position = v.Character.HumanoidRootPart.Position
+							end
+						end
+					end
+				end
+			end
+		end
+	end)
+	
+	script.Parent.MouseButton2Down:Connect(function()
+		_G.Run = false
+	end)
+end
+coroutine.wrap(MIFO_fake_script)()
+local function VFZCYB_fake_script() -- BypassAC.LocalScript 
+	local script = Instance.new('LocalScript', BypassAC)
+
+	_G.Run = true
+	script.Parent.MouseButton1Down:Connect(function()
+		while true do wait()
+			game.Players.LocalPlayer.Character:WaitForChild("Input").Disabled = true
+			game.Players.LocalPlayer.Character:WaitForChild("input"):Destroy()
+			game.Players.LocalPlayer.Character:WaitForChild("Character"):Destroy()
+			game.Players.LocalPlayer.Character:WaitForChild("Health"):Destroy()
+			game.Players.LocalPlayer.Character:WaitForChild("ManScript"):WaitForChild("Stun"):Destroy()
+		end
+	end)
+end
+coroutine.wrap(VFZCYB_fake_script)()
