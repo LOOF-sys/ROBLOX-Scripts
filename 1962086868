@@ -1,0 +1,323 @@
+-- Tower Of Hell Script
+
+local ScreenGui = Instance.new("ScreenGui")
+local UI = Instance.new("ImageLabel")
+local Frame = Instance.new("Frame")
+local Auto_Farm = Instance.new("TextButton")
+local TextButton_Roundify_12px = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local Gode_Mode = Instance.new("TextButton")
+local TextButton_Roundify_12px_2 = Instance.new("ImageLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local OpenUI = Instance.new("TextButton")
+local TextButton_Roundify_12px_3 = Instance.new("ImageLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+UI.Name = "UI"
+UI.Parent = ScreenGui
+UI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UI.BackgroundTransparency = 1.000
+UI.Position = UDim2.new(0.686114371, 0, 0.641943634, 0)
+UI.Size = UDim2.new(0.224037379, 0, 0.212276369, 0)
+UI.Image = "rbxassetid://3570695787"
+UI.ImageColor3 = Color3.fromRGB(16, 16, 16)
+UI.ScaleType = Enum.ScaleType.Slice
+UI.SliceCenter = Rect.new(100, 100, 100, 100)
+UI.SliceScale = 0.120
+
+Frame.Parent = UI
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(-1.86264515e-08, 0, 0.188337862, 0)
+Frame.Size = UDim2.new(1, 0, 0.011043055, 0)
+
+Auto_Farm.Name = "Auto_Farm"
+Auto_Farm.Parent = UI
+Auto_Farm.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Auto_Farm.BackgroundTransparency = 1.000
+Auto_Farm.BorderSizePixel = 0
+Auto_Farm.Position = UDim2.new(0.0196524635, 0, 0.254268706, 0)
+Auto_Farm.Size = UDim2.new(0.952569544, 0, 0.197126731, 0)
+Auto_Farm.Font = Enum.Font.PermanentMarker
+Auto_Farm.Text = ""
+Auto_Farm.TextColor3 = Color3.fromRGB(190, 190, 190)
+Auto_Farm.TextSize = 33.000
+
+TextButton_Roundify_12px.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px.Parent = Auto_Farm
+TextButton_Roundify_12px.Active = true
+TextButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px.BackgroundTransparency = 1.000
+TextButton_Roundify_12px.Position = UDim2.new(0.501635432, 0, 0.468177617, 0)
+TextButton_Roundify_12px.Selectable = true
+TextButton_Roundify_12px.Size = UDim2.new(1.00327086, 0, 1.01045156, 0)
+TextButton_Roundify_12px.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px.ImageColor3 = Color3.fromRGB(75, 75, 75)
+TextButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px.SliceScale = 0.120
+
+TextLabel.Parent = TextButton_Roundify_12px
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.409937888, 0, 0.340909094, 0)
+TextLabel.Size = UDim2.new(0.173913047, 0, 0.318181813, 0)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Auto Farm"
+TextLabel.TextColor3 = Color3.fromRGB(213, 213, 213)
+TextLabel.TextSize = 20.000
+
+TextLabel_2.Parent = UI
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.406308651, 0, 0.827682078, 0)
+TextLabel_2.Size = UDim2.new(0.147805989, 0, 0.0400000252, 0)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "Made By: IScripterV / IScripterV#0972"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 15.000
+
+TextLabel_3.Parent = UI
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.422498792, 0, 0.0862534642, 0)
+TextLabel_3.Size = UDim2.new(0.147805989, 0, 0.0400000252, 0)
+TextLabel_3.Font = Enum.Font.SciFi
+TextLabel_3.Text = "Tower Of Hell UI"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 33.000
+
+Close.Name = "Close"
+Close.Parent = UI
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.0155279478, 0, 0.0352112539, 0)
+Close.Size = UDim2.new(0.083140865, 0, 0.131999999, 0)
+Close.Font = Enum.Font.PermanentMarker
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 40.000
+
+Gode_Mode.Name = "Gode_Mode"
+Gode_Mode.Parent = UI
+Gode_Mode.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Gode_Mode.BackgroundTransparency = 1.000
+Gode_Mode.BorderSizePixel = 0
+Gode_Mode.Position = UDim2.new(0.0165468734, 0, 0.500885546, 0)
+Gode_Mode.Size = UDim2.new(0.952569544, 0, 0.18539013, 0)
+Gode_Mode.Font = Enum.Font.PermanentMarker
+Gode_Mode.Text = "God Mode"
+Gode_Mode.TextColor3 = Color3.fromRGB(190, 190, 190)
+Gode_Mode.TextSize = 33.000
+
+TextButton_Roundify_12px_2.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_2.Parent = Gode_Mode
+TextButton_Roundify_12px_2.Active = true
+TextButton_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_2.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_2.Position = UDim2.new(0.501635432, 0, 0.531475484, 0)
+TextButton_Roundify_12px_2.Selectable = true
+TextButton_Roundify_12px_2.Size = UDim2.new(1.00327086, 0, 0.989691019, 0)
+TextButton_Roundify_12px_2.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_2.ImageColor3 = Color3.fromRGB(75, 75, 75)
+TextButton_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_2.SliceScale = 0.120
+
+TextLabel_4.Parent = TextButton_Roundify_12px_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.409937888, 0, 0.340909094, 0)
+TextLabel_4.Size = UDim2.new(0.173913047, 0, 0.318181813, 0)
+TextLabel_4.Font = Enum.Font.SciFi
+TextLabel_4.Text = "God Mode"
+TextLabel_4.TextColor3 = Color3.fromRGB(213, 213, 213)
+TextLabel_4.TextSize = 20.000
+
+OpenUI.Name = "OpenUI"
+OpenUI.Parent = ScreenGui
+OpenUI.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+OpenUI.BackgroundTransparency = 1.000
+OpenUI.BorderSizePixel = 0
+OpenUI.Position = UDim2.new(0.00721197249, 0, 0.54027611, 0)
+OpenUI.Size = UDim2.new(0.07545726, 0, 0.0647805035, 0)
+OpenUI.Visible = false
+OpenUI.Font = Enum.Font.PermanentMarker
+OpenUI.Text = ""
+OpenUI.TextColor3 = Color3.fromRGB(190, 190, 190)
+OpenUI.TextSize = 33.000
+
+TextButton_Roundify_12px_3.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px_3.Parent = OpenUI
+TextButton_Roundify_12px_3.Active = true
+TextButton_Roundify_12px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px_3.BackgroundTransparency = 1.000
+TextButton_Roundify_12px_3.Position = UDim2.new(0.484544694, 0, 0.531475961, 0)
+TextButton_Roundify_12px_3.Selectable = true
+TextButton_Roundify_12px_3.Size = UDim2.new(0.969089389, 0, 0.989690959, 0)
+TextButton_Roundify_12px_3.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px_3.ImageColor3 = Color3.fromRGB(75, 75, 75)
+TextButton_Roundify_12px_3.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px_3.SliceScale = 0.120
+
+TextLabel_5.Parent = TextButton_Roundify_12px_3
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.409937888, 0, 0.340909094, 0)
+TextLabel_5.Size = UDim2.new(0.173913047, 0, 0.318181813, 0)
+TextLabel_5.Font = Enum.Font.SciFi
+TextLabel_5.Text = "Open"
+TextLabel_5.TextColor3 = Color3.fromRGB(213, 213, 213)
+TextLabel_5.TextSize = 20.000
+
+-- Scripts:
+
+local function NIPWEEA_fake_script() -- Auto_Farm.LocalScript 
+	local script = Instance.new('LocalScript', Auto_Farm)
+
+	_G.Run = true
+	script.Parent.MouseButton1Down:Connect(function()
+		_G.Run = true
+		game.Players.LocalPlayer.Character.KillScript.Disabled = true
+		
+		while _G.Run == true do
+			for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+				print(v)
+				if v.Name == "Humanoid" then
+					print("Humanoid Found")
+					if v.Health == 0 then
+						warn("Reset God Mode")
+						game.Players.LocalPlayer.Character.KillScript.Disabled = true
+						warn("Resetting Auto Farm")
+						wait(3)
+						warn("Farm Reset...")
+					else
+						wait(20)
+						local TweenService = game:GetService("TweenService")
+						local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+	
+						local Info = TweenInfo.new(
+							0.01,
+							Enum.EasingStyle.Linear,
+							Enum.EasingDirection.InOut,
+							0,
+							false,
+							0
+						)
+	
+						local Fire = 
+							{
+								CFrame = game:GetService("Workspace").tower.finishes.Finish.CFrame
+							}
+	
+						local RunServx = TweenService:Create(target, Info, Fire)
+	
+						RunServx:Play()
+					end
+				end
+			end
+		end
+	end)
+	
+	script.Parent.MouseButton2Down:Connect(function()
+		_G.Run = false
+	end)
+end
+coroutine.wrap(NIPWEEA_fake_script)()
+local function VCGPZ_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.OpenUI.Visible = true
+	end)
+end
+coroutine.wrap(VCGPZ_fake_script)()
+local function SBNWLJC_fake_script() -- Gode_Mode.LocalScript 
+	local script = Instance.new('LocalScript', Gode_Mode)
+
+	_G.Run = true
+	script.Parent.MouseButton1Down:Connect(function()
+		_G.Run = true
+		game.Players.LocalPlayer.Character.KillScript.Disabled = true
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == "Humanoid" then
+				if v.Health == 0 then
+					warn("Player Died")
+					print("Resetting")
+					wait(4)
+					game.Players.LocalPlayer.Character.KillScript.Disabled = true
+				end
+			end
+		end
+	end)
+	
+	script.Parent.MouseButton2Down:Connect(function()
+		_G.Run = false
+	end)
+end
+coroutine.wrap(SBNWLJC_fake_script)()
+local function GYMWLWY_fake_script() -- UI.Draggable 
+	local script = Instance.new('LocalScript', UI)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(GYMWLWY_fake_script)()
+local function WXVZ_fake_script() -- OpenUI.LocalScript 
+	local script = Instance.new('LocalScript', OpenUI)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Visible = false
+		script.Parent.Parent.UI.Visible = true
+	end)
+end
+coroutine.wrap(WXVZ_fake_script)()
