@@ -3,8 +3,10 @@
 while true do wait()
     wait(5)
     game.Players.LocalPlayer.Character.Humanoid.Sit = true
+    warn("Table Returned nil")
     wait(5)
     game.Players.LocalPlayer.Character.Humanoid.Sit = false
+    warn("Bypassing Cool Down...")
     wait(20)
 game.Players.LocalPlayer.Character.Humanoid.Sit = true
 local CreateInstance = Instance.new("Part", game.Workspace)
@@ -410,3 +412,4 @@ wait(2.1)
 CreateInstance:Destroy()
 wait(0.1)
 end
+
