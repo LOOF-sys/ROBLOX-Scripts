@@ -1,5 +1,7 @@
 -- Legends_Of_Speed_GUI
 
+game.Players.LocalPlayer:Kick("Script Disabled") -- remove this when undisabled
+
 game:GetService("Workspace").areaCircles.areaCircle:Destroy()
 game:GetService("Workspace").areaCircles.areaCircle:Destroy()
 -- Gui to Lua
