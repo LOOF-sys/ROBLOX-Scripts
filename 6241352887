@@ -1,5 +1,7 @@
 -- Manly Infection Script
 
+game.Players.LocalPlayer:Kick("Script is Patched and you have been kicked for the saftey of our users")
+
 local MainGui = Instance.new("ScreenGui")
 local OpenUI = Instance.new("TextButton")
 local UI = Instance.new("ImageLabel")
