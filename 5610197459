@@ -26,6 +26,9 @@ local GravityControl = Instance.new("TextBox")
 local JumpPower = Instance.new("TextButton")
 local JumpPowerControl = Instance.new("TextBox")
 local Teleports = Instance.new("TextButton")
+local AntiRagdoll = Instance.new("TextButton")
+local TelelportToPlr = Instance.new("TextButton")
+local PlayerTp_Name = Instance.new("TextBox")
 local OpenUI = Instance.new("TextButton")
 local SettingsTab = Instance.new("Frame")
 local TopLabel = Instance.new("TextLabel")
@@ -103,8 +106,8 @@ GUI.Parent = MainGui
 GUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 GUI.BackgroundTransparency = 1.000
 GUI.BorderSizePixel = 0
-GUI.Position = UDim2.new(0.567386806, 0, 0.570657074, 0)
-GUI.Size = UDim2.new(0.413124681, 0, 0.36851564, 0)
+GUI.Position = UDim2.new(0.596288383, 0, 0.596232533, 0)
+GUI.Size = UDim2.new(0.384223104, 0, 0.342940122, 0)
 GUI.Image = "rbxassetid://3570695787"
 GUI.ImageColor3 = Color3.fromRGB(51, 116, 172)
 GUI.ScaleType = Enum.ScaleType.Slice
@@ -118,7 +121,7 @@ Name.BackgroundTransparency = 1.000
 Name.Position = UDim2.new(0.176221892, 0, -0.00304596452, 0)
 Name.Size = UDim2.new(0.643617034, 0, 0.0997383967, 0)
 Name.Font = Enum.Font.PermanentMarker
-Name.Text = "Made By: SamTerraria10"
+Name.Text = "Made By: IScripterV"
 Name.TextColor3 = Color3.fromRGB(0, 0, 0)
 Name.TextSize = 40.000
 Name.TextWrapped = true
@@ -361,6 +364,38 @@ Teleports.Font = Enum.Font.PermanentMarker
 Teleports.Text = "Teleports"
 Teleports.TextColor3 = Color3.fromRGB(0, 0, 0)
 Teleports.TextSize = 34.000
+
+AntiRagdoll.Name = "Anti-Ragdoll"
+AntiRagdoll.Parent = GUI
+AntiRagdoll.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
+AntiRagdoll.BorderSizePixel = 4
+AntiRagdoll.Position = UDim2.new(0.727130115, 0, 0.448475629, 0)
+AntiRagdoll.Size = UDim2.new(0.249846146, 0, 0.126540333, 0)
+AntiRagdoll.Font = Enum.Font.PermanentMarker
+AntiRagdoll.Text = "Anti-Ragdoll"
+AntiRagdoll.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiRagdoll.TextSize = 25.000
+
+TelelportToPlr.Name = "TelelportToPlr"
+TelelportToPlr.Parent = GUI
+TelelportToPlr.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
+TelelportToPlr.BorderSizePixel = 3
+TelelportToPlr.Position = UDim2.new(0.602534294, 0, 0.608910382, 0)
+TelelportToPlr.Size = UDim2.new(0.124595746, 0, 0.0977443755, 0)
+TelelportToPlr.Font = Enum.Font.SourceSans
+TelelportToPlr.Text = "Tp To Plr"
+TelelportToPlr.TextColor3 = Color3.fromRGB(0, 0, 0)
+TelelportToPlr.TextSize = 14.000
+
+PlayerTp_Name.Name = "PlayerTp_Name"
+PlayerTp_Name.Parent = GUI
+PlayerTp_Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerTp_Name.Position = UDim2.new(0.741018414, 0, 0.608846605, 0)
+PlayerTp_Name.Size = UDim2.new(0.235957772, 0, 0.0939849764, 0)
+PlayerTp_Name.Font = Enum.Font.SourceSans
+PlayerTp_Name.Text = "Player Name to tp to"
+PlayerTp_Name.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerTp_Name.TextSize = 14.000
 
 OpenUI.Name = "OpenUI"
 OpenUI.Parent = MainGui
@@ -1034,7 +1069,7 @@ FancyHouseTP.TextWrapped = true
 
 -- Scripts:
 
-local function PEDFE_fake_script() -- FarmCash.Functions 
+local function QKFSG_fake_script() -- FarmCash.Functions 
 	local script = Instance.new('LocalScript', FarmCash)
 
 	local MainGui = script.Parent
@@ -1062,8 +1097,8 @@ local function PEDFE_fake_script() -- FarmCash.Functions
 		print("Auto Cash Disabled")
 	end)
 end
-coroutine.wrap(PEDFE_fake_script)()
-local function ZVEEEFG_fake_script() -- AutoKnifeGrabber.Functions 
+coroutine.wrap(QKFSG_fake_script)()
+local function VOVFOL_fake_script() -- AutoKnifeGrabber.Functions 
 	local script = Instance.new('LocalScript', AutoKnifeGrabber)
 
 	local MainGui = script.Parent
@@ -1085,8 +1120,8 @@ local function ZVEEEFG_fake_script() -- AutoKnifeGrabber.Functions
 		print("Disabled Auto Knife Grabber")
 	end)
 end
-coroutine.wrap(ZVEEEFG_fake_script)()
-local function ULGM_fake_script() -- AutoPistolGrabber.Functions 
+coroutine.wrap(VOVFOL_fake_script)()
+local function LZKQU_fake_script() -- AutoPistolGrabber.Functions 
 	local script = Instance.new('LocalScript', AutoPistolGrabber)
 
 	local MainGui = script.Parent
@@ -1108,8 +1143,8 @@ local function ULGM_fake_script() -- AutoPistolGrabber.Functions
 		print("Auto Pistol Grabber Disabled")
 	end)
 end
-coroutine.wrap(ULGM_fake_script)()
-local function GBIJTJF_fake_script() -- AutoShotgunGrabber.Functions 
+coroutine.wrap(LZKQU_fake_script)()
+local function BOUTS_fake_script() -- AutoShotgunGrabber.Functions 
 	local script = Instance.new('LocalScript', AutoShotgunGrabber)
 
 	local MainGui = script.Parent
@@ -1131,8 +1166,8 @@ local function GBIJTJF_fake_script() -- AutoShotgunGrabber.Functions
 		print("Auto Shotgun Grabber Disabled")
 	end)
 end
-coroutine.wrap(GBIJTJF_fake_script)()
-local function JDVHZW_fake_script() -- MusicPlayer.Functions 
+coroutine.wrap(BOUTS_fake_script)()
+local function RRNWGTO_fake_script() -- MusicPlayer.Functions 
 	local script = Instance.new('LocalScript', MusicPlayer)
 
 	local MainGui = script.Parent
@@ -1156,8 +1191,8 @@ local function JDVHZW_fake_script() -- MusicPlayer.Functions
 		print("Playing Music")
 	end)
 end
-coroutine.wrap(JDVHZW_fake_script)()
-local function MODE_fake_script() -- PistolGiver.Functions 
+coroutine.wrap(RRNWGTO_fake_script)()
+local function YJXCW_fake_script() -- PistolGiver.Functions 
 	local script = Instance.new('LocalScript', PistolGiver)
 
 	local MainGui = script.Parent
@@ -1170,8 +1205,8 @@ local function MODE_fake_script() -- PistolGiver.Functions
 		print("Giving Pistol 1 Time...")
 	end)
 end
-coroutine.wrap(MODE_fake_script)()
-local function ULPLHS_fake_script() -- ShotgunGiver.Functions 
+coroutine.wrap(YJXCW_fake_script)()
+local function ZLRQ_fake_script() -- ShotgunGiver.Functions 
 	local script = Instance.new('LocalScript', ShotgunGiver)
 
 	local MainGui = script.Parent
@@ -1184,8 +1219,8 @@ local function ULPLHS_fake_script() -- ShotgunGiver.Functions
 		print("Giving Shotgun 1 Time...")
 	end)
 end
-coroutine.wrap(ULPLHS_fake_script)()
-local function VKAXQ_fake_script() -- KnifeGiver.Functions 
+coroutine.wrap(ZLRQ_fake_script)()
+local function ODBLKUS_fake_script() -- KnifeGiver.Functions 
 	local script = Instance.new('LocalScript', KnifeGiver)
 
 	local MainGui = script.Parent
@@ -1198,8 +1233,8 @@ local function VKAXQ_fake_script() -- KnifeGiver.Functions
 		print("Getting Knife 1 Time...")
 	end)
 end
-coroutine.wrap(VKAXQ_fake_script)()
-local function ILNLN_fake_script() -- AntiAfk.Functions 
+coroutine.wrap(ODBLKUS_fake_script)()
+local function VAQDOYU_fake_script() -- AntiAfk.Functions 
 	local script = Instance.new('LocalScript', AntiAfk)
 
 	local MainGui = script.Parent
@@ -1218,8 +1253,8 @@ local function ILNLN_fake_script() -- AntiAfk.Functions
 		print("Anti AFK Working")
 	end)
 end
-coroutine.wrap(ILNLN_fake_script)()
-local function AKNSA_fake_script() -- MoneyOptions.Functions 
+coroutine.wrap(VAQDOYU_fake_script)()
+local function EXCI_fake_script() -- MoneyOptions.Functions 
 	local script = Instance.new('LocalScript', MoneyOptions)
 
 	local MainGui = script.Parent
@@ -1230,8 +1265,8 @@ local function AKNSA_fake_script() -- MoneyOptions.Functions
 		print("Opened Money Options")
 	end)
 end
-coroutine.wrap(AKNSA_fake_script)()
-local function NQGRCD_fake_script() -- Settings.Functions 
+coroutine.wrap(EXCI_fake_script)()
+local function UZRSEN_fake_script() -- Settings.Functions 
 	local script = Instance.new('LocalScript', Settings)
 
 	local MainGui = script.Parent
@@ -1241,8 +1276,8 @@ local function NQGRCD_fake_script() -- Settings.Functions
 		script.Parent.Parent.Parent.SettingsTab.Visible = true
 	end)
 end
-coroutine.wrap(NQGRCD_fake_script)()
-local function PGITDIL_fake_script() -- Close.Functions 
+coroutine.wrap(UZRSEN_fake_script)()
+local function UNFR_fake_script() -- Close.Functions 
 	local script = Instance.new('LocalScript', Close)
 
 	local MainGui = script.Parent
@@ -1254,8 +1289,8 @@ local function PGITDIL_fake_script() -- Close.Functions
 		print("Closed UI")
 	end)
 end
-coroutine.wrap(PGITDIL_fake_script)()
-local function VWXCGT_fake_script() -- WalkSpeed.Functions 
+coroutine.wrap(UNFR_fake_script)()
+local function VLTYT_fake_script() -- WalkSpeed.Functions 
 	local script = Instance.new('LocalScript', WalkSpeed)
 
 	local MainGui = script.Parent
@@ -1271,8 +1306,8 @@ local function VWXCGT_fake_script() -- WalkSpeed.Functions
 		print("Changed Speed to Default")
 	end)
 end
-coroutine.wrap(VWXCGT_fake_script)()
-local function YNKNIDX_fake_script() -- Gravity.Functions 
+coroutine.wrap(VLTYT_fake_script)()
+local function CBSXKD_fake_script() -- Gravity.Functions 
 	local script = Instance.new('LocalScript', Gravity)
 
 	local MainGui = script.Parent
@@ -1283,8 +1318,8 @@ local function YNKNIDX_fake_script() -- Gravity.Functions
 		print("Gravity Changed")
 	end)
 end
-coroutine.wrap(YNKNIDX_fake_script)()
-local function CBEJJ_fake_script() -- JumpPower.Functions 
+coroutine.wrap(CBSXKD_fake_script)()
+local function BMBJ_fake_script() -- JumpPower.Functions 
 	local script = Instance.new('LocalScript', JumpPower)
 
 	local MainGui = script.Parent
@@ -1300,8 +1335,8 @@ local function CBEJJ_fake_script() -- JumpPower.Functions
 		print("Jump Power Switched to Default")
 	end)
 end
-coroutine.wrap(CBEJJ_fake_script)()
-local function EKCSZUW_fake_script() -- Teleports.Functions 
+coroutine.wrap(BMBJ_fake_script)()
+local function OEXIP_fake_script() -- Teleports.Functions 
 	local script = Instance.new('LocalScript', Teleports)
 
 	local MainGui = script.Parent
@@ -1312,8 +1347,72 @@ local function EKCSZUW_fake_script() -- Teleports.Functions
 		print("Opened Teleport tab")
 	end)
 end
-coroutine.wrap(EKCSZUW_fake_script)()
-local function JSJDFB_fake_script() -- OpenUI.Functions 
+coroutine.wrap(OEXIP_fake_script)()
+local function LQFCFSK_fake_script() -- AntiRagdoll.Functions 
+	local script = Instance.new('LocalScript', AntiRagdoll)
+
+	_G.Run = true
+	script.Parent.MouseButton1Down:Connect(function()
+		_G.Run = true
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == "Ragdoll" then
+				v.RagdollInput.Disabled = true
+				v:Destroy()
+			end
+		end
+		
+		while _G.Run == true do wait()
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == "Humanoid" then
+				if v.Health == 0 then
+					warn("Player Has Died")
+					print("Repaired Modules...")
+					wait(6)
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == "Ragdoll" then
+				v.RagdollInput.Disabled = true
+				v:Destroy()
+				end
+			end
+			end
+			end
+			end
+		end
+	end)
+end
+coroutine.wrap(LQFCFSK_fake_script)()
+local function NIZQQCN_fake_script() -- TelelportToPlr.Functions 
+	local script = Instance.new('LocalScript', TelelportToPlr)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		for i,v in pairs(game.Players:GetChildren()) do
+			if v.Name == script.Parent.Parent.PlayerTp_Name.Text then
+				game.Players.LocalPlayer.Character.Humanoid.Sit = true
+				wait(0.5)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+				wait(0.5)
+				game.Players.LocalPlayer.Character.Humanoid.Sit = false
+				wait(0.5)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+				wait(0.1)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+				wait(0.1)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+				wait(2)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+				wait(0.5)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+				wait(0.1)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+				game.Players.LocalPlayer.Character.Humanoid.Sit = true
+				wait(0.5)
+				game.Players.LocalPlayer.Character.Humanoid.Sit = false
+			end
+		end
+	end)
+end
+coroutine.wrap(NIZQQCN_fake_script)()
+local function VDWTTM_fake_script() -- OpenUI.Functions 
 	local script = Instance.new('LocalScript', OpenUI)
 
 	local MainGui = script.Parent
@@ -1325,8 +1424,8 @@ local function JSJDFB_fake_script() -- OpenUI.Functions
 		print("Opened UI")
 	end)
 end
-coroutine.wrap(JSJDFB_fake_script)()
-local function GQYK_fake_script() -- KickPlr.Functions 
+coroutine.wrap(VDWTTM_fake_script)()
+local function WBDSEK_fake_script() -- KickPlr.Functions 
 	local script = Instance.new('LocalScript', KickPlr)
 
 	local MainGui = script.Parent
@@ -1338,8 +1437,8 @@ local function GQYK_fake_script() -- KickPlr.Functions
 		game.Players.LocalPlayer:Kick("Force Kicked Player Client")
 	end)
 end
-coroutine.wrap(GQYK_fake_script)()
-local function EINZ_fake_script() -- HideUselessButtons.Functions 
+coroutine.wrap(WBDSEK_fake_script)()
+local function MQNZ_fake_script() -- HideUselessButtons.Functions 
 	local script = Instance.new('LocalScript', HideUselessButtons)
 
 	local MainGui = script.Parent
@@ -1352,8 +1451,8 @@ local function EINZ_fake_script() -- HideUselessButtons.Functions
 		print("Useless Buttons Hidden")
 	end)
 end
-coroutine.wrap(EINZ_fake_script)()
-local function SGJAGHI_fake_script() -- Close_2.Functions 
+coroutine.wrap(MQNZ_fake_script)()
+local function NCHH_fake_script() -- Close_2.Functions 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local MainGui =  script.Parent
@@ -1363,8 +1462,8 @@ local function SGJAGHI_fake_script() -- Close_2.Functions
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(SGJAGHI_fake_script)()
-local function DNFKM_fake_script() -- HowToUse.Functions 
+coroutine.wrap(NCHH_fake_script)()
+local function NQIT_fake_script() -- HowToUse.Functions 
 	local script = Instance.new('LocalScript', HowToUse)
 
 	local MainGui = script.Parent
@@ -1375,8 +1474,8 @@ local function DNFKM_fake_script() -- HowToUse.Functions
 		print("Opened Help Tab")
 	end)
 end
-coroutine.wrap(DNFKM_fake_script)()
-local function OZLCPVT_fake_script() -- Close_3.LocalScript 
+coroutine.wrap(NQIT_fake_script)()
+local function PQVYQE_fake_script() -- Close_3.LocalScript 
 	local script = Instance.new('LocalScript', Close_3)
 
 	local MainGui = script.Parent
@@ -1387,8 +1486,8 @@ local function OZLCPVT_fake_script() -- Close_3.LocalScript
 		print("Closed Help Tab")
 	end)
 end
-coroutine.wrap(OZLCPVT_fake_script)()
-local function UBTVK_fake_script() -- Close_4.Functions 
+coroutine.wrap(PQVYQE_fake_script)()
+local function XJACT_fake_script() -- Close_4.Functions 
 	local script = Instance.new('LocalScript', Close_4)
 
 	local MainGui = script.Parent
@@ -1399,8 +1498,8 @@ local function UBTVK_fake_script() -- Close_4.Functions
 		print("Closed Greet UI")
 	end)
 end
-coroutine.wrap(UBTVK_fake_script)()
-local function KGEVBGY_fake_script() -- Close_5.Functions 
+coroutine.wrap(XJACT_fake_script)()
+local function VMZZSD_fake_script() -- Close_5.Functions 
 	local script = Instance.new('LocalScript', Close_5)
 
 	local MainGui = script.Parent
@@ -1411,8 +1510,8 @@ local function KGEVBGY_fake_script() -- Close_5.Functions
 		print("Closed Advisory Tab")
 	end)
 end
-coroutine.wrap(KGEVBGY_fake_script)()
-local function MTFGYH_fake_script() -- AutoDeposit.Functions 
+coroutine.wrap(VMZZSD_fake_script)()
+local function HVATA_fake_script() -- AutoDeposit.Functions 
 	local script = Instance.new('LocalScript', AutoDeposit)
 
 	local MainGui = script.Parent
@@ -1431,8 +1530,8 @@ local function MTFGYH_fake_script() -- AutoDeposit.Functions
 		end
 	end)
 end
-coroutine.wrap(MTFGYH_fake_script)()
-local function HTAN_fake_script() -- Deposit.Functions 
+coroutine.wrap(HVATA_fake_script)()
+local function OPWD_fake_script() -- Deposit.Functions 
 	local script = Instance.new('LocalScript', Deposit)
 
 	local MainGui = script.Parent
@@ -1447,8 +1546,8 @@ local function HTAN_fake_script() -- Deposit.Functions
 		game:GetService("ReplicatedStorage").RemoteEvent.ATM:FireServer(ohTable1)
 	end)
 end
-coroutine.wrap(HTAN_fake_script)()
-local function VJCPB_fake_script() -- Withdrawl.Functions 
+coroutine.wrap(OPWD_fake_script)()
+local function UNQVYG_fake_script() -- Withdrawl.Functions 
 	local script = Instance.new('LocalScript', Withdrawl)
 
 	local MainGui = script.Parent
@@ -1463,8 +1562,8 @@ local function VJCPB_fake_script() -- Withdrawl.Functions
 		game:GetService("ReplicatedStorage").RemoteEvent.ATM:FireServer(ohTable1)
 	end)
 end
-coroutine.wrap(VJCPB_fake_script)()
-local function VUGSI_fake_script() -- Close_6.Functions 
+coroutine.wrap(UNQVYG_fake_script)()
+local function DSPVG_fake_script() -- Close_6.Functions 
 	local script = Instance.new('LocalScript', Close_6)
 
 	local MainGui = script.Parent
@@ -1475,8 +1574,8 @@ local function VUGSI_fake_script() -- Close_6.Functions
 		print("Closed Money Tab")
 	end)
 end
-coroutine.wrap(VUGSI_fake_script)()
-local function IDBNP_fake_script() -- ATMTP.Functions 
+coroutine.wrap(DSPVG_fake_script)()
+local function WYWSBTD_fake_script() -- ATMTP.Functions 
 	local script = Instance.new('LocalScript', ATMTP)
 
 	local MainGui = script.Parent
@@ -1486,8 +1585,8 @@ local function IDBNP_fake_script() -- ATMTP.Functions
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
 	end)
 end
-coroutine.wrap(IDBNP_fake_script)()
-local function KWLIRP_fake_script() -- PistolTP.Functions 
+coroutine.wrap(WYWSBTD_fake_script)()
+local function WWFTJBG_fake_script() -- PistolTP.Functions 
 	local script = Instance.new('LocalScript', PistolTP)
 
 	local MainGui = script.Parent
@@ -1497,8 +1596,8 @@ local function KWLIRP_fake_script() -- PistolTP.Functions
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
 	end)
 end
-coroutine.wrap(KWLIRP_fake_script)()
-local function SGUUJZU_fake_script() -- ShotgunTP.Functions 
+coroutine.wrap(WWFTJBG_fake_script)()
+local function KPRIBU_fake_script() -- ShotgunTP.Functions 
 	local script = Instance.new('LocalScript', ShotgunTP)
 
 	local MainGui = script.Parent
@@ -1508,8 +1607,8 @@ local function SGUUJZU_fake_script() -- ShotgunTP.Functions
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
 	end)
 end
-coroutine.wrap(SGUUJZU_fake_script)()
-local function KHWXFO_fake_script() -- MountainTP.Functions 
+coroutine.wrap(KPRIBU_fake_script)()
+local function JWRQEH_fake_script() -- MountainTP.Functions 
 	local script = Instance.new('LocalScript', MountainTP)
 
 	local MainGui = script.Parent
@@ -1519,8 +1618,8 @@ local function KHWXFO_fake_script() -- MountainTP.Functions
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
 	end)
 end
-coroutine.wrap(KHWXFO_fake_script)()
-local function OTPGRII_fake_script() -- CarTP.Functions 
+coroutine.wrap(JWRQEH_fake_script)()
+local function QDSX_fake_script() -- CarTP.Functions 
 	local script = Instance.new('LocalScript', CarTP)
 
 	local MainGui = script.Parent
@@ -1530,8 +1629,8 @@ local function OTPGRII_fake_script() -- CarTP.Functions
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
 	end)
 end
-coroutine.wrap(OTPGRII_fake_script)()
-local function OFDW_fake_script() -- GunShopTP.Functions 
+coroutine.wrap(QDSX_fake_script)()
+local function NWMPRM_fake_script() -- GunShopTP.Functions 
 	local script = Instance.new('LocalScript', GunShopTP)
 
 	local MainGui = script.Parent
@@ -1541,8 +1640,8 @@ local function OFDW_fake_script() -- GunShopTP.Functions
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
 	end)
 end
-coroutine.wrap(OFDW_fake_script)()
-local function SUPLS_fake_script() -- GraveTP.Functions 
+coroutine.wrap(NWMPRM_fake_script)()
+local function AFTDLBN_fake_script() -- GraveTP.Functions 
 	local script = Instance.new('LocalScript', GraveTP)
 
 	local MainGui = script.Parent
@@ -1552,8 +1651,8 @@ local function SUPLS_fake_script() -- GraveTP.Functions
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
 	end)
 end
-coroutine.wrap(SUPLS_fake_script)()
-local function RMDEHM_fake_script() -- BackAreaTP.Functions 
+coroutine.wrap(AFTDLBN_fake_script)()
+local function CREAY_fake_script() -- BackAreaTP.Functions 
 	local script = Instance.new('LocalScript', BackAreaTP)
 
 	local MainGui = script.Parent
@@ -1563,8 +1662,8 @@ local function RMDEHM_fake_script() -- BackAreaTP.Functions
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
 	end)
 end
-coroutine.wrap(RMDEHM_fake_script)()
-local function KUHNLL_fake_script() -- Close_7.Functions 
+coroutine.wrap(CREAY_fake_script)()
+local function PSKMY_fake_script() -- Close_7.Functions 
 	local script = Instance.new('LocalScript', Close_7)
 
 	local MainGui = script.Parent
@@ -1575,8 +1674,8 @@ local function KUHNLL_fake_script() -- Close_7.Functions
 		print("Closed Teleports")
 	end)
 end
-coroutine.wrap(KUHNLL_fake_script)()
-local function OQFVD_fake_script() -- SkyTP.Functions 
+coroutine.wrap(PSKMY_fake_script)()
+local function FDXHX_fake_script() -- SkyTP.Functions 
 	local script = Instance.new('LocalScript', SkyTP)
 
 	local MainGui = script.Parent
@@ -1586,8 +1685,8 @@ local function OQFVD_fake_script() -- SkyTP.Functions
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
 	end)
 end
-coroutine.wrap(OQFVD_fake_script)()
-local function NGTFXGL_fake_script() -- HalfSkyTP.Functions 
+coroutine.wrap(FDXHX_fake_script)()
+local function SRPTA_fake_script() -- HalfSkyTP.Functions 
 	local script = Instance.new('LocalScript', HalfSkyTP)
 
 	local MainGui = script.Parent
@@ -1597,8 +1696,8 @@ local function NGTFXGL_fake_script() -- HalfSkyTP.Functions
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
 	end)
 end
-coroutine.wrap(NGTFXGL_fake_script)()
-local function WPMWG_fake_script() -- FancyHouseTP.Functions 
+coroutine.wrap(SRPTA_fake_script)()
+local function HFDEYSI_fake_script() -- FancyHouseTP.Functions 
 	local script = Instance.new('LocalScript', FancyHouseTP)
 
 	local MainGui = script.Parent
@@ -1608,4 +1707,4 @@ local function WPMWG_fake_script() -- FancyHouseTP.Functions
 		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
 	end)
 end
-coroutine.wrap(WPMWG_fake_script)()
+coroutine.wrap(HFDEYSI_fake_script)()
