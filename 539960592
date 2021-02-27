@@ -1,0 +1,20 @@
+local Shit_modules = {}
+
+function AddModule(Name,ModuleInstance)
+    table.insert(Shit_modules,Name)
+    Shit_modules[Name] = ModuleInstance
+end
+
+for i,v in ipairs(getloadedmodules()) do
+    AddModule(v.Name,v)
+end
+
+local OldDetect
+for k,v in pairs(getfenv(require(Shit_modules.AntiExploit)).client.AntiExploit) do
+    warn(k,v)
+    if tostring(k) == "Detect" then
+        OldDetect = hookfunction(v,function(p1,p2)
+           warn("Tried to ban haha for:",p1,"Info:",p2) 
+        end)
+    end
+end
