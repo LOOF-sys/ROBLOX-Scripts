@@ -1,0 +1,412 @@
+-- hohos water park auto farm
+
+while true do wait()
+    wait(5)
+    game.Players.LocalPlayer.Character.Humanoid.Sit = true
+    wait(5)
+    game.Players.LocalPlayer.Character.Humanoid.Sit = false
+    wait(20)
+game.Players.LocalPlayer.Character.Humanoid.Sit = true
+local CreateInstance = Instance.new("Part", game.Workspace)
+CreateInstance.Anchored = true
+CreateInstance.Size = Vector3.new(1,0.1,1)
+CreateInstance.Position = Vector3.new(-78685.0859, 88726, -25093.8301, -0.417277008, -6.35568114e-08, 0.908779323, 1.15477254e-08, 1, 7.52387379e-08, -0.908779323, 4.18897308e-08, -0.417277008)
+CreateInstance.CanCollide = false
+CreateInstance.Archivable = false
+CreateInstance.Transparency = 1
+CreateInstance.Name = "Stande3r"
+
+local TweenService = game:GetService("TweenService")
+local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+
+local Info = TweenInfo.new(
+	0.01,
+	Enum.EasingStyle.Linear,
+	Enum.EasingDirection.InOut,
+	0,
+	false,
+	0
+)
+
+local Fire = 
+{
+	CFrame = game.Workspace.Stande3r.CFrame
+}
+
+local RunServx = TweenService:Create(target, Info, Fire)
+
+RunServx:Play()
+wait(0.02)
+CreateInstance:Destroy()
+wait(0.5)
+
+local CreateInstance = Instance.new("Part", game.Workspace)
+CreateInstance.Anchored = true
+CreateInstance.Size = Vector3.new(1,0.1,1)
+CreateInstance.Position = Vector3.new(-78619.7969, 88887.8281, -24867.5332)
+CreateInstance.CanCollide = false
+CreateInstance.Archivable = false
+CreateInstance.Transparency = 1
+CreateInstance.Name = "Stande3r"
+
+local TweenService = game:GetService("TweenService")
+local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+
+local Info = TweenInfo.new(
+	0.01,
+	Enum.EasingStyle.Linear,
+	Enum.EasingDirection.InOut,
+	0,
+	false,
+	0
+)
+
+local Fire = 
+{
+	CFrame = game.Workspace.Stande3r.CFrame
+}
+
+local RunServx = TweenService:Create(target, Info, Fire)
+
+RunServx:Play()
+wait(0.02)
+CreateInstance:Destroy()
+wait(0.3)
+
+local CreateInstance = Instance.new("Part", game.Workspace)
+CreateInstance.Anchored = true
+CreateInstance.Size = Vector3.new(1,0.1,1)
+CreateInstance.Position = Vector3.new(-78619.7969, 88885.7969, -24876.2676, 0.99994725, -0.00124091771, -0.0101966569, 0.00124223111, 0.999999225, 0.000122471771, 0.0101964967, -0.000135131922, 0.999948025)
+CreateInstance.CanCollide = false
+CreateInstance.Archivable = false
+CreateInstance.Transparency = 1
+CreateInstance.Name = "Stande3r"
+
+local TweenService = game:GetService("TweenService")
+local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+
+local Info = TweenInfo.new(
+	0.01,
+	Enum.EasingStyle.Linear,
+	Enum.EasingDirection.InOut,
+	0,
+	false,
+	0
+)
+
+local Fire = 
+{
+	CFrame = game.Workspace.Stande3r.CFrame
+}
+
+local RunServx = TweenService:Create(target, Info, Fire)
+
+RunServx:Play()
+wait(0.02)
+CreateInstance:Destroy()
+wait(0.1)
+
+local CreateInstance = Instance.new("Part", game.Workspace)
+CreateInstance.Anchored = true
+CreateInstance.Size = Vector3.new(1,0.1,1)
+CreateInstance.Position = Vector3.new(-78619.6016, 88766, -25104.2305, 0.999165118, -2.94839886e-08, 0.0408545174, 2.61127759e-08, 1, 8.30511055e-08, -0.0408545174, -8.19149406e-08, 0.999165118)
+CreateInstance.CanCollide = false
+CreateInstance.Archivable = false
+CreateInstance.Transparency = 1
+CreateInstance.Name = "Stande3r"
+
+local TweenService = game:GetService("TweenService")
+local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+
+local Info = TweenInfo.new(
+	2,
+	Enum.EasingStyle.Linear,
+	Enum.EasingDirection.InOut,
+	0,
+	false,
+	0
+)
+
+local Fire = 
+{
+	CFrame = game.Workspace.Stande3r.CFrame
+}
+
+local RunServx = TweenService:Create(target, Info, Fire)
+
+game.Players.LocalPlayer.Character.Humanoid.Sit = true
+RunServx:Play()
+wait(2.1)
+CreateInstance:Destroy()
+wait(0.1)
+
+-- 2nd Tween Pack
+game.Players.LocalPlayer.Character.Humanoid.Sit = true
+local CreateInstance = Instance.new("Part", game.Workspace)
+CreateInstance.Anchored = true
+CreateInstance.Size = Vector3.new(1,0.1,1)
+CreateInstance.Position = Vector3.new(-78685.0859, 88726, -25093.8301, -0.417277008, -6.35568114e-08, 0.908779323, 1.15477254e-08, 1, 7.52387379e-08, -0.908779323, 4.18897308e-08, -0.417277008)
+CreateInstance.CanCollide = false
+CreateInstance.Archivable = false
+CreateInstance.Transparency = 1
+CreateInstance.Name = "Stande3r"
+
+local TweenService = game:GetService("TweenService")
+local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+
+local Info = TweenInfo.new(
+	0.01,
+	Enum.EasingStyle.Linear,
+	Enum.EasingDirection.InOut,
+	0,
+	false,
+	0
+)
+
+local Fire = 
+{
+	CFrame = game.Workspace.Stande3r.CFrame
+}
+
+local RunServx = TweenService:Create(target, Info, Fire)
+
+RunServx:Play()
+wait(0.02)
+CreateInstance:Destroy()
+wait(0.5)
+
+local CreateInstance = Instance.new("Part", game.Workspace)
+CreateInstance.Anchored = true
+CreateInstance.Size = Vector3.new(1,0.1,1)
+CreateInstance.Position = Vector3.new(-78619.7969, 88887.8281, -24867.5332)
+CreateInstance.CanCollide = false
+CreateInstance.Archivable = false
+CreateInstance.Transparency = 1
+CreateInstance.Name = "Stande3r"
+
+local TweenService = game:GetService("TweenService")
+local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+
+local Info = TweenInfo.new(
+	0.01,
+	Enum.EasingStyle.Linear,
+	Enum.EasingDirection.InOut,
+	0,
+	false,
+	0
+)
+
+local Fire = 
+{
+	CFrame = game.Workspace.Stande3r.CFrame
+}
+
+local RunServx = TweenService:Create(target, Info, Fire)
+
+RunServx:Play()
+wait(0.02)
+CreateInstance:Destroy()
+wait(0.3)
+
+local CreateInstance = Instance.new("Part", game.Workspace)
+CreateInstance.Anchored = true
+CreateInstance.Size = Vector3.new(1,0.1,1)
+CreateInstance.Position = Vector3.new(-78619.7969, 88885.7969, -24876.2676, 0.99994725, -0.00124091771, -0.0101966569, 0.00124223111, 0.999999225, 0.000122471771, 0.0101964967, -0.000135131922, 0.999948025)
+CreateInstance.CanCollide = false
+CreateInstance.Archivable = false
+CreateInstance.Transparency = 1
+CreateInstance.Name = "Stande3r"
+
+local TweenService = game:GetService("TweenService")
+local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+
+local Info = TweenInfo.new(
+	0.01,
+	Enum.EasingStyle.Linear,
+	Enum.EasingDirection.InOut,
+	0,
+	false,
+	0
+)
+
+local Fire = 
+{
+	CFrame = game.Workspace.Stande3r.CFrame
+}
+
+local RunServx = TweenService:Create(target, Info, Fire)
+
+RunServx:Play()
+wait(0.02)
+CreateInstance:Destroy()
+wait(0.1)
+
+local CreateInstance = Instance.new("Part", game.Workspace)
+CreateInstance.Anchored = true
+CreateInstance.Size = Vector3.new(1,0.1,1)
+CreateInstance.Position = Vector3.new(-78619.6016, 88766, -25104.2305, 0.999165118, -2.94839886e-08, 0.0408545174, 2.61127759e-08, 1, 8.30511055e-08, -0.0408545174, -8.19149406e-08, 0.999165118)
+CreateInstance.CanCollide = false
+CreateInstance.Archivable = false
+CreateInstance.Transparency = 1
+CreateInstance.Name = "Stande3r"
+
+local TweenService = game:GetService("TweenService")
+local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+
+local Info = TweenInfo.new(
+	2,
+	Enum.EasingStyle.Linear,
+	Enum.EasingDirection.InOut,
+	0,
+	false,
+	0
+)
+
+local Fire = 
+{
+	CFrame = game.Workspace.Stande3r.CFrame
+}
+
+local RunServx = TweenService:Create(target, Info, Fire)
+
+game.Players.LocalPlayer.Character.Humanoid.Sit = true
+RunServx:Play()
+wait(2.1)
+CreateInstance:Destroy()
+wait(0.1)
+
+-- 3rd Tween pack
+game.Players.LocalPlayer.Character.Humanoid.Sit = true
+local CreateInstance = Instance.new("Part", game.Workspace)
+CreateInstance.Anchored = true
+CreateInstance.Size = Vector3.new(1,0.1,1)
+CreateInstance.Position = Vector3.new(-78685.0859, 88726, -25093.8301, -0.417277008, -6.35568114e-08, 0.908779323, 1.15477254e-08, 1, 7.52387379e-08, -0.908779323, 4.18897308e-08, -0.417277008)
+CreateInstance.CanCollide = false
+CreateInstance.Archivable = false
+CreateInstance.Transparency = 1
+CreateInstance.Name = "Stande3r"
+
+local TweenService = game:GetService("TweenService")
+local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+
+local Info = TweenInfo.new(
+	0.01,
+	Enum.EasingStyle.Linear,
+	Enum.EasingDirection.InOut,
+	0,
+	false,
+	0
+)
+
+local Fire = 
+{
+	CFrame = game.Workspace.Stande3r.CFrame
+}
+
+local RunServx = TweenService:Create(target, Info, Fire)
+
+RunServx:Play()
+wait(0.02)
+CreateInstance:Destroy()
+wait(0.5)
+
+local CreateInstance = Instance.new("Part", game.Workspace)
+CreateInstance.Anchored = true
+CreateInstance.Size = Vector3.new(1,0.1,1)
+CreateInstance.Position = Vector3.new(-78619.7969, 88887.8281, -24867.5332)
+CreateInstance.CanCollide = false
+CreateInstance.Archivable = false
+CreateInstance.Transparency = 1
+CreateInstance.Name = "Stande3r"
+
+local TweenService = game:GetService("TweenService")
+local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+
+local Info = TweenInfo.new(
+	0.01,
+	Enum.EasingStyle.Linear,
+	Enum.EasingDirection.InOut,
+	0,
+	false,
+	0
+)
+
+local Fire = 
+{
+	CFrame = game.Workspace.Stande3r.CFrame
+}
+
+local RunServx = TweenService:Create(target, Info, Fire)
+
+RunServx:Play()
+wait(0.02)
+CreateInstance:Destroy()
+wait(0.3)
+
+local CreateInstance = Instance.new("Part", game.Workspace)
+CreateInstance.Anchored = true
+CreateInstance.Size = Vector3.new(1,0.1,1)
+CreateInstance.Position = Vector3.new(-78619.7969, 88885.7969, -24876.2676, 0.99994725, -0.00124091771, -0.0101966569, 0.00124223111, 0.999999225, 0.000122471771, 0.0101964967, -0.000135131922, 0.999948025)
+CreateInstance.CanCollide = false
+CreateInstance.Archivable = false
+CreateInstance.Transparency = 1
+CreateInstance.Name = "Stande3r"
+
+local TweenService = game:GetService("TweenService")
+local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+
+local Info = TweenInfo.new(
+	0.01,
+	Enum.EasingStyle.Linear,
+	Enum.EasingDirection.InOut,
+	0,
+	false,
+	0
+)
+
+local Fire = 
+{
+	CFrame = game.Workspace.Stande3r.CFrame
+}
+
+local RunServx = TweenService:Create(target, Info, Fire)
+
+RunServx:Play()
+wait(0.02)
+CreateInstance:Destroy()
+wait(0.1)
+
+local CreateInstance = Instance.new("Part", game.Workspace)
+CreateInstance.Anchored = true
+CreateInstance.Size = Vector3.new(1,0.1,1)
+CreateInstance.Position = Vector3.new(-78619.6016, 88766, -25104.2305, 0.999165118, -2.94839886e-08, 0.0408545174, 2.61127759e-08, 1, 8.30511055e-08, -0.0408545174, -8.19149406e-08, 0.999165118)
+CreateInstance.CanCollide = false
+CreateInstance.Archivable = false
+CreateInstance.Transparency = 1
+CreateInstance.Name = "Stande3r"
+
+local TweenService = game:GetService("TweenService")
+local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+
+local Info = TweenInfo.new(
+	2,
+	Enum.EasingStyle.Linear,
+	Enum.EasingDirection.InOut,
+	0,
+	false,
+	0
+)
+
+local Fire = 
+{
+	CFrame = game.Workspace.Stande3r.CFrame
+}
+
+local RunServx = TweenService:Create(target, Info, Fire)
+
+game.Players.LocalPlayer.Character.Humanoid.Sit = true
+RunServx:Play()
+wait(2.1)
+CreateInstance:Destroy()
+wait(0.1)
+end
