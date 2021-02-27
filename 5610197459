@@ -1,5 +1,10 @@
 -- gang up on people sim
 
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local MainGui = Instance.new("ScreenGui")
 local GUI = Instance.new("ImageLabel")
 local Name = Instance.new("TextLabel")
@@ -1069,7 +1074,7 @@ FancyHouseTP.TextWrapped = true
 
 -- Scripts:
 
-local function TSMU_fake_script() -- FarmCash.Functions 
+local function VSBRAA_fake_script() -- FarmCash.Functions 
 	local script = Instance.new('LocalScript', FarmCash)
 
 	local MainGui = script.Parent
@@ -1097,8 +1102,8 @@ local function TSMU_fake_script() -- FarmCash.Functions
 		print("Auto Cash Disabled")
 	end)
 end
-coroutine.wrap(TSMU_fake_script)()
-local function YSTX_fake_script() -- AutoKnifeGrabber.Functions 
+coroutine.wrap(VSBRAA_fake_script)()
+local function LPPUCGT_fake_script() -- AutoKnifeGrabber.Functions 
 	local script = Instance.new('LocalScript', AutoKnifeGrabber)
 
 	local MainGui = script.Parent
@@ -1120,8 +1125,8 @@ local function YSTX_fake_script() -- AutoKnifeGrabber.Functions
 		print("Disabled Auto Knife Grabber")
 	end)
 end
-coroutine.wrap(YSTX_fake_script)()
-local function RGAR_fake_script() -- AutoPistolGrabber.Functions 
+coroutine.wrap(LPPUCGT_fake_script)()
+local function XBZKJ_fake_script() -- AutoPistolGrabber.Functions 
 	local script = Instance.new('LocalScript', AutoPistolGrabber)
 
 	local MainGui = script.Parent
@@ -1143,8 +1148,8 @@ local function RGAR_fake_script() -- AutoPistolGrabber.Functions
 		print("Auto Pistol Grabber Disabled")
 	end)
 end
-coroutine.wrap(RGAR_fake_script)()
-local function KICLRR_fake_script() -- AutoShotgunGrabber.Functions 
+coroutine.wrap(XBZKJ_fake_script)()
+local function VSNPL_fake_script() -- AutoShotgunGrabber.Functions 
 	local script = Instance.new('LocalScript', AutoShotgunGrabber)
 
 	local MainGui = script.Parent
@@ -1166,8 +1171,8 @@ local function KICLRR_fake_script() -- AutoShotgunGrabber.Functions
 		print("Auto Shotgun Grabber Disabled")
 	end)
 end
-coroutine.wrap(KICLRR_fake_script)()
-local function SVWSVPK_fake_script() -- MusicPlayer.Functions 
+coroutine.wrap(VSNPL_fake_script)()
+local function AZNBLP_fake_script() -- MusicPlayer.Functions 
 	local script = Instance.new('LocalScript', MusicPlayer)
 
 	local MainGui = script.Parent
@@ -1191,8 +1196,8 @@ local function SVWSVPK_fake_script() -- MusicPlayer.Functions
 		print("Playing Music")
 	end)
 end
-coroutine.wrap(SVWSVPK_fake_script)()
-local function TIMI_fake_script() -- PistolGiver.Functions 
+coroutine.wrap(AZNBLP_fake_script)()
+local function OBVF_fake_script() -- PistolGiver.Functions 
 	local script = Instance.new('LocalScript', PistolGiver)
 
 	local MainGui = script.Parent
@@ -1205,8 +1210,8 @@ local function TIMI_fake_script() -- PistolGiver.Functions
 		print("Giving Pistol 1 Time...")
 	end)
 end
-coroutine.wrap(TIMI_fake_script)()
-local function JXHR_fake_script() -- ShotgunGiver.Functions 
+coroutine.wrap(OBVF_fake_script)()
+local function BAZQFKI_fake_script() -- ShotgunGiver.Functions 
 	local script = Instance.new('LocalScript', ShotgunGiver)
 
 	local MainGui = script.Parent
@@ -1219,8 +1224,8 @@ local function JXHR_fake_script() -- ShotgunGiver.Functions
 		print("Giving Shotgun 1 Time...")
 	end)
 end
-coroutine.wrap(JXHR_fake_script)()
-local function YWBQW_fake_script() -- KnifeGiver.Functions 
+coroutine.wrap(BAZQFKI_fake_script)()
+local function IHYSL_fake_script() -- KnifeGiver.Functions 
 	local script = Instance.new('LocalScript', KnifeGiver)
 
 	local MainGui = script.Parent
@@ -1233,8 +1238,8 @@ local function YWBQW_fake_script() -- KnifeGiver.Functions
 		print("Getting Knife 1 Time...")
 	end)
 end
-coroutine.wrap(YWBQW_fake_script)()
-local function VDOPQHW_fake_script() -- AntiAfk.Functions 
+coroutine.wrap(IHYSL_fake_script)()
+local function OCWBANP_fake_script() -- AntiAfk.Functions 
 	local script = Instance.new('LocalScript', AntiAfk)
 
 	local MainGui = script.Parent
@@ -1253,8 +1258,8 @@ local function VDOPQHW_fake_script() -- AntiAfk.Functions
 		print("Anti AFK Working")
 	end)
 end
-coroutine.wrap(VDOPQHW_fake_script)()
-local function WWFFX_fake_script() -- MoneyOptions.Functions 
+coroutine.wrap(OCWBANP_fake_script)()
+local function CBKSG_fake_script() -- MoneyOptions.Functions 
 	local script = Instance.new('LocalScript', MoneyOptions)
 
 	local MainGui = script.Parent
@@ -1265,8 +1270,8 @@ local function WWFFX_fake_script() -- MoneyOptions.Functions
 		print("Opened Money Options")
 	end)
 end
-coroutine.wrap(WWFFX_fake_script)()
-local function FKOQRQX_fake_script() -- Settings.Functions 
+coroutine.wrap(CBKSG_fake_script)()
+local function AHIMWCK_fake_script() -- Settings.Functions 
 	local script = Instance.new('LocalScript', Settings)
 
 	local MainGui = script.Parent
@@ -1276,8 +1281,8 @@ local function FKOQRQX_fake_script() -- Settings.Functions
 		script.Parent.Parent.Parent.SettingsTab.Visible = true
 	end)
 end
-coroutine.wrap(FKOQRQX_fake_script)()
-local function BEXW_fake_script() -- Close.Functions 
+coroutine.wrap(AHIMWCK_fake_script)()
+local function PHOGV_fake_script() -- Close.Functions 
 	local script = Instance.new('LocalScript', Close)
 
 	local MainGui = script.Parent
@@ -1289,8 +1294,8 @@ local function BEXW_fake_script() -- Close.Functions
 		print("Closed UI")
 	end)
 end
-coroutine.wrap(BEXW_fake_script)()
-local function OITPITU_fake_script() -- WalkSpeed.Functions 
+coroutine.wrap(PHOGV_fake_script)()
+local function SGKLK_fake_script() -- WalkSpeed.Functions 
 	local script = Instance.new('LocalScript', WalkSpeed)
 
 	local MainGui = script.Parent
@@ -1306,8 +1311,8 @@ local function OITPITU_fake_script() -- WalkSpeed.Functions
 		print("Changed Speed to Default")
 	end)
 end
-coroutine.wrap(OITPITU_fake_script)()
-local function CNKHU_fake_script() -- Gravity.Functions 
+coroutine.wrap(SGKLK_fake_script)()
+local function EOUBR_fake_script() -- Gravity.Functions 
 	local script = Instance.new('LocalScript', Gravity)
 
 	local MainGui = script.Parent
@@ -1318,8 +1323,8 @@ local function CNKHU_fake_script() -- Gravity.Functions
 		print("Gravity Changed")
 	end)
 end
-coroutine.wrap(CNKHU_fake_script)()
-local function PROJRIA_fake_script() -- JumpPower.Functions 
+coroutine.wrap(EOUBR_fake_script)()
+local function SSIZ_fake_script() -- JumpPower.Functions 
 	local script = Instance.new('LocalScript', JumpPower)
 
 	local MainGui = script.Parent
@@ -1335,8 +1340,8 @@ local function PROJRIA_fake_script() -- JumpPower.Functions
 		print("Jump Power Switched to Default")
 	end)
 end
-coroutine.wrap(PROJRIA_fake_script)()
-local function WJAZMT_fake_script() -- Teleports.Functions 
+coroutine.wrap(SSIZ_fake_script)()
+local function HVKCL_fake_script() -- Teleports.Functions 
 	local script = Instance.new('LocalScript', Teleports)
 
 	local MainGui = script.Parent
@@ -1347,8 +1352,8 @@ local function WJAZMT_fake_script() -- Teleports.Functions
 		print("Opened Teleport tab")
 	end)
 end
-coroutine.wrap(WJAZMT_fake_script)()
-local function XAYKLRY_fake_script() -- AntiRagdoll.Functions 
+coroutine.wrap(HVKCL_fake_script)()
+local function JFDW_fake_script() -- AntiRagdoll.Functions 
 	local script = Instance.new('LocalScript', AntiRagdoll)
 
 	_G.Run = true
@@ -1380,39 +1385,70 @@ local function XAYKLRY_fake_script() -- AntiRagdoll.Functions
 		end
 	end)
 end
-coroutine.wrap(XAYKLRY_fake_script)()
-local function SRHSD_fake_script() -- TelelportToPlr.Functions 
+coroutine.wrap(JFDW_fake_script)()
+local function ECTQ_fake_script() -- TelelportToPlr.Functions 
 	local script = Instance.new('LocalScript', TelelportToPlr)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		for i,v in pairs(game.Players:GetChildren()) do
 			if v.Name == script.Parent.Parent.PlayerTp_Name.Text then
-				game.Players.LocalPlayer.Character.Humanoid.Sit = true
-				wait(0.5)
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
-				wait(0.5)
-				game.Players.LocalPlayer.Character.Humanoid.Sit = false
-				wait(0.5)
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
-				wait(0.1)
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
-				wait(0.1)
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
-				wait(2)
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
-				wait(0.5)
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
-				wait(0.1)
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
-				game.Players.LocalPlayer.Character.Humanoid.Sit = true
-				wait(0.5)
-				game.Players.LocalPlayer.Character.Humanoid.Sit = false
+				local timeRemaining = 15
+	
+				while timeRemaining > 0 do
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+					wait(0.05)
+					timeRemaining = timeRemaining - 1	
+				end
 			end
 		end
 	end)
 end
-coroutine.wrap(SRHSD_fake_script)()
-local function NXQIFRC_fake_script() -- OpenUI.Functions 
+coroutine.wrap(ECTQ_fake_script)()
+local function DRBFJ_fake_script() -- GUI.Draggable 
+	local script = Instance.new('LocalScript', GUI)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(DRBFJ_fake_script)()
+local function RXHO_fake_script() -- OpenUI.Functions 
 	local script = Instance.new('LocalScript', OpenUI)
 
 	local MainGui = script.Parent
@@ -1424,8 +1460,8 @@ local function NXQIFRC_fake_script() -- OpenUI.Functions
 		print("Opened UI")
 	end)
 end
-coroutine.wrap(NXQIFRC_fake_script)()
-local function WWQGD_fake_script() -- KickPlr.Functions 
+coroutine.wrap(RXHO_fake_script)()
+local function QKOZPYU_fake_script() -- KickPlr.Functions 
 	local script = Instance.new('LocalScript', KickPlr)
 
 	local MainGui = script.Parent
@@ -1437,8 +1473,8 @@ local function WWQGD_fake_script() -- KickPlr.Functions
 		game.Players.LocalPlayer:Kick("Force Kicked Player Client")
 	end)
 end
-coroutine.wrap(WWQGD_fake_script)()
-local function QFOJSWK_fake_script() -- HideUselessButtons.Functions 
+coroutine.wrap(QKOZPYU_fake_script)()
+local function IHAKMIY_fake_script() -- HideUselessButtons.Functions 
 	local script = Instance.new('LocalScript', HideUselessButtons)
 
 	local MainGui = script.Parent
@@ -1451,8 +1487,8 @@ local function QFOJSWK_fake_script() -- HideUselessButtons.Functions
 		print("Useless Buttons Hidden")
 	end)
 end
-coroutine.wrap(QFOJSWK_fake_script)()
-local function UCIAPN_fake_script() -- Close_2.Functions 
+coroutine.wrap(IHAKMIY_fake_script)()
+local function IVDNE_fake_script() -- Close_2.Functions 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local MainGui =  script.Parent
@@ -1462,8 +1498,8 @@ local function UCIAPN_fake_script() -- Close_2.Functions
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(UCIAPN_fake_script)()
-local function EBUTPM_fake_script() -- HowToUse.Functions 
+coroutine.wrap(IVDNE_fake_script)()
+local function CPKPMZ_fake_script() -- HowToUse.Functions 
 	local script = Instance.new('LocalScript', HowToUse)
 
 	local MainGui = script.Parent
@@ -1474,8 +1510,52 @@ local function EBUTPM_fake_script() -- HowToUse.Functions
 		print("Opened Help Tab")
 	end)
 end
-coroutine.wrap(EBUTPM_fake_script)()
-local function VXKJWP_fake_script() -- Close_3.LocalScript 
+coroutine.wrap(CPKPMZ_fake_script)()
+local function VKKGD_fake_script() -- SettingsTab.Draggable 
+	local script = Instance.new('LocalScript', SettingsTab)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(VKKGD_fake_script)()
+local function MKRIDO_fake_script() -- Close_3.LocalScript 
 	local script = Instance.new('LocalScript', Close_3)
 
 	local MainGui = script.Parent
@@ -1486,8 +1566,52 @@ local function VXKJWP_fake_script() -- Close_3.LocalScript
 		print("Closed Help Tab")
 	end)
 end
-coroutine.wrap(VXKJWP_fake_script)()
-local function FYPPYOJ_fake_script() -- Close_4.Functions 
+coroutine.wrap(MKRIDO_fake_script)()
+local function EOZZZE_fake_script() -- HelpTab.Draggable 
+	local script = Instance.new('LocalScript', HelpTab)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(EOZZZE_fake_script)()
+local function SRWMGO_fake_script() -- Close_4.Functions 
 	local script = Instance.new('LocalScript', Close_4)
 
 	local MainGui = script.Parent
@@ -1498,8 +1622,52 @@ local function FYPPYOJ_fake_script() -- Close_4.Functions
 		print("Closed Greet UI")
 	end)
 end
-coroutine.wrap(FYPPYOJ_fake_script)()
-local function WMOMD_fake_script() -- Close_5.Functions 
+coroutine.wrap(SRWMGO_fake_script)()
+local function IRRDLC_fake_script() -- GreetGUI.Draggable 
+	local script = Instance.new('LocalScript', GreetGUI)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(IRRDLC_fake_script)()
+local function CIXAOFN_fake_script() -- Close_5.Functions 
 	local script = Instance.new('LocalScript', Close_5)
 
 	local MainGui = script.Parent
@@ -1510,8 +1678,52 @@ local function WMOMD_fake_script() -- Close_5.Functions
 		print("Closed Advisory Tab")
 	end)
 end
-coroutine.wrap(WMOMD_fake_script)()
-local function ZALRNQV_fake_script() -- AutoDeposit.Functions 
+coroutine.wrap(CIXAOFN_fake_script)()
+local function ZDAC_fake_script() -- AdvisoryTab.Draggable 
+	local script = Instance.new('LocalScript', AdvisoryTab)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(ZDAC_fake_script)()
+local function OCGMJ_fake_script() -- AutoDeposit.Functions 
 	local script = Instance.new('LocalScript', AutoDeposit)
 
 	local MainGui = script.Parent
@@ -1530,8 +1742,8 @@ local function ZALRNQV_fake_script() -- AutoDeposit.Functions
 		end
 	end)
 end
-coroutine.wrap(ZALRNQV_fake_script)()
-local function IJLJ_fake_script() -- Deposit.Functions 
+coroutine.wrap(OCGMJ_fake_script)()
+local function OIQIJWP_fake_script() -- Deposit.Functions 
 	local script = Instance.new('LocalScript', Deposit)
 
 	local MainGui = script.Parent
@@ -1546,8 +1758,8 @@ local function IJLJ_fake_script() -- Deposit.Functions
 		game:GetService("ReplicatedStorage").RemoteEvent.ATM:FireServer(ohTable1)
 	end)
 end
-coroutine.wrap(IJLJ_fake_script)()
-local function MYTA_fake_script() -- Withdrawl.Functions 
+coroutine.wrap(OIQIJWP_fake_script)()
+local function RNGR_fake_script() -- Withdrawl.Functions 
 	local script = Instance.new('LocalScript', Withdrawl)
 
 	local MainGui = script.Parent
@@ -1562,8 +1774,8 @@ local function MYTA_fake_script() -- Withdrawl.Functions
 		game:GetService("ReplicatedStorage").RemoteEvent.ATM:FireServer(ohTable1)
 	end)
 end
-coroutine.wrap(MYTA_fake_script)()
-local function NTEJQ_fake_script() -- Close_6.Functions 
+coroutine.wrap(RNGR_fake_script)()
+local function KVMIKX_fake_script() -- Close_6.Functions 
 	local script = Instance.new('LocalScript', Close_6)
 
 	local MainGui = script.Parent
@@ -1574,978 +1786,188 @@ local function NTEJQ_fake_script() -- Close_6.Functions
 		print("Closed Money Tab")
 	end)
 end
-coroutine.wrap(NTEJQ_fake_script)()
-local function AAAF_fake_script() -- ATMTP.Functions 
+coroutine.wrap(KVMIKX_fake_script)()
+local function EYYS_fake_script() -- MoneyOptions_2.Draggable 
+	local script = Instance.new('LocalScript', MoneyOptions_2)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(EYYS_fake_script)()
+local function WQYSLUD_fake_script() -- ATMTP.Functions 
 	local script = Instance.new('LocalScript', ATMTP)
 
 	local MainGui = script.Parent
 	local ATMTP = MainGui
 	
 	ATMTP.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-		wait(0.05)
+		local timeRemaining = 20
+	
+		while timeRemaining > 0 do
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
+			wait(0.05)
+			timeRemaining = timeRemaining - 1	
+		end
 	end)
 end
-coroutine.wrap(AAAF_fake_script)()
-local function MVUQWZ_fake_script() -- PistolTP.Functions 
+coroutine.wrap(WQYSLUD_fake_script)()
+local function NSKC_fake_script() -- PistolTP.Functions 
 	local script = Instance.new('LocalScript', PistolTP)
 
 	local MainGui = script.Parent
 	local PistolTP = MainGui
 	
 	PistolTP.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-		wait(0.05)
+		local timeRemaining = 120
+	
+		while timeRemaining > 0 do
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
+			wait(0.05)
+			timeRemaining = timeRemaining - 1	
+		end
 	end)
 end
-coroutine.wrap(MVUQWZ_fake_script)()
-local function ZNBSUP_fake_script() -- ShotgunTP.Functions 
+coroutine.wrap(NSKC_fake_script)()
+local function WBXQ_fake_script() -- ShotgunTP.Functions 
 	local script = Instance.new('LocalScript', ShotgunTP)
 
 	local MainGui = script.Parent
 	local ShoutgunTP = MainGui
 	
 	ShoutgunTP.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-		wait(0.05)
+		local timeRemaining = 100
+	
+		while timeRemaining > 0 do
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
+			wait(0.05)
+			timeRemaining = timeRemaining - 1	
+		end
 	end)
 end
-coroutine.wrap(ZNBSUP_fake_script)()
-local function AZVUOQ_fake_script() -- MountainTP.Functions 
+coroutine.wrap(WBXQ_fake_script)()
+local function DJULVJJ_fake_script() -- MountainTP.Functions 
 	local script = Instance.new('LocalScript', MountainTP)
 
 	local MainGui = script.Parent
 	local MountainTP = MainGui
 	
 	MountainTP.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-		wait(0.05)
+		local timeRemaining = 300
+	
+		while timeRemaining > 0 do
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+			wait(0.05)
+			timeRemaining = timeRemaining - 1	
+		end
 	end)
 end
-coroutine.wrap(AZVUOQ_fake_script)()
-local function SYBI_fake_script() -- CarTP.Functions 
+coroutine.wrap(DJULVJJ_fake_script)()
+local function GJVAK_fake_script() -- CarTP.Functions 
 	local script = Instance.new('LocalScript', CarTP)
 
 	local MainGui = script.Parent
 	local CarTP = MainGui
 	
 	CarTP.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-		wait(0.05)
+		local timeRemaining = 20
+	
+		while timeRemaining > 0 do
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
+			wait(0.05)
+			timeRemaining = timeRemaining - 1	
+		end
 	end)
 end
-coroutine.wrap(SYBI_fake_script)()
-local function OXIVAZ_fake_script() -- GunShopTP.Functions 
+coroutine.wrap(GJVAK_fake_script)()
+local function UCTV_fake_script() -- GunShopTP.Functions 
 	local script = Instance.new('LocalScript', GunShopTP)
 
 	local MainGui = script.Parent
 	local GunShopTP = MainGui
 	
 	GunShopTP.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-		wait(0.05)
+		local timeRemaining = 60
+	
+		while timeRemaining > 0 do
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
+			wait(0.05)
+			timeRemaining = timeRemaining - 1	
+		end
 	end)
 end
-coroutine.wrap(OXIVAZ_fake_script)()
-local function KRRCGZ_fake_script() -- GraveTP.Functions 
+coroutine.wrap(UCTV_fake_script)()
+local function NPBH_fake_script() -- GraveTP.Functions 
 	local script = Instance.new('LocalScript', GraveTP)
 
 	local MainGui = script.Parent
 	local GraveTP = MainGui
 	
 	GraveTP.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-		wait(0.05)
+		local timeRemaining = 30
+	
+		while timeRemaining > 0 do
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
+			wait(0.05)
+			timeRemaining = timeRemaining - 1	
+		end
 	end)
 end
-coroutine.wrap(KRRCGZ_fake_script)()
-local function NZHEDQC_fake_script() -- BackAreaTP.Functions 
+coroutine.wrap(NPBH_fake_script)()
+local function ZUMVMBA_fake_script() -- BackAreaTP.Functions 
 	local script = Instance.new('LocalScript', BackAreaTP)
 
 	local MainGui = script.Parent
 	local BackAreaTP = MainGui
 	
 	BackAreaTP.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-		wait(0.05)
+		local timeRemaining = 50
+	
+		while timeRemaining > 0 do
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
+			wait(0.05)
+			timeRemaining = timeRemaining - 1	
+		end
 	end)
 end
-coroutine.wrap(NZHEDQC_fake_script)()
-local function FVCNBGF_fake_script() -- Close_7.Functions 
+coroutine.wrap(ZUMVMBA_fake_script)()
+local function WJAFH_fake_script() -- Close_7.Functions 
 	local script = Instance.new('LocalScript', Close_7)
 
 	local MainGui = script.Parent
@@ -2556,625 +1978,99 @@ local function FVCNBGF_fake_script() -- Close_7.Functions
 		print("Closed Teleports")
 	end)
 end
-coroutine.wrap(FVCNBGF_fake_script)()
-local function KAXLCX_fake_script() -- SkyTP.Functions 
+coroutine.wrap(WJAFH_fake_script)()
+local function XUFCCN_fake_script() -- SkyTP.Functions 
 	local script = Instance.new('LocalScript', SkyTP)
 
 	local MainGui = script.Parent
 	local SkyTP = MainGui
 	
 	SkyTP.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
+		local timeRemaining = 300
+	
+		while timeRemaining > 0 do
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+			wait(0.05)
+			timeRemaining = timeRemaining - 1	
+		end
 	end)
 end
-coroutine.wrap(KAXLCX_fake_script)()
-local function PHQZ_fake_script() -- HalfSkyTP.Functions 
+coroutine.wrap(XUFCCN_fake_script)()
+local function FIQTW_fake_script() -- HalfSkyTP.Functions 
 	local script = Instance.new('LocalScript', HalfSkyTP)
 
 	local MainGui = script.Parent
 	local HalfSkyTP = MainGui
 	
 	HalfSkyTP.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-		wait(0.05)
+		local timeRemaining = 500
+	
+		while timeRemaining > 0 do
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+			wait(0.05)
+			timeRemaining = timeRemaining - 1	
+		end
 	end)
 end
-coroutine.wrap(PHQZ_fake_script)()
-local function IVMW_fake_script() -- FancyHouseTP.Functions 
+coroutine.wrap(FIQTW_fake_script)()
+local function WIKZEX_fake_script() -- FancyHouseTP.Functions 
 	local script = Instance.new('LocalScript', FancyHouseTP)
 
 	local MainGui = script.Parent
 	local HalfSkyTP = MainGui
 	
 	HalfSkyTP.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-		wait(0.05)
+		local timeRemaining = 80
+	
+		while timeRemaining > 0 do
+			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
+			wait(0.05)
+			timeRemaining = timeRemaining - 1	
+		end
 	end)
 end
-coroutine.wrap(IVMW_fake_script)()
-local function PYBL_fake_script() -- Teleports_2.SkyTpHelper 
+coroutine.wrap(WIKZEX_fake_script)()
+local function TZCYGAT_fake_script() -- Teleports_2.Draggable 
 	local script = Instance.new('LocalScript', Teleports_2)
 
-	script.Parent.SkyTP.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
-		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-		wait(0.05)
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
 	end)
 end
-coroutine.wrap(PYBL_fake_script)()
+coroutine.wrap(TZCYGAT_fake_script)()
