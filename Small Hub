@@ -1,1 +1,3 @@
+wait(3)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/ROBLOX-Scripts/main/"..game.PlaceId,true))()
+wait(5)
