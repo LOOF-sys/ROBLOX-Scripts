@@ -135,20 +135,20 @@ end})
 
 window:AddButton({text = "Give Pistol",callback = function ()
 	local pistol = game:GetService("Workspace").Map.GunSpawner:WaitForChild("GunCollector").Handle
-    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.GunSpawner.GunCollector.Handle,1) 
-    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.GunSpawner.GunCollector.Handle,0)
+    firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("GunSpawner"):WaitForChild("GunCollector").Handle,0)
+    firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("GunSpawner"):WaitForChild("GunCollector").Handle,0)
 end})
 
 window:AddButton({text = "Give Shotgun",callback = function ()
     local shotgun = game:GetService("Workspace").Map.ShotgunSpawner:WaitForChild("ShotgunCollector").Handle
-    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.ShotgunSpawner.ShotgunCollector.Handle,1) 
-    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.ShotgunSpawner.ShotgunCollector.Handle,0)
+    firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("ShotgunSpawner"):WaitForChild("ShotgunCollector").Handle,1) 
+    firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("ShotgunSpawner"):WaitForChild("ShotgunCollector").Handle,0)
 end})
 
 window:AddButton({text = "Give Knife",callback = function ()
 	local knife = game:GetService("Workspace").Map.KnifeHouse.KnifeSpawner:WaitForChild("KnifeCollector").Handle
-    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.KnifeSpawner.KnifeCollector.Handle,1) 
-    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.KnifeSpawner.KnifeCollector.Handle,0)
+    firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("KnifeSpawner"):WaitForChild("KnifeCollector").Handle,1) 
+    firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("KnifeSpawner"):WaitForChild("KnifeCollector").Handle,0)
 end})
 
 window:AddSlider({text = "WalkSpeed",min = 16,max = 300,dual = true,callback = function (value)
@@ -163,7 +163,7 @@ window:AddSlider({text = "Gravity",min = 0,max = 192,float = 3,callback = functi
     game.Workspace.Gravity = value
 end})
 
-window:AddBox({text = "Teleport To Player",value = "game.Players.PLAYERSNAMEHERE",callback = function (text,confirmed)
+window:AddBox({text = "Teleport To Player",value = "Players Name Here",callback = function (text,confirmed)
     for i,v in pairs(game.Players:GetChildren()) do
         if v.Name == text then
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
@@ -293,14 +293,22 @@ end})
 window3:AddToggle({text = "Auto Pistol Grabber",flag = "PistolGrabChecked",callback = function (checked)
     while wait() do
         if ui.flags.PistolGrabChecked then
+            for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+                if v.Name == "Humanoid" then
+                    if v.Health == 0 then
+                        warn("Player Has Died... Resseting AUto GRabbers")
+                    else
             local pistol = game:GetService("Workspace").Map.GunSpawner:WaitForChild("GunCollector").Handle
             if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
                 warn("Player Has Died... Resetting Auto GRab")
                 wait(8)
             else
-            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.GunSpawner.GunCollector.Handle,1) 
-            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.GunSpawner.GunCollector.Handle,0)        
+            firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("GunSpawner"):WaitForChild("GunCollector").Handle,1) 
+            firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("GunSpawner"):WaitForChild("GunCollector").Handle,0)        
             end
+        end
+        end
+        end
         end
     end
 end})
@@ -308,14 +316,22 @@ end})
 window3:AddToggle({text = "Auto SHotgun Grabber",flag = "ShotgunGrabChecked",callback = function (checked)
     while wait() do
         if ui.flags.ShotgunGrabChecked then
+            for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+                if v.Name == "Humanoid" then
+                    if v.Health == 0 then
+                        warn("Player Has Died... Resseting AUto GRabbers")
+                    else
             local shotgun = game:GetService("Workspace").Map.ShotgunSpawner:WaitForChild("ShotgunCollector").Handle
             if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
                     warn("Player Has Died... Resetting Auto GRab")
                     wait(8)
                 else
-            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.ShotgunSpawner.ShotgunCollector.Handle,1) 
-            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.ShotgunSpawner.ShotgunCollector.Handle,0)
+            firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("ShotgunSpawner"):WaitForChild("ShotgunCollector").Handle,1) 
+            firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("ShotgunSpawner"):WaitForChild("ShotgunCollector").Handle,0)
                 end
+            end
+            end
+        end
         end
     end
 end})
@@ -323,13 +339,68 @@ end})
 window3:AddToggle({text = "Auto Knife Grabber",flag = "KnifeGrabChecked",callback = function (checked)
     while wait() do
         if ui.flags.KnifeGrabChecked then
+            for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+                if v.Name == "Humanoid" then
+                    if v.Health == 0 then
+                        warn("Player Has Died... Resseting AUto GRabbers")
+                    else
             local knife = game:GetService("Workspace").Map.KnifeHouse.KnifeSpawner:WaitForChild("KnifeCollector").Handle
-            if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+            if game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Health == 0 then
                 warn("Player Has Died... Resetting Auto GRab")
                 wait(8)
             else
-            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.KnifeSpawner.KnifeCollector.Handle,1) 
-            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.KnifeSpawner.KnifeCollector.Handle,0)
+            firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("KnifeSpawner"):WaitForChild("KnifeCollector").Handle,1) 
+            firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("KnifeSpawner"):WaitForChild("KnifeCollector").Handle,0)
+            end
+        end
+        end
+    end
+    end
+end
+end})
+
+window3:AddBox({text = "Kill Player [Pistol Required]",value = "Players Name Here",callback = function (text,confirmed)
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.Name == "Gun" then
+            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+            wait(0.1)
+            for i,v in pairs(game.Players:GetChildren()) do
+                print(v)
+                if v.Name == text then
+                    for i,v in pairs(v.Character:GetChildren()) do
+                        print(v)
+                        if v.Name == "HumanoidRootPart" then
+                            local ohString1 = "Fire"
+                            game.Players.LocalPlayer.Character.Gun.DamageEvent:FireServer(ohString1, v)
+                            print("Killed Target")
+                        else
+                            warn("Could Not Kill Target")
+                        end
+                    end
+               end
+            end
+        else
+            warn("Gun already equipped or is non existent")
+            for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+                if v.Name == "Gun" then
+                    for i,v in pairs(game.Players:GetChildren()) do
+                        print(v)
+                        if v.Name == text then
+                            for i,v in pairs(v.Character:GetChildren()) do
+                                print(v)
+                                if v.Name == "HumanoidRootPart" then
+                                    local ohString1 = "Fire"
+                                    game.Players.LocalPlayer.Character.Gun.DamageEvent:FireServer(ohString1, v)
+                                    print("Killed Target")
+                                else
+                                    warn("Could Not Kill Target")
+                                end
+                            end
+                        end
+                    end
+                else
+                    warn("Your supposted to get a gun befre you use this")
+                end
             end
         end
     end
