@@ -1,2076 +1,431 @@
 -- gang up on people sim
 
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
-local MainGui = Instance.new("ScreenGui")
-local GUI = Instance.new("ImageLabel")
-local Name = Instance.new("TextLabel")
-local FarmCash = Instance.new("TextButton")
-local AutoKnifeGrabber = Instance.new("TextButton")
-local AutoPistolGrabber = Instance.new("TextButton")
-local TopBorder = Instance.new("Frame")
-local AutoShotgunGrabber = Instance.new("TextButton")
-local MusicPlayer = Instance.new("TextButton")
-local MusicId = Instance.new("TextBox")
-local AutoDIsplay = Instance.new("TextLabel")
-local VolumeControl = Instance.new("TextBox")
-local PistolGiver = Instance.new("TextButton")
-local ShotgunGiver = Instance.new("TextButton")
-local KnifeGiver = Instance.new("TextButton")
-local AntiAfk = Instance.new("TextButton")
-local MoneyOptions = Instance.new("TextButton")
-local Settings = Instance.new("ImageButton")
-local Close = Instance.new("TextButton")
-local WalkSpeed = Instance.new("TextButton")
-local WalkSpeedControl = Instance.new("TextBox")
-local Gravity = Instance.new("TextButton")
-local GravityControl = Instance.new("TextBox")
-local JumpPower = Instance.new("TextButton")
-local JumpPowerControl = Instance.new("TextBox")
-local Teleports = Instance.new("TextButton")
-local AntiRagdoll = Instance.new("TextButton")
-local TelelportToPlr = Instance.new("TextButton")
-local PlayerTp_Name = Instance.new("TextBox")
-local OpenUI = Instance.new("TextButton")
-local SettingsTab = Instance.new("Frame")
-local TopLabel = Instance.new("TextLabel")
-local KickPlr = Instance.new("TextButton")
-local HideUselessButtons = Instance.new("TextButton")
-local Close_2 = Instance.new("TextButton")
-local HowToUse = Instance.new("TextButton")
-local Frame = Instance.new("Frame")
-local HelpTab = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local TopBorder_2 = Instance.new("Frame")
-local Sentence1 = Instance.new("TextLabel")
-local Sentence2 = Instance.new("TextLabel")
-local Sentence3 = Instance.new("TextLabel")
-local Sentence4 = Instance.new("TextLabel")
-local Sentence5 = Instance.new("TextLabel")
-local Sentence6 = Instance.new("TextLabel")
-local Sentence7 = Instance.new("TextLabel")
-local Sentence8 = Instance.new("TextLabel")
-local Sentence9 = Instance.new("TextLabel")
-local Sentence10 = Instance.new("TextLabel")
-local Sentence11 = Instance.new("TextLabel")
-local Close_3 = Instance.new("TextButton")
-local GreetGUI = Instance.new("Frame")
-local TextLabel_2 = Instance.new("TextLabel")
-local Close_4 = Instance.new("TextButton")
-local AdvisoryTab = Instance.new("Frame")
-local TextLabel_3 = Instance.new("TextLabel")
-local Border = Instance.new("Frame")
-local Sentence1_2 = Instance.new("TextLabel")
-local Sentence2_2 = Instance.new("TextLabel")
-local Sentence3_2 = Instance.new("TextLabel")
-local Sentence4_2 = Instance.new("TextLabel")
-local Sentence5_2 = Instance.new("TextLabel")
-local Sentence6_2 = Instance.new("TextLabel")
-local Sentence7_2 = Instance.new("TextLabel")
-local Sentence8_2 = Instance.new("TextLabel")
-local Close_5 = Instance.new("TextButton")
-local MoneyOptions_2 = Instance.new("Frame")
-local TopName = Instance.new("TextLabel")
-local TopBorder_3 = Instance.new("Frame")
-local AutoDeposit = Instance.new("TextButton")
-local Deposit = Instance.new("TextButton")
-local Withdrawl = Instance.new("TextButton")
-local WithdrawlValue = Instance.new("TextBox")
-local DepositValue = Instance.new("TextBox")
-local AutoDepValue = Instance.new("TextBox")
-local TopImage = Instance.new("ImageLabel")
-local MiddleImage = Instance.new("ImageLabel")
-local BottomImage = Instance.new("ImageLabel")
-local Close_6 = Instance.new("TextButton")
-local Teleports_2 = Instance.new("Frame")
-local TopLabel_2 = Instance.new("TextLabel")
-local TopBorder_4 = Instance.new("Frame")
-local ATMTP = Instance.new("TextButton")
-local PistolTP = Instance.new("TextButton")
-local ShotgunTP = Instance.new("TextButton")
-local MountainTP = Instance.new("TextButton")
-local CarTP = Instance.new("TextButton")
-local GunShopTP = Instance.new("TextButton")
-local GraveTP = Instance.new("TextButton")
-local BackAreaTP = Instance.new("TextButton")
-local Close_7 = Instance.new("TextButton")
-local SkyTP = Instance.new("TextButton")
-local HalfSkyTP = Instance.new("TextButton")
-local FancyHouseTP = Instance.new("TextButton")
-
---Properties:
-
-MainGui.Name = "MainGui"
-MainGui.Parent = game.CoreGui
-
-GUI.Name = "GUI"
-GUI.Parent = MainGui
-GUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GUI.BackgroundTransparency = 1.000
-GUI.BorderSizePixel = 0
-GUI.Position = UDim2.new(0.596288383, 0, 0.596232533, 0)
-GUI.Size = UDim2.new(0.384223104, 0, 0.342940122, 0)
-GUI.Image = "rbxassetid://3570695787"
-GUI.ImageColor3 = Color3.fromRGB(51, 116, 172)
-GUI.ScaleType = Enum.ScaleType.Slice
-GUI.SliceCenter = Rect.new(100, 100, 100, 100)
-GUI.SliceScale = 0.120
-
-Name.Name = "Name"
-Name.Parent = GUI
-Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name.BackgroundTransparency = 1.000
-Name.Position = UDim2.new(0.176221892, 0, -0.00304596452, 0)
-Name.Size = UDim2.new(0.643617034, 0, 0.0997383967, 0)
-Name.Font = Enum.Font.PermanentMarker
-Name.Text = "Made By: IScripterV"
-Name.TextColor3 = Color3.fromRGB(0, 0, 0)
-Name.TextSize = 40.000
-Name.TextWrapped = true
-
-FarmCash.Name = "FarmCash"
-FarmCash.Parent = GUI
-FarmCash.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-FarmCash.BorderSizePixel = 0
-FarmCash.Position = UDim2.new(0.0159574505, 0, 0.127819568, 0)
-FarmCash.Size = UDim2.new(0.189635977, 0, 0.0977443755, 0)
-FarmCash.Font = Enum.Font.SourceSans
-FarmCash.Text = "Auto Cash"
-FarmCash.TextColor3 = Color3.fromRGB(0, 0, 0)
-FarmCash.TextSize = 14.000
-
-AutoKnifeGrabber.Name = "AutoKnifeGrabber"
-AutoKnifeGrabber.Parent = GUI
-AutoKnifeGrabber.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-AutoKnifeGrabber.BorderSizePixel = 0
-AutoKnifeGrabber.Position = UDim2.new(0.0159574505, 0, 0.387218088, 0)
-AutoKnifeGrabber.Size = UDim2.new(0.189635977, 0, 0.0977443755, 0)
-AutoKnifeGrabber.Font = Enum.Font.SourceSans
-AutoKnifeGrabber.Text = "Auto Grab Knife"
-AutoKnifeGrabber.TextColor3 = Color3.fromRGB(0, 0, 0)
-AutoKnifeGrabber.TextSize = 14.000
-
-AutoPistolGrabber.Name = "AutoPistolGrabber"
-AutoPistolGrabber.Parent = GUI
-AutoPistolGrabber.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-AutoPistolGrabber.BorderSizePixel = 0
-AutoPistolGrabber.Position = UDim2.new(0.0159574505, 0, 0.255639136, 0)
-AutoPistolGrabber.Size = UDim2.new(0.189635977, 0, 0.0977443755, 0)
-AutoPistolGrabber.Font = Enum.Font.SourceSans
-AutoPistolGrabber.Text = "Auto Grab Pistol"
-AutoPistolGrabber.TextColor3 = Color3.fromRGB(0, 0, 0)
-AutoPistolGrabber.TextSize = 14.000
-
-TopBorder.Name = "TopBorder"
-TopBorder.Parent = GUI
-TopBorder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TopBorder.Position = UDim2.new(0, 0, 0.0966924354, 0)
-TopBorder.Size = UDim2.new(0.99999994, 0, 0.00176537328, 0)
-
-AutoShotgunGrabber.Name = "AutoShotgunGrabber"
-AutoShotgunGrabber.Parent = GUI
-AutoShotgunGrabber.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-AutoShotgunGrabber.BorderSizePixel = 0
-AutoShotgunGrabber.Position = UDim2.new(0.0159574505, 0, 0.515037656, 0)
-AutoShotgunGrabber.Size = UDim2.new(0.189635977, 0, 0.0977443755, 0)
-AutoShotgunGrabber.Font = Enum.Font.SourceSans
-AutoShotgunGrabber.Text = "Auto Grab Shotgun"
-AutoShotgunGrabber.TextColor3 = Color3.fromRGB(0, 0, 0)
-AutoShotgunGrabber.TextSize = 14.000
-
-MusicPlayer.Name = "MusicPlayer"
-MusicPlayer.Parent = GUI
-MusicPlayer.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-MusicPlayer.BorderSizePixel = 0
-MusicPlayer.Position = UDim2.new(0.0159574505, 0, 0.642857134, 0)
-MusicPlayer.Size = UDim2.new(0.189635977, 0, 0.0977443755, 0)
-MusicPlayer.Font = Enum.Font.SourceSans
-MusicPlayer.Text = "Play Music"
-MusicPlayer.TextColor3 = Color3.fromRGB(0, 0, 0)
-MusicPlayer.TextSize = 14.000
-
-MusicId.Name = "MusicId"
-MusicId.Parent = GUI
-MusicId.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MusicId.Position = UDim2.new(0.0159574766, 0, 0.864661694, 0)
-MusicId.Size = UDim2.new(0.397683054, 0, 0.0939849764, 0)
-MusicId.Font = Enum.Font.SourceSans
-MusicId.Text = "http://www.roblox.com/asset/?id=6247425685"
-MusicId.TextColor3 = Color3.fromRGB(0, 0, 0)
-MusicId.TextSize = 14.000
-
-AutoDIsplay.Name = "AutoDIsplay"
-AutoDIsplay.Parent = GUI
-AutoDIsplay.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoDIsplay.Position = UDim2.new(0.0159574505, 0, 0.789473712, 0)
-AutoDIsplay.Size = UDim2.new(0.466875851, 0, 0.0526315905, 0)
-AutoDIsplay.Font = Enum.Font.SourceSans
-AutoDIsplay.Text = "Put http://www.roblox.com/asset/?id= <- your id here"
-AutoDIsplay.TextColor3 = Color3.fromRGB(0, 0, 0)
-AutoDIsplay.TextSize = 14.000
-
-VolumeControl.Name = "VolumeControl"
-VolumeControl.Parent = GUI
-VolumeControl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VolumeControl.Position = UDim2.new(0.428414881, 0, 0.864661694, 0)
-VolumeControl.Size = UDim2.new(0.174629316, 0, 0.0939849764, 0)
-VolumeControl.Font = Enum.Font.SourceSans
-VolumeControl.Text = "Put Volume Here"
-VolumeControl.TextColor3 = Color3.fromRGB(0, 0, 0)
-VolumeControl.TextSize = 14.000
-
-PistolGiver.Name = "PistolGiver"
-PistolGiver.Parent = GUI
-PistolGiver.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-PistolGiver.BorderSizePixel = 0
-PistolGiver.Position = UDim2.new(0.219009623, 0, 0.127819568, 0)
-PistolGiver.Size = UDim2.new(0.173161522, 0, 0.0977443755, 0)
-PistolGiver.Font = Enum.Font.SourceSans
-PistolGiver.Text = "Give Pistol"
-PistolGiver.TextColor3 = Color3.fromRGB(0, 0, 0)
-PistolGiver.TextSize = 14.000
-
-ShotgunGiver.Name = "ShotgunGiver"
-ShotgunGiver.Parent = GUI
-ShotgunGiver.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-ShotgunGiver.BorderSizePixel = 0
-ShotgunGiver.Position = UDim2.new(0.219009623, 0, 0.255639136, 0)
-ShotgunGiver.Size = UDim2.new(0.173161522, 0, 0.0977443755, 0)
-ShotgunGiver.Font = Enum.Font.SourceSans
-ShotgunGiver.Text = "Give Shotgun"
-ShotgunGiver.TextColor3 = Color3.fromRGB(0, 0, 0)
-ShotgunGiver.TextSize = 14.000
-
-KnifeGiver.Name = "KnifeGiver"
-KnifeGiver.Parent = GUI
-KnifeGiver.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-KnifeGiver.BorderSizePixel = 0
-KnifeGiver.Position = UDim2.new(0.413408309, 0, 0.127606317, 0)
-KnifeGiver.Size = UDim2.new(0.174808934, 0, 0.0977443755, 0)
-KnifeGiver.Font = Enum.Font.SourceSans
-KnifeGiver.Text = "Give Knife"
-KnifeGiver.TextColor3 = Color3.fromRGB(0, 0, 0)
-KnifeGiver.TextSize = 14.000
-
-AntiAfk.Name = "AntiAfk"
-AntiAfk.Parent = GUI
-AntiAfk.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-AntiAfk.BorderSizePixel = 0
-AntiAfk.Position = UDim2.new(0.411666751, 0, 0.253158063, 0)
-AntiAfk.Size = UDim2.new(0.174808934, 0, 0.0977443755, 0)
-AntiAfk.Font = Enum.Font.SourceSans
-AntiAfk.Text = "Anti AFK"
-AntiAfk.TextColor3 = Color3.fromRGB(0, 0, 0)
-AntiAfk.TextSize = 14.000
-
-MoneyOptions.Name = "MoneyOptions"
-MoneyOptions.Parent = GUI
-MoneyOptions.BackgroundColor3 = Color3.fromRGB(61, 255, 83)
-MoneyOptions.BorderSizePixel = 4
-MoneyOptions.Position = UDim2.new(0.727130055, 0, 0.124966621, 0)
-MoneyOptions.Size = UDim2.new(0.250228137, 0, 0.134218603, 0)
-MoneyOptions.Font = Enum.Font.PermanentMarker
-MoneyOptions.Text = "Money Settings"
-MoneyOptions.TextColor3 = Color3.fromRGB(0, 0, 0)
-MoneyOptions.TextSize = 25.000
-
-Settings.Name = "Settings"
-Settings.Parent = GUI
-Settings.BackgroundColor3 = Color3.fromRGB(87, 255, 78)
-Settings.BackgroundTransparency = 1.000
-Settings.BorderSizePixel = 0
-Settings.Position = UDim2.new(0.841206491, 0, 0.00354609964, 0)
-Settings.Size = UDim2.new(0.123960264, 0, 0.0825080127, 0)
-Settings.Image = "rbxassetid://6295268328"
-
-Close.Name = "Close"
-Close.Parent = GUI
-Close.BackgroundColor3 = Color3.fromRGB(63, 255, 34)
-Close.Position = UDim2.new(0.0147058824, 0, 0.0112781972, 0)
-Close.Size = UDim2.new(0.135620922, 0, 0.0601503812, 0)
-Close.Font = Enum.Font.SciFi
-Close.Text = "Close UI [X]"
-Close.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close.TextSize = 14.000
-
-WalkSpeed.Name = "WalkSpeed"
-WalkSpeed.Parent = GUI
-WalkSpeed.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-WalkSpeed.BorderSizePixel = 0
-WalkSpeed.Position = UDim2.new(0.218345955, 0, 0.514291167, 0)
-WalkSpeed.Size = UDim2.new(0.174808934, 0, 0.0977443755, 0)
-WalkSpeed.Font = Enum.Font.SourceSans
-WalkSpeed.Text = "Walkspeed"
-WalkSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
-WalkSpeed.TextSize = 14.000
-
-WalkSpeedControl.Name = "WalkSpeedControl"
-WalkSpeedControl.Parent = GUI
-WalkSpeedControl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-WalkSpeedControl.Position = UDim2.new(0.408296764, 0, 0.518050432, 0)
-WalkSpeedControl.Size = UDim2.new(0.174629316, 0, 0.0939849764, 0)
-WalkSpeedControl.Font = Enum.Font.SourceSans
-WalkSpeedControl.Text = "WalkSpeed Here"
-WalkSpeedControl.TextColor3 = Color3.fromRGB(0, 0, 0)
-WalkSpeedControl.TextSize = 14.000
-
-Gravity.Name = "Gravity"
-Gravity.Parent = GUI
-Gravity.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-Gravity.BorderSizePixel = 0
-Gravity.Position = UDim2.new(0.218345955, 0, 0.642323971, 0)
-Gravity.Size = UDim2.new(0.174808934, 0, 0.0977443755, 0)
-Gravity.Font = Enum.Font.SourceSans
-Gravity.Text = "Gravity"
-Gravity.TextColor3 = Color3.fromRGB(0, 0, 0)
-Gravity.TextSize = 14.000
-
-GravityControl.Name = "GravityControl"
-GravityControl.Parent = GUI
-GravityControl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GravityControl.Position = UDim2.new(0.408296764, 0, 0.64587003, 0)
-GravityControl.Size = UDim2.new(0.174629316, 0, 0.0939849764, 0)
-GravityControl.Font = Enum.Font.SourceSans
-GravityControl.Text = "Gravity Here"
-GravityControl.TextColor3 = Color3.fromRGB(0, 0, 0)
-GravityControl.TextSize = 14.000
-
-JumpPower.Name = "JumpPower"
-JumpPower.Parent = GUI
-JumpPower.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-JumpPower.BorderSizePixel = 0
-JumpPower.Position = UDim2.new(0.21834594, 0, 0.387164772, 0)
-JumpPower.Size = UDim2.new(0.174808934, 0, 0.0977443755, 0)
-JumpPower.Font = Enum.Font.SourceSans
-JumpPower.Text = "Jump Power"
-JumpPower.TextColor3 = Color3.fromRGB(0, 0, 0)
-JumpPower.TextSize = 14.000
-
-JumpPowerControl.Name = "JumpPowerControl"
-JumpPowerControl.Parent = GUI
-JumpPowerControl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-JumpPowerControl.Position = UDim2.new(0.408296704, 0, 0.390710831, 0)
-JumpPowerControl.Size = UDim2.new(0.174629316, 0, 0.0939849764, 0)
-JumpPowerControl.Font = Enum.Font.SourceSans
-JumpPowerControl.Text = "Jump Power Here"
-JumpPowerControl.TextColor3 = Color3.fromRGB(0, 0, 0)
-JumpPowerControl.TextSize = 14.000
-
-Teleports.Name = "Teleports"
-Teleports.Parent = GUI
-Teleports.BackgroundColor3 = Color3.fromRGB(51, 235, 255)
-Teleports.BorderSizePixel = 4
-Teleports.Position = UDim2.new(0.727130055, 0, 0.287337989, 0)
-Teleports.Size = UDim2.new(0.250228137, 0, 0.134218603, 0)
-Teleports.Font = Enum.Font.PermanentMarker
-Teleports.Text = "Teleports"
-Teleports.TextColor3 = Color3.fromRGB(0, 0, 0)
-Teleports.TextSize = 34.000
-
-AntiRagdoll.Name = "Anti-Ragdoll"
-AntiRagdoll.Parent = GUI
-AntiRagdoll.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-AntiRagdoll.BorderSizePixel = 4
-AntiRagdoll.Position = UDim2.new(0.727130115, 0, 0.448475629, 0)
-AntiRagdoll.Size = UDim2.new(0.249846146, 0, 0.126540333, 0)
-AntiRagdoll.Font = Enum.Font.PermanentMarker
-AntiRagdoll.Text = "Anti-Ragdoll"
-AntiRagdoll.TextColor3 = Color3.fromRGB(0, 0, 0)
-AntiRagdoll.TextSize = 25.000
-
-TelelportToPlr.Name = "TelelportToPlr"
-TelelportToPlr.Parent = GUI
-TelelportToPlr.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-TelelportToPlr.BorderSizePixel = 3
-TelelportToPlr.Position = UDim2.new(0.602534294, 0, 0.608910382, 0)
-TelelportToPlr.Size = UDim2.new(0.124595746, 0, 0.0977443755, 0)
-TelelportToPlr.Font = Enum.Font.SourceSans
-TelelportToPlr.Text = "Tp To Plr"
-TelelportToPlr.TextColor3 = Color3.fromRGB(0, 0, 0)
-TelelportToPlr.TextSize = 14.000
-
-PlayerTp_Name.Name = "PlayerTp_Name"
-PlayerTp_Name.Parent = GUI
-PlayerTp_Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayerTp_Name.Position = UDim2.new(0.741018414, 0, 0.608846605, 0)
-PlayerTp_Name.Size = UDim2.new(0.235957772, 0, 0.0939849764, 0)
-PlayerTp_Name.Font = Enum.Font.SourceSans
-PlayerTp_Name.Text = "Player Name to tp to"
-PlayerTp_Name.TextColor3 = Color3.fromRGB(0, 0, 0)
-PlayerTp_Name.TextSize = 14.000
-
-OpenUI.Name = "OpenUI"
-OpenUI.Parent = MainGui
-OpenUI.BackgroundColor3 = Color3.fromRGB(29, 165, 255)
-OpenUI.BackgroundTransparency = 0.500
-OpenUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
-OpenUI.BorderSizePixel = 4
-OpenUI.Position = UDim2.new(0.00730816089, 0, 0.44768855, 0)
-OpenUI.Size = UDim2.new(0.0803897679, 0, 0.0705596134, 0)
-OpenUI.Visible = false
-OpenUI.Font = Enum.Font.PermanentMarker
-OpenUI.Text = "Open"
-OpenUI.TextColor3 = Color3.fromRGB(0, 0, 0)
-OpenUI.TextSize = 60.000
-
-SettingsTab.Name = "SettingsTab"
-SettingsTab.Parent = MainGui
-SettingsTab.BackgroundColor3 = Color3.fromRGB(151, 88, 182)
-SettingsTab.Position = UDim2.new(0.576676071, 0, 0.32603398, 0)
-SettingsTab.Size = UDim2.new(0.334408015, 0, 0.317121416, 0)
-SettingsTab.Visible = false
-
-TopLabel.Name = "TopLabel"
-TopLabel.Parent = SettingsTab
-TopLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TopLabel.BackgroundTransparency = 1.000
-TopLabel.Position = UDim2.new(0.232435822, 0, 0.0620098263, 0)
-TopLabel.Size = UDim2.new(0, 200, 0, 23)
-TopLabel.Font = Enum.Font.SpecialElite
-TopLabel.Text = "Settings"
-TopLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TopLabel.TextSize = 35.000
-
-KickPlr.Name = "KickPlr"
-KickPlr.Parent = SettingsTab
-KickPlr.BackgroundColor3 = Color3.fromRGB(134, 54, 140)
-KickPlr.Position = UDim2.new(0.0167865716, 0, 0.318264306, 0)
-KickPlr.Size = UDim2.new(0.321342915, 0, 0.0863309279, 0)
-KickPlr.Font = Enum.Font.SourceSans
-KickPlr.Text = "Force Leave Game"
-KickPlr.TextColor3 = Color3.fromRGB(0, 0, 0)
-KickPlr.TextSize = 14.000
-
-HideUselessButtons.Name = "HideUselessButtons"
-HideUselessButtons.Parent = SettingsTab
-HideUselessButtons.BackgroundColor3 = Color3.fromRGB(134, 54, 140)
-HideUselessButtons.Position = UDim2.new(0.0167865716, 0, 0.206753463, 0)
-HideUselessButtons.Size = UDim2.new(0.321342915, 0, 0.0863309279, 0)
-HideUselessButtons.Font = Enum.Font.SourceSans
-HideUselessButtons.Text = "Hide Useless Buttons"
-HideUselessButtons.TextColor3 = Color3.fromRGB(0, 0, 0)
-HideUselessButtons.TextSize = 14.000
-
-Close_2.Name = "Close"
-Close_2.Parent = SettingsTab
-Close_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Close_2.BackgroundTransparency = 1.000
-Close_2.Position = UDim2.new(0.872691453, 0, -0.000446353282, 0)
-Close_2.Size = UDim2.new(0, 47, 0, 37)
-Close_2.Font = Enum.Font.Highway
-Close_2.Text = "X"
-Close_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close_2.TextSize = 53.000
-
-HowToUse.Name = "HowToUse"
-HowToUse.Parent = SettingsTab
-HowToUse.BackgroundColor3 = Color3.fromRGB(134, 54, 140)
-HowToUse.Position = UDim2.new(0.0194422677, 0, 0.42875424, 0)
-HowToUse.Size = UDim2.new(0.321342915, 0, 0.0863309279, 0)
-HowToUse.Font = Enum.Font.SourceSans
-HowToUse.Text = "Instructions /  Help"
-HowToUse.TextColor3 = Color3.fromRGB(0, 0, 0)
-HowToUse.TextSize = 14.000
-
-Frame.Parent = SettingsTab
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.Position = UDim2.new(-8.10454353e-08, 0, 0.169892326, 0)
-Frame.Size = UDim2.new(1.00000012, 0, 0, 0)
-
-HelpTab.Name = "HelpTab"
-HelpTab.Parent = MainGui
-HelpTab.BackgroundColor3 = Color3.fromRGB(230, 101, 255)
-HelpTab.Position = UDim2.new(0.0803897679, 0, 0.20681265, 0)
-HelpTab.Size = UDim2.new(0.336175382, 0, 0.381629288, 0)
-HelpTab.Visible = false
-
-TextLabel.Parent = HelpTab
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.269979715, 0, -0.00195145851, 0)
-TextLabel.Size = UDim2.new(0.456359088, 0, 0.114579447, 0)
-TextLabel.Font = Enum.Font.PermanentMarker
-TextLabel.Text = "Need Some Help?"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 40.000
-
-TopBorder_2.Name = "TopBorder"
-TopBorder_2.Parent = HelpTab
-TopBorder_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TopBorder_2.Position = UDim2.new(0, 0, 0.112627983, 0)
-TopBorder_2.Size = UDim2.new(1, 0, 0, 0)
-
-Sentence1.Name = "Sentence1"
-Sentence1.Parent = HelpTab
-Sentence1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence1.BackgroundTransparency = 1.000
-Sentence1.Position = UDim2.new(0, 0, 0.110320285, 0)
-Sentence1.Size = UDim2.new(1, 0, 0.067615658, 0)
-Sentence1.Font = Enum.Font.SourceSans
-Sentence1.Text = "How To Use: Left Click the buttons to enable features and right click "
-Sentence1.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence1.TextSize = 14.000
-
-Sentence2.Name = "Sentence2"
-Sentence2.Parent = HelpTab
-Sentence2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence2.BackgroundTransparency = 1.000
-Sentence2.Position = UDim2.new(-0.0025839794, 0, 0.177935943, 0)
-Sentence2.Size = UDim2.new(1, 0, 0.067615658, 0)
-Sentence2.Font = Enum.Font.SourceSans
-Sentence2.Text = "the buttons to disable them, To use the music Player make sure to type in the"
-Sentence2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence2.TextSize = 14.000
-
-Sentence3.Name = "Sentence3"
-Sentence3.Parent = HelpTab
-Sentence3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence3.BackgroundTransparency = 1.000
-Sentence3.Position = UDim2.new(-0.0025839794, 0, 0.245551601, 0)
-Sentence3.Size = UDim2.new(1, 0, 0.067615658, 0)
-Sentence3.Font = Enum.Font.SourceSans
-Sentence3.Text = "url that is provided then the music code and type in the volume and hit"
-Sentence3.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence3.TextSize = 14.000
-
-Sentence4.Name = "Sentence4"
-Sentence4.Parent = HelpTab
-Sentence4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence4.BackgroundTransparency = 1.000
-Sentence4.Position = UDim2.new(-0.0025839794, 0, 0.313167274, 0)
-Sentence4.Size = UDim2.new(1, 0, 0.067615658, 0)
-Sentence4.Font = Enum.Font.SourceSans
-Sentence4.Text = "\"Play Music\", for the other features use the text boxes to change the values"
-Sentence4.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence4.TextSize = 14.000
-
-Sentence5.Name = "Sentence5"
-Sentence5.Parent = HelpTab
-Sentence5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence5.BackgroundTransparency = 1.000
-Sentence5.Position = UDim2.new(-0.0025839794, 0, 0.380782932, 0)
-Sentence5.Size = UDim2.new(1, 0, 0.067615658, 0)
-Sentence5.Font = Enum.Font.SourceSans
-Sentence5.Text = "Errors: If the gui is not working correctly, you may need to upgrade your"
-Sentence5.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence5.TextSize = 14.000
-
-Sentence6.Name = "Sentence6"
-Sentence6.Parent = HelpTab
-Sentence6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence6.BackgroundTransparency = 1.000
-Sentence6.Position = UDim2.new(-0.0025839794, 0, 0.44839859, 0)
-Sentence6.Size = UDim2.new(1, 0, 0.067615658, 0)
-Sentence6.Font = Enum.Font.SourceSans
-Sentence6.Text = "Exploit, Tried getting a payed exploit such as, Synapse X or ProtoSmasher"
-Sentence6.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence6.TextSize = 14.000
-
-Sentence7.Name = "Sentence7"
-Sentence7.Parent = HelpTab
-Sentence7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence7.BackgroundTransparency = 1.000
-Sentence7.Position = UDim2.new(-0.0025839794, 0, 0.516014218, 0)
-Sentence7.Size = UDim2.new(1, 0, 0.067615658, 0)
-Sentence7.Font = Enum.Font.SourceSans
-Sentence7.Text = "Basics [repeating 1st sentence]: To Enable Buttons Left Click them. To Disable"
-Sentence7.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence7.TextSize = 14.000
-
-Sentence8.Name = "Sentence8"
-Sentence8.Parent = HelpTab
-Sentence8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence8.BackgroundTransparency = 1.000
-Sentence8.Position = UDim2.new(0, 0, 0.583629847, 0)
-Sentence8.Size = UDim2.new(1, 0, 0.067615658, 0)
-Sentence8.Font = Enum.Font.SourceSans
-Sentence8.Text = "The Buttons that you turned on by Left Clicking, Just Right Click them and"
-Sentence8.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence8.TextSize = 14.000
-
-Sentence9.Name = "Sentence9"
-Sentence9.Parent = HelpTab
-Sentence9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence9.BackgroundTransparency = 1.000
-Sentence9.Position = UDim2.new(0, 0, 0.651245475, 0)
-Sentence9.Size = UDim2.new(1, 0, 0.067615658, 0)
-Sentence9.Font = Enum.Font.SourceSans
-Sentence9.Text = "they will turn off, You can always reEnable the buttons by Left Clicking them"
-Sentence9.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence9.TextSize = 14.000
-
-Sentence10.Name = "Sentence10"
-Sentence10.Parent = HelpTab
-Sentence10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence10.BackgroundTransparency = 1.000
-Sentence10.Position = UDim2.new(0, 0, 0.718861103, 0)
-Sentence10.Size = UDim2.new(1, 0, 0.067615658, 0)
-Sentence10.Font = Enum.Font.SourceSans
-Sentence10.Text = "To Turn them back on | For Further Support join the discord server"
-Sentence10.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence10.TextSize = 14.000
-
-Sentence11.Name = "Sentence11"
-Sentence11.Parent = HelpTab
-Sentence11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence11.BackgroundTransparency = 1.000
-Sentence11.Position = UDim2.new(-0.0025839794, 0, 0.839857519, 0)
-Sentence11.Size = UDim2.new(1, 0, 0.067615658, 0)
-Sentence11.Font = Enum.Font.SciFi
-Sentence11.Text = "https://discord.gg/shjRxBBZ3U"
-Sentence11.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence11.TextSize = 26.000
-
-Close_3.Name = "Close"
-Close_3.Parent = HelpTab
-Close_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Close_3.BackgroundTransparency = 1.000
-Close_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Close_3.Position = UDim2.new(-9.85709914e-09, 0, 0, 0)
-Close_3.Size = UDim2.new(0.116279088, 0, 0.112627998, 0)
-Close_3.Font = Enum.Font.PermanentMarker
-Close_3.Text = "X"
-Close_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close_3.TextSize = 50.000
-
-GreetGUI.Name = "GreetGUI"
-GreetGUI.Parent = MainGui
-GreetGUI.BackgroundColor3 = Color3.fromRGB(78, 170, 255)
-GreetGUI.BorderSizePixel = 7
-GreetGUI.Position = UDim2.new(0.205846474, 0, 0.0364963487, 0)
-GreetGUI.Size = UDim2.new(0.476311326, 0, 0.15571776, 0)
-
-TextLabel_2.Parent = GreetGUI
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.329762638, 0, 0.0803571492, 0)
-TextLabel_2.Size = UDim2.new(0, 200, 0, 17)
-TextLabel_2.Font = Enum.Font.PermanentMarker
-TextLabel_2.Text = "gang up on people simulator GUI"
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextSize = 44.000
-
-Close_4.Name = "Close"
-Close_4.Parent = GreetGUI
-Close_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Close_4.BackgroundTransparency = 0.500
-Close_4.BorderSizePixel = 3
-Close_4.Position = UDim2.new(0.0238946471, 0, 0.42274937, 0)
-Close_4.Size = UDim2.new(0.951784253, 0, 0.464285702, 0)
-Close_4.Font = Enum.Font.PatrickHand
-Close_4.Text = "Close This GUI [X]"
-Close_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close_4.TextSize = 66.000
-
-AdvisoryTab.Name = "AdvisoryTab"
-AdvisoryTab.Parent = MainGui
-AdvisoryTab.BackgroundColor3 = Color3.fromRGB(231, 89, 255)
-AdvisoryTab.Position = UDim2.new(0.0779537186, 0, 0.253041387, 0)
-AdvisoryTab.Size = UDim2.new(0.270401955, 0, 0.317615718, 0)
-
-TextLabel_3.Parent = AdvisoryTab
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.245614037, 0, 0.0494170934, 0)
-TextLabel_3.Size = UDim2.new(0.505847931, 0, 0.0658895001, 0)
-TextLabel_3.Font = Enum.Font.PermanentMarker
-TextLabel_3.Text = "Big Advisory"
-TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.TextSize = 66.000
-
-Border.Name = "Border"
-Border.Parent = AdvisoryTab
-Border.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Border.Position = UDim2.new(0, 0, 0.201786563, 0)
-Border.Size = UDim2.new(1, 0, 0.00411809376, 0)
-
-Sentence1_2.Name = "Sentence1"
-Sentence1_2.Parent = AdvisoryTab
-Sentence1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence1_2.BackgroundTransparency = 1.000
-Sentence1_2.Position = UDim2.new(0.204678386, 0, 0.205904663, 0)
-Sentence1_2.Size = UDim2.new(0.584795296, 0, 0.0617714077, 0)
-Sentence1_2.Font = Enum.Font.SourceSans
-Sentence1_2.Text = "When Trying to Turn off buttons by right clicking them you may "
-Sentence1_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence1_2.TextSize = 14.000
-
-Sentence2_2.Name = "Sentence2"
-Sentence2_2.Parent = AdvisoryTab
-Sentence2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence2_2.BackgroundTransparency = 1.000
-Sentence2_2.Position = UDim2.new(0.204678386, 0, 0.267676055, 0)
-Sentence2_2.Size = UDim2.new(0.584795296, 0, 0.0617714077, 0)
-Sentence2_2.Font = Enum.Font.SourceSans
-Sentence2_2.Text = "need to right click the button multiple times for it to turn off"
-Sentence2_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence2_2.TextSize = 14.000
-
-Sentence3_2.Name = "Sentence3"
-Sentence3_2.Parent = AdvisoryTab
-Sentence3_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence3_2.BackgroundTransparency = 1.000
-Sentence3_2.Position = UDim2.new(0.204678386, 0, 0.329447448, 0)
-Sentence3_2.Size = UDim2.new(0.584795296, 0, 0.0617714077, 0)
-Sentence3_2.Font = Enum.Font.SourceSans
-Sentence3_2.Text = "about 5 times is about how much before it finally turns off the"
-Sentence3_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence3_2.TextSize = 14.000
-
-Sentence4_2.Name = "Sentence4"
-Sentence4_2.Parent = AdvisoryTab
-Sentence4_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence4_2.BackgroundTransparency = 1.000
-Sentence4_2.Position = UDim2.new(0.204678386, 0, 0.391218841, 0)
-Sentence4_2.Size = UDim2.new(0.584795296, 0, 0.0617714077, 0)
-Sentence4_2.Font = Enum.Font.SourceSans
-Sentence4_2.Text = "button / functions, i am working to fix this bug and soon this gui will"
-Sentence4_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence4_2.TextSize = 14.000
-
-Sentence5_2.Name = "Sentence5"
-Sentence5_2.Parent = AdvisoryTab
-Sentence5_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence5_2.BackgroundTransparency = 1.000
-Sentence5_2.Position = UDim2.new(0.204678386, 0, 0.465344548, 0)
-Sentence5_2.Size = UDim2.new(0.584795296, 0, 0.0617714077, 0)
-Sentence5_2.Font = Enum.Font.SourceSans
-Sentence5_2.Text = "be removed [unless] i find another bug, This gui is just to notify"
-Sentence5_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence5_2.TextSize = 14.000
-
-Sentence6_2.Name = "Sentence6"
-Sentence6_2.Parent = AdvisoryTab
-Sentence6_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence6_2.BackgroundTransparency = 1.000
-Sentence6_2.Position = UDim2.new(0.204678386, 0, 0.531234026, 0)
-Sentence6_2.Size = UDim2.new(0.584795296, 0, 0.0617714077, 0)
-Sentence6_2.Font = Enum.Font.SourceSans
-Sentence6_2.Text = "about bugs and errors that are in this gui which this is the only"
-Sentence6_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence6_2.TextSize = 14.000
-
-Sentence7_2.Name = "Sentence7"
-Sentence7_2.Parent = AdvisoryTab
-Sentence7_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence7_2.BackgroundTransparency = 1.000
-Sentence7_2.Position = UDim2.new(0.204678386, 0, 0.597123504, 0)
-Sentence7_2.Size = UDim2.new(0.584795296, 0, 0.0617714077, 0)
-Sentence7_2.Font = Enum.Font.SourceSans
-Sentence7_2.Text = "one ive encounterd so far but, make sure to open the settings"
-Sentence7_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence7_2.TextSize = 14.000
-
-Sentence8_2.Name = "Sentence8"
-Sentence8_2.Parent = AdvisoryTab
-Sentence8_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sentence8_2.BackgroundTransparency = 1.000
-Sentence8_2.Position = UDim2.new(0.204678386, 0, 0.658894897, 0)
-Sentence8_2.Size = UDim2.new(0.584795296, 0, 0.0617714077, 0)
-Sentence8_2.Font = Enum.Font.SourceSans
-Sentence8_2.Text = "and click the \"Help\" Button so you know how this GUI works *FULLY*"
-Sentence8_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Sentence8_2.TextSize = 14.000
-
-Close_5.Name = "Close"
-Close_5.Parent = AdvisoryTab
-Close_5.BackgroundColor3 = Color3.fromRGB(22, 112, 115)
-Close_5.BackgroundTransparency = 0.500
-Close_5.BorderSizePixel = 4
-Close_5.Position = UDim2.new(0.0215954706, 0, 0.75687784, 0)
-Close_5.Size = UDim2.new(0.952088714, 0, 0.219404444, 0)
-Close_5.Font = Enum.Font.PatrickHand
-Close_5.Text = "Close Out Of This GUI [X]"
-Close_5.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close_5.TextSize = 46.000
-
-MoneyOptions_2.Name = "MoneyOptions"
-MoneyOptions_2.Parent = MainGui
-MoneyOptions_2.BackgroundColor3 = Color3.fromRGB(76, 255, 181)
-MoneyOptions_2.BorderSizePixel = 7
-MoneyOptions_2.Position = UDim2.new(0.280146182, 0, 0.257767558, 0)
-MoneyOptions_2.Size = UDim2.new(0.281364173, 0, 0.223984316, 0)
-MoneyOptions_2.Visible = false
-
-TopName.Name = "TopName"
-TopName.Parent = MoneyOptions_2
-TopName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TopName.BackgroundTransparency = 1.000
-TopName.Position = UDim2.new(0.245478049, 0, 0.0379147232, 0)
-TopName.Size = UDim2.new(0.506460011, 0, 0.0900473893, 0)
-TopName.Font = Enum.Font.PermanentMarker
-TopName.Text = "Money Options"
-TopName.TextColor3 = Color3.fromRGB(0, 0, 0)
-TopName.TextSize = 55.000
-
-TopBorder_3.Name = "TopBorder"
-TopBorder_3.Parent = MoneyOptions_2
-TopBorder_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TopBorder_3.Position = UDim2.new(0, 0, 0.189573407, 0)
-TopBorder_3.Size = UDim2.new(1.00000012, 0, 0.0047393362, 0)
-
-AutoDeposit.Name = "AutoDeposit"
-AutoDeposit.Parent = MoneyOptions_2
-AutoDeposit.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-AutoDeposit.BorderSizePixel = 3
-AutoDeposit.Position = UDim2.new(0.0395737328, 0, 0.23894006, 0)
-AutoDeposit.Size = UDim2.new(0.298839927, 0, 0.111962378, 0)
-AutoDeposit.Font = Enum.Font.SourceSans
-AutoDeposit.Text = "Auto Deposit"
-AutoDeposit.TextColor3 = Color3.fromRGB(0, 0, 0)
-AutoDeposit.TextSize = 14.000
-
-Deposit.Name = "Deposit"
-Deposit.Parent = MoneyOptions_2
-Deposit.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-Deposit.BorderSizePixel = 3
-Deposit.Position = UDim2.new(0.0395737328, 0, 0.523300231, 0)
-Deposit.Size = UDim2.new(0.298839927, 0, 0.111962378, 0)
-Deposit.Font = Enum.Font.SourceSans
-Deposit.Text = "Deposit Cash"
-Deposit.TextColor3 = Color3.fromRGB(0, 0, 0)
-Deposit.TextSize = 14.000
-
-Withdrawl.Name = "Withdrawl"
-Withdrawl.Parent = MoneyOptions_2
-Withdrawl.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-Withdrawl.BorderSizePixel = 3
-Withdrawl.Position = UDim2.new(0.0395737328, 0, 0.812399745, 0)
-Withdrawl.Size = UDim2.new(0.298839927, 0, 0.111962378, 0)
-Withdrawl.Font = Enum.Font.SourceSans
-Withdrawl.Text = "Withdrawl Cash"
-Withdrawl.TextColor3 = Color3.fromRGB(0, 0, 0)
-Withdrawl.TextSize = 14.000
-
-WithdrawlValue.Name = "WithdrawlValue"
-WithdrawlValue.Parent = MoneyOptions_2
-WithdrawlValue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-WithdrawlValue.Position = UDim2.new(0.372546643, 0, 0.817268312, 0)
-WithdrawlValue.Size = UDim2.new(0.397683054, 0, 0.0939849764, 0)
-WithdrawlValue.Font = Enum.Font.SourceSans
-WithdrawlValue.Text = "Work Yet [Im fixing it soon]"
-WithdrawlValue.TextColor3 = Color3.fromRGB(0, 0, 0)
-WithdrawlValue.TextSize = 14.000
-
-DepositValue.Name = "DepositValue"
-DepositValue.Parent = MoneyOptions_2
-DepositValue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DepositValue.Position = UDim2.new(0.372546643, 0, 0.537647486, 0)
-DepositValue.Size = UDim2.new(0.397683054, 0, 0.0939849764, 0)
-DepositValue.Font = Enum.Font.SourceSans
-DepositValue.Text = "Deposit Custom Values Dont"
-DepositValue.TextColor3 = Color3.fromRGB(0, 0, 0)
-DepositValue.TextSize = 14.000
-
-AutoDepValue.Name = "AutoDepValue"
-AutoDepValue.Parent = MoneyOptions_2
-AutoDepValue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoDepValue.Position = UDim2.new(0.372546643, 0, 0.253287315, 0)
-AutoDepValue.Size = UDim2.new(0.397683054, 0, 0.0939849764, 0)
-AutoDepValue.Font = Enum.Font.SourceSans
-AutoDepValue.Text = "Value for all defaults to 10"
-AutoDepValue.TextColor3 = Color3.fromRGB(0, 0, 0)
-AutoDepValue.TextSize = 14.000
-
-TopImage.Name = "TopImage"
-TopImage.Parent = MoneyOptions_2
-TopImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TopImage.BorderSizePixel = 0
-TopImage.Position = UDim2.new(0.803617656, 0, 0.194312751, 0)
-TopImage.Size = UDim2.new(0.152454838, 0, 0.218009457, 0)
-TopImage.Image = "http://www.roblox.com/asset/?id=6160436216"
-
-MiddleImage.Name = "MiddleImage"
-MiddleImage.Parent = MoneyOptions_2
-MiddleImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MiddleImage.BorderSizePixel = 0
-MiddleImage.Position = UDim2.new(0.803617656, 0, 0.469194233, 0)
-MiddleImage.Size = UDim2.new(0.152454838, 0, 0.218009457, 0)
-MiddleImage.Image = "http://www.roblox.com/asset/?id=6160436216"
-
-BottomImage.Name = "BottomImage"
-BottomImage.Parent = MoneyOptions_2
-BottomImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BottomImage.BorderSizePixel = 0
-BottomImage.Position = UDim2.new(0.803617656, 0, 0.753554463, 0)
-BottomImage.Size = UDim2.new(0.152454838, 0, 0.218009457, 0)
-BottomImage.Image = "http://www.roblox.com/asset/?id=6160436216"
-
-Close_6.Name = "Close"
-Close_6.Parent = MoneyOptions_2
-Close_6.BackgroundColor3 = Color3.fromRGB(49, 245, 255)
-Close_6.BackgroundTransparency = 1.000
-Close_6.BorderSizePixel = 3
-Close_6.Position = UDim2.new(-0.0017699413, 0, 0.02566991, 0)
-Close_6.Size = UDim2.new(0.0972895026, 0, 0.111962378, 0)
-Close_6.Font = Enum.Font.PermanentMarker
-Close_6.Text = "X"
-Close_6.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close_6.TextSize = 55.000
-
-Teleports_2.Name = "Teleports"
-Teleports_2.Parent = MainGui
-Teleports_2.BackgroundColor3 = Color3.fromRGB(145, 90, 255)
-Teleports_2.BorderSizePixel = 6
-Teleports_2.Position = UDim2.new(0.198635384, 0, 0.44768855, 0)
-Teleports_2.Size = UDim2.new(0.326431394, 0, 0.343065768, 0)
-Teleports_2.Visible = false
-
-TopLabel_2.Name = "TopLabel"
-TopLabel_2.Parent = Teleports_2
-TopLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TopLabel_2.BackgroundTransparency = 1.000
-TopLabel_2.Position = UDim2.new(0.341430157, 0, 0.0630006939, 0)
-TopLabel_2.Size = UDim2.new(0.313032895, 0, 0.0389294401, 0)
-TopLabel_2.Font = Enum.Font.PermanentMarker
-TopLabel_2.Text = "Teleports"
-TopLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TopLabel_2.TextSize = 65.000
-
-TopBorder_4.Name = "TopBorder"
-TopBorder_4.Parent = Teleports_2
-TopBorder_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TopBorder_4.Position = UDim2.new(0, 0, 0.193675905, 0)
-TopBorder_4.Size = UDim2.new(1.00000012, 0, 0, 0)
-
-ATMTP.Name = "ATMTP"
-ATMTP.Parent = Teleports_2
-ATMTP.BackgroundColor3 = Color3.fromRGB(222, 99, 255)
-ATMTP.BorderSizePixel = 4
-ATMTP.Position = UDim2.new(0.018381495, 0, 0.39149797, 0)
-ATMTP.Size = UDim2.new(0.215576306, 0, 0.12541236, 0)
-ATMTP.Font = Enum.Font.PermanentMarker
-ATMTP.Text = "ATM TP"
-ATMTP.TextColor3 = Color3.fromRGB(0, 0, 0)
-ATMTP.TextSize = 30.000
-
-PistolTP.Name = "PistolTP"
-PistolTP.Parent = Teleports_2
-PistolTP.BackgroundColor3 = Color3.fromRGB(222, 99, 255)
-PistolTP.BorderSizePixel = 4
-PistolTP.Position = UDim2.new(0.018381495, 0, 0.557505846, 0)
-PistolTP.Size = UDim2.new(0.215576306, 0, 0.12541236, 0)
-PistolTP.Font = Enum.Font.PermanentMarker
-PistolTP.Text = "Pistol TP"
-PistolTP.TextColor3 = Color3.fromRGB(0, 0, 0)
-PistolTP.TextSize = 25.000
-
-ShotgunTP.Name = "ShotgunTP"
-ShotgunTP.Parent = Teleports_2
-ShotgunTP.BackgroundColor3 = Color3.fromRGB(222, 99, 255)
-ShotgunTP.BorderSizePixel = 4
-ShotgunTP.Position = UDim2.new(0.018381495, 0, 0.723513722, 0)
-ShotgunTP.Size = UDim2.new(0.215576306, 0, 0.12541236, 0)
-ShotgunTP.Font = Enum.Font.PermanentMarker
-ShotgunTP.Text = "Shotgun TP"
-ShotgunTP.TextColor3 = Color3.fromRGB(0, 0, 0)
-ShotgunTP.TextSize = 22.000
-
-MountainTP.Name = "MountainTP"
-MountainTP.Parent = Teleports_2
-MountainTP.BackgroundColor3 = Color3.fromRGB(222, 99, 255)
-MountainTP.BorderSizePixel = 4
-MountainTP.Position = UDim2.new(0.279772341, 0, 0.221537471, 0)
-MountainTP.Size = UDim2.new(0.215576306, 0, 0.12541236, 0)
-MountainTP.Font = Enum.Font.PermanentMarker
-MountainTP.Text = "Mountain TP"
-MountainTP.TextColor3 = Color3.fromRGB(0, 0, 0)
-MountainTP.TextSize = 19.000
-
-CarTP.Name = "CarTP"
-CarTP.Parent = Teleports_2
-CarTP.BackgroundColor3 = Color3.fromRGB(222, 99, 255)
-CarTP.BorderSizePixel = 4
-CarTP.Position = UDim2.new(0.279772341, 0, 0.39149794, 0)
-CarTP.Size = UDim2.new(0.215576306, 0, 0.12541236, 0)
-CarTP.Font = Enum.Font.PermanentMarker
-CarTP.Text = "Car TP"
-CarTP.TextColor3 = Color3.fromRGB(0, 0, 0)
-CarTP.TextSize = 36.000
-
-GunShopTP.Name = "GunShopTP"
-GunShopTP.Parent = Teleports_2
-GunShopTP.BackgroundColor3 = Color3.fromRGB(222, 99, 255)
-GunShopTP.BorderSizePixel = 4
-GunShopTP.Position = UDim2.new(0.279772341, 0, 0.557505846, 0)
-GunShopTP.Size = UDim2.new(0.215576306, 0, 0.12541236, 0)
-GunShopTP.Font = Enum.Font.PermanentMarker
-GunShopTP.Text = "GunShop Tp"
-GunShopTP.TextColor3 = Color3.fromRGB(0, 0, 0)
-GunShopTP.TextSize = 21.000
-
-GraveTP.Name = "GraveTP"
-GraveTP.Parent = Teleports_2
-GraveTP.BackgroundColor3 = Color3.fromRGB(222, 99, 255)
-GraveTP.BorderSizePixel = 4
-GraveTP.Position = UDim2.new(0.279772341, 0, 0.723513722, 0)
-GraveTP.Size = UDim2.new(0.215576306, 0, 0.12541236, 0)
-GraveTP.Font = Enum.Font.PermanentMarker
-GraveTP.Text = "Grave TP"
-GraveTP.TextColor3 = Color3.fromRGB(0, 0, 0)
-GraveTP.TextSize = 28.000
-
-BackAreaTP.Name = "BackAreaTP"
-BackAreaTP.Parent = Teleports_2
-BackAreaTP.BackgroundColor3 = Color3.fromRGB(222, 99, 255)
-BackAreaTP.BorderSizePixel = 4
-BackAreaTP.Position = UDim2.new(0.018381536, 0, 0.221537471, 0)
-BackAreaTP.Size = UDim2.new(0.215576306, 0, 0.12541236, 0)
-BackAreaTP.Font = Enum.Font.PermanentMarker
-BackAreaTP.Text = "BackArea TP"
-BackAreaTP.TextColor3 = Color3.fromRGB(0, 0, 0)
-BackAreaTP.TextSize = 18.000
-
-Close_7.Name = "Close"
-Close_7.Parent = Teleports_2
-Close_7.BackgroundColor3 = Color3.fromRGB(222, 99, 255)
-Close_7.BackgroundTransparency = 1.000
-Close_7.BorderSizePixel = 4
-Close_7.Position = UDim2.new(-0.000803083181, 0, -0.0039525684, 0)
-Close_7.Size = UDim2.new(0.16521661, 0, 0.169960499, 0)
-Close_7.Font = Enum.Font.PermanentMarker
-Close_7.Text = "X"
-Close_7.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close_7.TextSize = 80.000
-
-SkyTP.Name = "SkyTP"
-SkyTP.Parent = Teleports_2
-SkyTP.BackgroundColor3 = Color3.fromRGB(222, 99, 255)
-SkyTP.BorderSizePixel = 4
-SkyTP.Position = UDim2.new(0.534273684, 0, 0.220395327, 0)
-SkyTP.Size = UDim2.new(0.215576306, 0, 0.12541236, 0)
-SkyTP.Font = Enum.Font.PermanentMarker
-SkyTP.Text = "Sky TP"
-SkyTP.TextColor3 = Color3.fromRGB(0, 0, 0)
-SkyTP.TextSize = 35.000
-SkyTP.TextWrapped = true
-
-HalfSkyTP.Name = "HalfSkyTP"
-HalfSkyTP.Parent = Teleports_2
-HalfSkyTP.BackgroundColor3 = Color3.fromRGB(222, 99, 255)
-HalfSkyTP.BorderSizePixel = 4
-HalfSkyTP.Position = UDim2.new(0.534273684, 0, 0.39149797, 0)
-HalfSkyTP.Size = UDim2.new(0.215576306, 0, 0.12541236, 0)
-HalfSkyTP.Font = Enum.Font.PermanentMarker
-HalfSkyTP.Text = "Middle Sky TP"
-HalfSkyTP.TextColor3 = Color3.fromRGB(0, 0, 0)
-HalfSkyTP.TextSize = 15.000
-HalfSkyTP.TextWrapped = true
-
-FancyHouseTP.Name = "FancyHouseTP"
-FancyHouseTP.Parent = Teleports_2
-FancyHouseTP.BackgroundColor3 = Color3.fromRGB(222, 99, 255)
-FancyHouseTP.BorderSizePixel = 4
-FancyHouseTP.Position = UDim2.new(0.534273684, 0, 0.570205152, 0)
-FancyHouseTP.Size = UDim2.new(0.215576306, 0, 0.12541236, 0)
-FancyHouseTP.Font = Enum.Font.PermanentMarker
-FancyHouseTP.Text = "Fancy House TP"
-FancyHouseTP.TextColor3 = Color3.fromRGB(0, 0, 0)
-FancyHouseTP.TextSize = 15.000
-FancyHouseTP.TextWrapped = true
-
--- Scripts:
-
-local function VSBRAA_fake_script() -- FarmCash.Functions 
-	local script = Instance.new('LocalScript', FarmCash)
-
-	local MainGui = script.Parent
-	local FarmCash = MainGui
-	
-	FarmCash.MouseButton1Down:Connect(function()
-		_G.totallydidntskidthis = true
-	
-		game.workspace.Gravity = 50
-	
-		while _G.totallydidntskidthis do
-			wait()
-			for i,v in pairs(workspace.Particles:GetChildren()) do
-				if v.Name == "Money" then
-					wait(0.1)
-					game.Players.LocalPlayer.Character:MoveTo(v.Bundle.Position)
+local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/uwuware-ui/main/main.lua",true))()
+
+local window = ui:CreateWindow("Main")
+local window2 = ui:CreateWindow("Teleports")
+local window3 = ui:CreateWindow("Fun Stuff")
+
+-- window 1 stuff
+window:AddToggle({text = "Auto Farm",flag = "AutoFarmChecked",callback = function (checked)
+while wait() do
+    if ui.flags.AutoFarmChecked then
+    for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+        if v.Name == "Humanoid" then
+            v.Sit = false
+            if v.Health == 0 then
+                wait(1)
+                warn("Player Has Died")
+                warn("Resetting Auto Farm")
+                wait(8)
+            else
+            for i,v in pairs(game.Workspace.Particles:GetChildren()) do
+			    if v.Name == "Money" then
+				    wait(0.1)
+				if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+                    warn("Player Has Died")
+                    wait(8)
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
+                else
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
+                end
+			    end
+            end
+	        for i,v in pairs(game.Workspace:GetChildren()) do
+	            if v.Name == "Money" then
+	                wait(0.1)
+				    if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+                    warn("Player Has Died")
+                    wait(8)
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
+                else
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
 				end
+            end
+	        end
+	        end
+        else
+        for i,v in pairs(game.Workspace.Particles:GetChildren()) do
+			if v.Name == "Money" then
+				wait(0.1)
+				if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+                    warn("Player Has Died")
+                    wait(8)
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
+                else
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
+                end
 			end
-		end
-		print("Auto Cash Enabled")
-	end)
-	
-	FarmCash.MouseButton2Down:Connect(function()
-		_G.totallydidntskidthis = false
-		print("Auto Cash Disabled")
-	end)
+        end
+	    for i,v in pairs(game.Workspace:GetChildren()) do
+	        if v.Name == "Money" then
+	            wait(0.1)
+	            if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+                    warn("Player Has Died")
+                    wait(8)
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
+                else
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
+                end
+	        end
+	    end
+        end
+    end
+    end
 end
-coroutine.wrap(VSBRAA_fake_script)()
-local function LPPUCGT_fake_script() -- AutoKnifeGrabber.Functions 
-	local script = Instance.new('LocalScript', AutoKnifeGrabber)
+end})
 
-	local MainGui = script.Parent
-	local AutoKnifeGrabber = MainGui
-	_G.KnifeAsser = true
-	
-	AutoKnifeGrabber.MouseButton1Down:Connect(function()
-		_G.KnifeAsser = true
-		while _G.KnifeAsser == true do wait(0.1)
-			local clientplayer = game.Players.LocalPlayer.Name
-			local knife = game:GetService("Workspace").Map.KnifeHouse.KnifeSpawner:WaitForChild("KnifeCollector").Handle
-			knife.Position = (game.Workspace:WaitForChild(clientplayer):WaitForChild("UpperTorso").Position)
-		end
-		print("Auto Grabbing Knifes")
-	end)
-	
-	AutoKnifeGrabber.MouseButton2Down:Connect(function()
-		_G.KnifeAsser = false
-		print("Disabled Auto Knife Grabber")
-	end)
-end
-coroutine.wrap(LPPUCGT_fake_script)()
-local function XBZKJ_fake_script() -- AutoPistolGrabber.Functions 
-	local script = Instance.new('LocalScript', AutoPistolGrabber)
+window:AddToggle({text = "Anti Ragdoll",flag = "AntiRagdollChecked",callback = function (checked)
+    while wait(1) do
+        if ui.flags.AntiRagdollChecked then
+            for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+                if v.ClassName == "Humanoid" then
+                    v.Sit = false
+                    print(v)
+                if v.Name == "Humanoid" then
+                    if v.Health == 0 then
+                        warn("Player Has Died")
+                        warn("Resetting Anti Ragdoll...")
+                        wait(8)
+                        for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+		                    if v.Name == "Ragdoll" then
+			                    v.RagdollInput.Disabled = true
+			                    for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			                        if v.Name == "Ragdoll" then
+                                        v:Destroy()
+                                    else
+                                        warn("Already Destroyed Instance")
+                                    end
+			                    end
+		                    end
+	                    end
+                    else
+                        for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+		                    if v.Name == "Ragdoll" then
+			                    v.RagdollInput.Disabled = true
+                                for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			                        if v.Name == "Ragdoll" then
+                                        v:Destroy()
+                                    else
+                                        warn("Already Destroyed Instance")
+                                    end
+			                    end
+		                    end
+                        end
+                    end
+                    end
+                end
+            end
+        end
+    end
+end})
 
-	local MainGui = script.Parent
-	local AutoPistolGrabber = MainGui
-	_G.AssFuckerPistol = true
-	
-	AutoPistolGrabber.MouseButton1Down:Connect(function()
-		_G.AssFuckerPistol = true
-		while _G.AssFuckerPistol == true do wait(0.1)
-			local clientplayer = game.Players.LocalPlayer.Name
-			local pistol = game:GetService("Workspace").Map.GunSpawner:WaitForChild("GunCollector").Handle
-			pistol.Position = (game.workspace:WaitForChild(clientplayer):WaitForChild("UpperTorso").Position)
-		end
-		print("Auto Pistol Grabber Enabled")
-	end)
-	
-	AutoPistolGrabber.MouseButton2Down:Connect(function()
-		_G.AssFuckerPistol = false
-		print("Auto Pistol Grabber Disabled")
-	end)
-end
-coroutine.wrap(XBZKJ_fake_script)()
-local function VSNPL_fake_script() -- AutoShotgunGrabber.Functions 
-	local script = Instance.new('LocalScript', AutoShotgunGrabber)
+window:AddToggle({text = "Auto Deposit",flag = "AutoDepositChecked",callback = function (checked)
+    while wait() do
+        if ui.flags.AutoDepositChecked then
+            local ohTable1 = {
+                ["Amount"] = 10,
+                ["Mode"] = "D"
+            }
+        
+            game:GetService("ReplicatedStorage").RemoteEvent.ATM:FireServer(ohTable1)
+        end
+    end
+end})
 
-	local MainGui = script.Parent
-	local AutoShotgunGrabber = MainGui
-	_G.ShotNigger = true
-	
-	AutoShotgunGrabber.MouseButton1Down:Connect(function()
-		_G.ShotNigger = true
-		while _G.ShotNigger == true do wait(0.1)
-			local clientplayer = game.Players.LocalPlayer.Name
-			local shotgun = game:GetService("Workspace").Map.ShotgunSpawner:WaitForChild("ShotgunCollector").Handle
-			shotgun.Position = (game.Workspace:WaitForChild(clientplayer):WaitForChild("UpperTorso").Position)
-		end
-		print("Auto Shotgun Grabber Enabled")
-	end)
-	
-	AutoShotgunGrabber.MouseButton2Down:Connect(function()
-		_G.ShotNigger = false
-		print("Auto Shotgun Grabber Disabled")
-	end)
-end
-coroutine.wrap(VSNPL_fake_script)()
-local function AZNBLP_fake_script() -- MusicPlayer.Functions 
-	local script = Instance.new('LocalScript', MusicPlayer)
+window:AddButton({text = "Give Pistol",callback = function ()
+	local pistol = game:GetService("Workspace").Map.GunSpawner:WaitForChild("GunCollector").Handle
+    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.GunSpawner.GunCollector.Handle,1) 
+    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.GunSpawner.GunCollector.Handle,0)
+end})
 
-	local MainGui = script.Parent
-	local MusicPlayer = MainGui
-	local Music = Instance.new("Sound", game.Workspace)
-	
-	Music.Parent = game.Workspace
-	Music.Archivable = false
-	Music.Name = "MusicModuleBySamTerraria10"
-	Music.Looped = true
-	Music.PlaybackSpeed = 1
-	MusicPlayer.MouseButton1Down:Connect(function()
-		local SoundDefine = script.Parent.Parent.MusicId.Text
-		local VolumeDef = script.Parent.Parent.VolumeControl.Text
-		Music.SoundId = (SoundDefine)
-		Music.Volume = (VolumeDef)
-		
-		wait(0)
-		
-		Music:Play()
-		print("Playing Music")
-	end)
-end
-coroutine.wrap(AZNBLP_fake_script)()
-local function OBVF_fake_script() -- PistolGiver.Functions 
-	local script = Instance.new('LocalScript', PistolGiver)
+window:AddButton({text = "Give Shotgun",callback = function ()
+    local shotgun = game:GetService("Workspace").Map.ShotgunSpawner:WaitForChild("ShotgunCollector").Handle
+    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.ShotgunSpawner.ShotgunCollector.Handle,1) 
+    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.ShotgunSpawner.ShotgunCollector.Handle,0)
+end})
 
-	local MainGui = script.Parent
-	local PistolGiver = MainGui
-	
-	PistolGiver.MouseButton1Down:Connect(function()
-		local clientplayer = game.Players.LocalPlayer.Name
-		local pistol = game:GetService("Workspace").Map.GunSpawner:WaitForChild("GunCollector").Handle
-		pistol.Position = (game.workspace:WaitForChild(clientplayer):WaitForChild("UpperTorso").Position)
-		print("Giving Pistol 1 Time...")
-	end)
-end
-coroutine.wrap(OBVF_fake_script)()
-local function BAZQFKI_fake_script() -- ShotgunGiver.Functions 
-	local script = Instance.new('LocalScript', ShotgunGiver)
+window:AddButton({text = "Give Knife",callback = function ()
+	local knife = game:GetService("Workspace").Map.KnifeHouse.KnifeSpawner:WaitForChild("KnifeCollector").Handle
+    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.KnifeSpawner.KnifeCollector.Handle,1) 
+    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.KnifeSpawner.KnifeCollector.Handle,0)
+end})
 
-	local MainGui = script.Parent
-	local ShotgunGiver = MainGui
-	
-	ShotgunGiver.MouseButton1Down:Connect(function()
-		local clientplayer = game.Players.LocalPlayer.Name
-		local shotgun = game:GetService("Workspace").Map.ShotgunSpawner:WaitForChild("ShotgunCollector").Handle
-		shotgun.Position = (game.Workspace:WaitForChild(clientplayer):WaitForChild("UpperTorso").Position)
-		print("Giving Shotgun 1 Time...")
-	end)
-end
-coroutine.wrap(BAZQFKI_fake_script)()
-local function IHYSL_fake_script() -- KnifeGiver.Functions 
-	local script = Instance.new('LocalScript', KnifeGiver)
+window:AddSlider({text = "WalkSpeed",min = 16,max = 300,dual = true,callback = function (value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end})
 
-	local MainGui = script.Parent
-	local KnifeGiver = MainGui
-	
-	KnifeGiver.MouseButton1Down:Connect(function()
-			local clientplayer = game.Players.LocalPlayer.Name
-			local knife = game:GetService("Workspace").Map.KnifeHouse.KnifeSpawner:WaitForChild("KnifeCollector").Handle
-			knife.Position = (game.Workspace:WaitForChild(clientplayer):WaitForChild("UpperTorso").Position)
-		print("Getting Knife 1 Time...")
-	end)
-end
-coroutine.wrap(IHYSL_fake_script)()
-local function OCWBANP_fake_script() -- AntiAfk.Functions 
-	local script = Instance.new('LocalScript', AntiAfk)
+window:AddSlider({text = "JumpPower",min = 50,max = 300,float = 3,callback = function (value)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+end})
 
-	local MainGui = script.Parent
-	local AntiAfk = MainGui
-	
-	AntiAfk.MouseButton1Down:Connect(function()
-		if not game:IsLoaded() then
-			game.Loaded:Wait()
-		end
-		local vu = game:GetService("VirtualUser")
-		game:GetService("Players").LocalPlayer.Idled:connect(function()
-			vu:Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
-			game:GetService("RunService").RenderStepped:Wait()
-			vu:Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
-		end)
-		print("Anti AFK Working")
-	end)
-end
-coroutine.wrap(OCWBANP_fake_script)()
-local function CBKSG_fake_script() -- MoneyOptions.Functions 
-	local script = Instance.new('LocalScript', MoneyOptions)
+window:AddSlider({text = "Gravity",min = 0,max = 192,float = 3,callback = function (value)
+    game.Workspace.Gravity = value
+end})
 
-	local MainGui = script.Parent
-	local MoneyOptions = MainGui
-	
-	MoneyOptions.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Parent.MoneyOptions.Visible = true
-		print("Opened Money Options")
-	end)
-end
-coroutine.wrap(CBKSG_fake_script)()
-local function AHIMWCK_fake_script() -- Settings.Functions 
-	local script = Instance.new('LocalScript', Settings)
+window:AddBox({text = "Teleport To Player",value = "game.Players.PLAYERSNAMEHERE",callback = function (text,confirmed)
+    print(text,confirmed)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = text.Character:WaitForChild("HumanoidRootPart").CFrame
+end})
 
-	local MainGui = script.Parent
-	local Settings = MainGui
-	
-	Settings.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Parent.SettingsTab.Visible = true
-	end)
-end
-coroutine.wrap(AHIMWCK_fake_script)()
-local function PHOGV_fake_script() -- Close.Functions 
-	local script = Instance.new('LocalScript', Close)
+window:AddBind({text = "Close/Open UI",key = Enum.KeyCode.P,hold = false,callback = function ()
+    ui:Close()
+end})
 
-	local MainGui = script.Parent
-	local Close = MainGui
-	
-	Close.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Visible = false
-		script.Parent.Parent.Parent.OpenUI.Visible = true
-		print("Closed UI")
-	end)
-end
-coroutine.wrap(PHOGV_fake_script)()
-local function SGKLK_fake_script() -- WalkSpeed.Functions 
-	local script = Instance.new('LocalScript', WalkSpeed)
+-- window2
+window2:AddButton({text = "Sky Tp",callback = function ()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+    wait(10)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
 
-	local MainGui = script.Parent
-	local WalkSpeed = MainGui
-	
-	WalkSpeed.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.Parent.WalkSpeedControl.Text
-		print("Changed WalkSpeed")
-	end)
-	
-	WalkSpeed.MouseButton2Down:Connect(function()
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-		print("Changed Speed to Default")
-	end)
-end
-coroutine.wrap(SGKLK_fake_script)()
-local function EOUBR_fake_script() -- Gravity.Functions 
-	local script = Instance.new('LocalScript', Gravity)
+end})
 
-	local MainGui = script.Parent
-	local KnifeGiver = MainGui
-	
-	KnifeGiver.MouseButton1Down:Connect(function()
-		game.Workspace.Gravity = script.Parent.Parent.GravityControl.Text
-		print("Gravity Changed")
-	end)
-end
-coroutine.wrap(EOUBR_fake_script)()
-local function SSIZ_fake_script() -- JumpPower.Functions 
-	local script = Instance.new('LocalScript', JumpPower)
+window2:AddButton({text = "Shotgun Tp",callback = function ()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
+	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+    wait(1)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
+end})
 
-	local MainGui = script.Parent
-	local JumpPower = MainGui
-	
-	JumpPower.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = script.Parent.Parent.JumpPowerControl.Text
-		print("Jump Power Modifyed")
-	end)
-	
-	JumpPower.MouseButton2Down:Connect(function()
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-		print("Jump Power Switched to Default")
-	end)
-end
-coroutine.wrap(SSIZ_fake_script)()
-local function HVKCL_fake_script() -- Teleports.Functions 
-	local script = Instance.new('LocalScript', Teleports)
+window2:AddButton({text = "Pistol Tp",callback = function ()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
+	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+    wait(1)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
+end})
 
-	local MainGui = script.Parent
-	local MoneyOptions = MainGui
-	
-	MoneyOptions.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Parent.Teleports.Visible = true
-		print("Opened Teleport tab")
-	end)
-end
-coroutine.wrap(HVKCL_fake_script)()
-local function JFDW_fake_script() -- AntiRagdoll.Functions 
-	local script = Instance.new('LocalScript', AntiRagdoll)
+window2:AddButton({text = "Mountain Tp",callback = function ()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+    wait(15)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
+end})
 
-	_G.Run = true
-	script.Parent.MouseButton1Down:Connect(function()
-		_G.Run = true
-		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-			if v.Name == "Ragdoll" then
-				v.RagdollInput.Disabled = true
-				v:Destroy()
-			end
-		end
-		
-		while _G.Run == true do wait()
-		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-			if v.Name == "Humanoid" then
-				if v.Health == 0 then
-					warn("Player Has Died")
-					print("Repaired Modules...")
-					wait(6)
-		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-			if v.Name == "Ragdoll" then
-				v.RagdollInput.Disabled = true
-				v:Destroy()
-				end
-			end
-			end
-			end
-			end
-		end
-	end)
-end
-coroutine.wrap(JFDW_fake_script)()
-local function ECTQ_fake_script() -- TelelportToPlr.Functions 
-	local script = Instance.new('LocalScript', TelelportToPlr)
+window2:AddButton({text = "Half Sky TP",callback = function ()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+    wait(15)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
+end})
 
-	script.Parent.MouseButton1Down:Connect(function()
-		for i,v in pairs(game.Players:GetChildren()) do
-			if v.Name == script.Parent.Parent.PlayerTp_Name.Text then
-				local timeRemaining = 15
-	
-				while timeRemaining > 0 do
-					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
-					wait(0.05)
-					timeRemaining = timeRemaining - 1	
-				end
-			end
-		end
-	end)
-end
-coroutine.wrap(ECTQ_fake_script)()
-local function DRBFJ_fake_script() -- GUI.Draggable 
-	local script = Instance.new('LocalScript', GUI)
+window2:AddButton({text = "Gun Shop Tp",callback = function ()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
+	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+    wait(1)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
+end})
 
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(DRBFJ_fake_script)()
-local function RXHO_fake_script() -- OpenUI.Functions 
-	local script = Instance.new('LocalScript', OpenUI)
+window2:AddButton({text = "Grave Tp",callback = function ()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
+	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+    wait(2)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
+end})
 
-	local MainGui = script.Parent
-	local OpenUI = MainGui
-	
-	OpenUI.MouseButton1Down:Connect(function()
-		script.Parent.Parent.GUI.Visible = true
-		script.Parent.Visible = false
-		print("Opened UI")
-	end)
-end
-coroutine.wrap(RXHO_fake_script)()
-local function QKOZPYU_fake_script() -- KickPlr.Functions 
-	local script = Instance.new('LocalScript', KickPlr)
+window2:AddButton({text = "Fancy House Tp",callback = function ()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
+	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+    wait(7.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
+end})
 
-	local MainGui = script.Parent
-	local KickPlr = MainGui
-	
-	KickPlr.MouseButton1Down:Connect(function()
-		print("Disconnecting Player...")
-		wait(3)
-		game.Players.LocalPlayer:Kick("Force Kicked Player Client")
-	end)
-end
-coroutine.wrap(QKOZPYU_fake_script)()
-local function IHAKMIY_fake_script() -- HideUselessButtons.Functions 
-	local script = Instance.new('LocalScript', HideUselessButtons)
+window2:AddButton({text = "Car Tp",callback = function ()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+	wait(2)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
+end})
 
-	local MainGui = script.Parent
-	local HideUselessButtons = MainGui
-	
-	HideUselessButtons.MouseButton1Down:Connect(function()
-		local MainLine = script.Parent.Parent.Parent.GUI
-		MainLine.WithdrawMoney.Visible = false
-		MainLine.AutoDeposit.Visible = false
-		print("Useless Buttons Hidden")
-	end)
-end
-coroutine.wrap(IHAKMIY_fake_script)()
-local function IVDNE_fake_script() -- Close_2.Functions 
-	local script = Instance.new('LocalScript', Close_2)
+window2:AddButton({text = "BackArea Tp",callback = function ()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
+	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+    wait(3)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
+end})
 
-	local MainGui =  script.Parent
-	local Close = MainGui
-	
-	Close.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(IVDNE_fake_script)()
-local function CPKPMZ_fake_script() -- HowToUse.Functions 
-	local script = Instance.new('LocalScript', HowToUse)
+window2:AddButton({text = "ATM Tp",callback = function ()
+	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
+	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+    wait(1)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
+end})
 
-	local MainGui = script.Parent
-	local HowToUse = MainGui
-	
-	HowToUse.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Parent.HelpTab.Visible = true
-		print("Opened Help Tab")
-	end)
-end
-coroutine.wrap(CPKPMZ_fake_script)()
-local function VKKGD_fake_script() -- SettingsTab.Draggable 
-	local script = Instance.new('LocalScript', SettingsTab)
+-- window 3
 
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(VKKGD_fake_script)()
-local function MKRIDO_fake_script() -- Close_3.LocalScript 
-	local script = Instance.new('LocalScript', Close_3)
+window3:AddToggle({text = "Auto Pistol Grabber",flag = "PistolGrabChecked",callback = function (checked)
+    while wait() do
+        if ui.flags.PistolGrabChecked then
+            local pistol = game:GetService("Workspace").Map.GunSpawner:WaitForChild("GunCollector").Handle
+            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.GunSpawner.GunCollector.Handle,1) 
+            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.GunSpawner.GunCollector.Handle,0)        
+        end
+    end
+end})
 
-	local MainGui = script.Parent
-	local Close = MainGui
-	
-	Close.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Visible = false
-		print("Closed Help Tab")
-	end)
-end
-coroutine.wrap(MKRIDO_fake_script)()
-local function EOZZZE_fake_script() -- HelpTab.Draggable 
-	local script = Instance.new('LocalScript', HelpTab)
+window3:AddToggle({text = "Auto SHotgun Grabber",flag = "ShotgunGrabChecked",callback = function (checked)
+    while wait() do
+        if ui.flags.ShotgunGrabChecked then
+            local shotgun = game:GetService("Workspace").Map.ShotgunSpawner:WaitForChild("ShotgunCollector").Handle
+            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.ShotgunSpawner.ShotgunCollector.Handle,1) 
+            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.ShotgunSpawner.ShotgunCollector.Handle,0)
+        end
+    end
+end})
 
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(EOZZZE_fake_script)()
-local function SRWMGO_fake_script() -- Close_4.Functions 
-	local script = Instance.new('LocalScript', Close_4)
+window3:AddToggle({text = "Auto Knife Grabber",flag = "KnifeGrabChecked",callback = function (checked)
+    while wait() do
+        if ui.flags.KnifeGrabChecked then
+            local knife = game:GetService("Workspace").Map.KnifeHouse.KnifeSpawner:WaitForChild("KnifeCollector").Handle
+            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.KnifeSpawner.KnifeCollector.Handle,1) 
+            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game.Workspace.Map.KnifeSpawner.KnifeCollector.Handle,0)
+        end
+    end
+end})
 
-	local MainGui = script.Parent
-	local Close = MainGui
-	
-	Close.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Visible = false
-		print("Closed Greet UI")
-	end)
-end
-coroutine.wrap(SRWMGO_fake_script)()
-local function IRRDLC_fake_script() -- GreetGUI.Draggable 
-	local script = Instance.new('LocalScript', GreetGUI)
-
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(IRRDLC_fake_script)()
-local function CIXAOFN_fake_script() -- Close_5.Functions 
-	local script = Instance.new('LocalScript', Close_5)
-
-	local MainGui = script.Parent
-	local AntiAfk = MainGui
-	
-	AntiAfk.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Visible = false
-		print("Closed Advisory Tab")
-	end)
-end
-coroutine.wrap(CIXAOFN_fake_script)()
-local function ZDAC_fake_script() -- AdvisoryTab.Draggable 
-	local script = Instance.new('LocalScript', AdvisoryTab)
-
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(ZDAC_fake_script)()
-local function OCGMJ_fake_script() -- AutoDeposit.Functions 
-	local script = Instance.new('LocalScript', AutoDeposit)
-
-	local MainGui = script.Parent
-	local AutoDeposit = MainGui
-	_G.NiggerDeposit = true
-	
-	AutoDeposit.MouseButton1Down:Connect(function()
-		
-		while _G.NiggerDeposit == true do wait(0.1)
-		local ohTable1 = {
-			["Amount"] = 10,
-			["Mode"] = "D"
-		}
-	
-		game:GetService("ReplicatedStorage").RemoteEvent.ATM:FireServer(ohTable1)
-		end
-	end)
-end
-coroutine.wrap(OCGMJ_fake_script)()
-local function OIQIJWP_fake_script() -- Deposit.Functions 
-	local script = Instance.new('LocalScript', Deposit)
-
-	local MainGui = script.Parent
-	local Deposit = MainGui
-	
-	Deposit.MouseButton1Down:Connect(function()
-		local ohTable1 = {
-			["Amount"] = 10,
-			["Mode"] = "D"
-		}
-	
-		game:GetService("ReplicatedStorage").RemoteEvent.ATM:FireServer(ohTable1)
-	end)
-end
-coroutine.wrap(OIQIJWP_fake_script)()
-local function RNGR_fake_script() -- Withdrawl.Functions 
-	local script = Instance.new('LocalScript', Withdrawl)
-
-	local MainGui = script.Parent
-	local Withdrawl = MainGui
-	
-	Withdrawl.MouseButton1Down:Connect(function()
-		local ohTable1 = {
-			["Amount"] = 10,
-			["Mode"] = "W"
-		}
-	
-		game:GetService("ReplicatedStorage").RemoteEvent.ATM:FireServer(ohTable1)
-	end)
-end
-coroutine.wrap(RNGR_fake_script)()
-local function KVMIKX_fake_script() -- Close_6.Functions 
-	local script = Instance.new('LocalScript', Close_6)
-
-	local MainGui = script.Parent
-	local AutoDeposit = MainGui
-	
-	AutoDeposit.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Visible = false
-		print("Closed Money Tab")
-	end)
-end
-coroutine.wrap(KVMIKX_fake_script)()
-local function EYYS_fake_script() -- MoneyOptions_2.Draggable 
-	local script = Instance.new('LocalScript', MoneyOptions_2)
-
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(EYYS_fake_script)()
-local function WQYSLUD_fake_script() -- ATMTP.Functions 
-	local script = Instance.new('LocalScript', ATMTP)
-
-	local MainGui = script.Parent
-	local ATMTP = MainGui
-	
-	ATMTP.MouseButton1Down:Connect(function()
-		local timeRemaining = 20
-	
-		while timeRemaining > 0 do
-			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-32.5972099, 3.23268175, 42.9375038, 0.221981585, 7.23231608e-08, 0.975050867, 6.50050325e-09, 1, -7.56536451e-08, -0.975050867, 2.31320367e-08, 0.221981585))
-			wait(0.05)
-			timeRemaining = timeRemaining - 1	
-		end
-	end)
-end
-coroutine.wrap(WQYSLUD_fake_script)()
-local function NSKC_fake_script() -- PistolTP.Functions 
-	local script = Instance.new('LocalScript', PistolTP)
-
-	local MainGui = script.Parent
-	local PistolTP = MainGui
-	
-	PistolTP.MouseButton1Down:Connect(function()
-		local timeRemaining = 120
-	
-		while timeRemaining > 0 do
-			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(17.6904736, 3.12266922, -40.3805084, 0.103179112, 4.12246308e-08, -0.994662821, -1.79337878e-08, 1, 3.95855118e-08, 0.994662821, 1.37536729e-08, 0.103179112))
-			wait(0.05)
-			timeRemaining = timeRemaining - 1	
-		end
-	end)
-end
-coroutine.wrap(NSKC_fake_script)()
-local function WBXQ_fake_script() -- ShotgunTP.Functions 
-	local script = Instance.new('LocalScript', ShotgunTP)
-
-	local MainGui = script.Parent
-	local ShoutgunTP = MainGui
-	
-	ShoutgunTP.MouseButton1Down:Connect(function()
-		local timeRemaining = 100
-	
-		while timeRemaining > 0 do
-			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-101.68, 3.79767, 120.318))
-			wait(0.05)
-			timeRemaining = timeRemaining - 1	
-		end
-	end)
-end
-coroutine.wrap(WBXQ_fake_script)()
-local function DJULVJJ_fake_script() -- MountainTP.Functions 
-	local script = Instance.new('LocalScript', MountainTP)
-
-	local MainGui = script.Parent
-	local MountainTP = MainGui
-	
-	MountainTP.MouseButton1Down:Connect(function()
-		local timeRemaining = 300
-	
-		while timeRemaining > 0 do
-			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-51.414463, 129.122665, -132.449554, -0.995353878, -6.64717277e-08, 0.0962844864, -7.32708614e-08, 1, -6.70794336e-08, -0.0962844864, -7.38226191e-08, -0.995353878))
-			wait(0.05)
-			timeRemaining = timeRemaining - 1	
-		end
-	end)
-end
-coroutine.wrap(DJULVJJ_fake_script)()
-local function GJVAK_fake_script() -- CarTP.Functions 
-	local script = Instance.new('LocalScript', CarTP)
-
-	local MainGui = script.Parent
-	local CarTP = MainGui
-	
-	CarTP.MouseButton1Down:Connect(function()
-		local timeRemaining = 20
-	
-		while timeRemaining > 0 do
-			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-64.4677, 3.17767, -33.0403))
-			wait(0.05)
-			timeRemaining = timeRemaining - 1	
-		end
-	end)
-end
-coroutine.wrap(GJVAK_fake_script)()
-local function UCTV_fake_script() -- GunShopTP.Functions 
-	local script = Instance.new('LocalScript', GunShopTP)
-
-	local MainGui = script.Parent
-	local GunShopTP = MainGui
-	
-	GunShopTP.MouseButton1Down:Connect(function()
-		local timeRemaining = 60
-	
-		while timeRemaining > 0 do
-			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1.63635, 4.12267, 107.257))
-			wait(0.05)
-			timeRemaining = timeRemaining - 1	
-		end
-	end)
-end
-coroutine.wrap(UCTV_fake_script)()
-local function NPBH_fake_script() -- GraveTP.Functions 
-	local script = Instance.new('LocalScript', GraveTP)
-
-	local MainGui = script.Parent
-	local GraveTP = MainGui
-	
-	GraveTP.MouseButton1Down:Connect(function()
-		local timeRemaining = 30
-	
-		while timeRemaining > 0 do
-			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(89.4115, 3.12267, 102.265))
-			wait(0.05)
-			timeRemaining = timeRemaining - 1	
-		end
-	end)
-end
-coroutine.wrap(NPBH_fake_script)()
-local function ZUMVMBA_fake_script() -- BackAreaTP.Functions 
-	local script = Instance.new('LocalScript', BackAreaTP)
-
-	local MainGui = script.Parent
-	local BackAreaTP = MainGui
-	
-	BackAreaTP.MouseButton1Down:Connect(function()
-		local timeRemaining = 50
-	
-		while timeRemaining > 0 do
-			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(220.539, 3.05473, -87.0464))
-			wait(0.05)
-			timeRemaining = timeRemaining - 1	
-		end
-	end)
-end
-coroutine.wrap(ZUMVMBA_fake_script)()
-local function WJAFH_fake_script() -- Close_7.Functions 
-	local script = Instance.new('LocalScript', Close_7)
-
-	local MainGui = script.Parent
-	local BackAreaTP = MainGui
-	
-	BackAreaTP.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Visible = false
-		print("Closed Teleports")
-	end)
-end
-coroutine.wrap(WJAFH_fake_script)()
-local function XUFCCN_fake_script() -- SkyTP.Functions 
-	local script = Instance.new('LocalScript', SkyTP)
-
-	local MainGui = script.Parent
-	local SkyTP = MainGui
-	
-	SkyTP.MouseButton1Down:Connect(function()
-		local timeRemaining = 300
-	
-		while timeRemaining > 0 do
-			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-71.0635681, 432.722687, 46.3323708, 0.770631909, 3.22215499e-08, 0.637280524, 7.05204695e-09, 1, -5.9088709e-08, -0.637280524, 5.00297759e-08, 0.770631909))
-			wait(0.05)
-			timeRemaining = timeRemaining - 1	
-		end
-	end)
-end
-coroutine.wrap(XUFCCN_fake_script)()
-local function FIQTW_fake_script() -- HalfSkyTP.Functions 
-	local script = Instance.new('LocalScript', HalfSkyTP)
-
-	local MainGui = script.Parent
-	local HalfSkyTP = MainGui
-	
-	HalfSkyTP.MouseButton1Down:Connect(function()
-		local timeRemaining = 500
-	
-		while timeRemaining > 0 do
-			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-56.7418556, -0.0660102367, 12.1369457, 0.949422359, 0.245854154, 0.195327774, -0.121698901, 0.861548662, -0.492872506, -0.289459109, 0.444173008, 0.847893715))
-			wait(0.05)
-			timeRemaining = timeRemaining - 1	
-		end
-	end)
-end
-coroutine.wrap(FIQTW_fake_script)()
-local function WIKZEX_fake_script() -- FancyHouseTP.Functions 
-	local script = Instance.new('LocalScript', FancyHouseTP)
-
-	local MainGui = script.Parent
-	local HalfSkyTP = MainGui
-	
-	HalfSkyTP.MouseButton1Down:Connect(function()
-		local timeRemaining = 80
-	
-		while timeRemaining > 0 do
-			game.Players.LocalPlayer.Character:MoveTo(Vector3.new(231.399429, 7.90452957, -118.361832, 0.39147383, 1.91651264e-08, 0.920189261, -8.40631742e-08, 1, 1.49354129e-08, -0.920189261, -8.32008524e-08, 0.39147383))
-			wait(0.05)
-			timeRemaining = timeRemaining - 1	
-		end
-	end)
-end
-coroutine.wrap(WIKZEX_fake_script)()
-local function TZCYGAT_fake_script() -- Teleports_2.Draggable 
-	local script = Instance.new('LocalScript', Teleports_2)
-
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(TZCYGAT_fake_script)()
+ui:Init()
