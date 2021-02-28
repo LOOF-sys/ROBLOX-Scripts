@@ -1,7 +1,5 @@
 -- Manly Infection Script
 
-warn("TAKE THIS WARNING SERIOUS || YOU ARE POTENTIALLY USING A PATCHED SCRIPT AND YOU HAVE A RISK OF GETTING BANNED || IF YOU ARE USING THIS ON YOUR MAIN EXIT THIS GAME NOW, UE THIS ON AN ALT AND DONT USE SPEED/JUMP POWER/GOD MODE/A-C BYPASS/LOOP KILL/GRAVITY AND SOME OTHERS I FORGOT. YOU HAVE BEEN WARNED")
-
 local MainGui = Instance.new("ScreenGui")
 local OpenUI = Instance.new("TextButton")
 local UI = Instance.new("ImageLabel")
@@ -23,7 +21,7 @@ local Mod_Bat = Instance.new("TextButton")
 local Settings = Instance.new("TextButton")
 local Loop_Kill_Plr = Instance.new("TextButton")
 local JumpPower_Value_2 = Instance.new("TextBox")
-local BypassAC = Instance.new("TextButton")
+local Deleted_Button = Instance.new("TextButton")
 
 --Properties:
 
@@ -251,20 +249,20 @@ JumpPower_Value_2.Text = ""
 JumpPower_Value_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 JumpPower_Value_2.TextSize = 14.000
 
-BypassAC.Name = "Bypass A-C"
-BypassAC.Parent = UI
-BypassAC.BackgroundColor3 = Color3.fromRGB(204, 142, 255)
-BypassAC.BorderSizePixel = 2
-BypassAC.Position = UDim2.new(0.640725553, 0, 0.452078283, 0)
-BypassAC.Size = UDim2.new(0.329324931, 0, 0.0914966837, 0)
-BypassAC.Font = Enum.Font.Michroma
-BypassAC.Text = "Bypass A-C"
-BypassAC.TextColor3 = Color3.fromRGB(0, 0, 0)
-BypassAC.TextSize = 24.000
+Deleted_Button.Name = "Deleted_Button"
+Deleted_Button.Parent = UI
+Deleted_Button.BackgroundColor3 = Color3.fromRGB(204, 142, 255)
+Deleted_Button.BorderSizePixel = 2
+Deleted_Button.Position = UDim2.new(0.640725553, 0, 0.452078283, 0)
+Deleted_Button.Size = UDim2.new(0.329324931, 0, 0.0914966837, 0)
+Deleted_Button.Font = Enum.Font.Michroma
+Deleted_Button.Text = "Deleted"
+Deleted_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Deleted_Button.TextSize = 24.000
 
 -- Scripts:
 
-local function SEQLJJL_fake_script() -- OpenUI.LocalScript 
+local function MRFKUS_fake_script() -- OpenUI.LocalScript 
 	local script = Instance.new('LocalScript', OpenUI)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -272,24 +270,24 @@ local function SEQLJJL_fake_script() -- OpenUI.LocalScript
 		script.Parent.Parent.UI.Visible = true
 	end)
 end
-coroutine.wrap(SEQLJJL_fake_script)()
-local function ISBK_fake_script() -- AntiGravityOn.LocalScript 
+coroutine.wrap(MRFKUS_fake_script)()
+local function IFTX_fake_script() -- AntiGravityOn.LocalScript 
 	local script = Instance.new('LocalScript', AntiGravityOn)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 	end)
 end
-coroutine.wrap(ISBK_fake_script)()
-local function KYELTO_fake_script() -- AntiGravityOff.LocalScript 
+coroutine.wrap(IFTX_fake_script)()
+local function OQNLWKR_fake_script() -- AntiGravityOff.LocalScript 
 	local script = Instance.new('LocalScript', AntiGravityOff)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
 	end)
 end
-coroutine.wrap(KYELTO_fake_script)()
-local function DHTVYR_fake_script() -- Close.LocalScript 
+coroutine.wrap(OQNLWKR_fake_script)()
+local function RQGCWUI_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -297,8 +295,8 @@ local function DHTVYR_fake_script() -- Close.LocalScript
 		script.Parent.Parent.Parent.OpenUI.Visible = true
 	end)
 end
-coroutine.wrap(DHTVYR_fake_script)()
-local function HUTD_fake_script() -- GodModeOn.LocalScript 
+coroutine.wrap(RQGCWUI_fake_script)()
+local function EQUXCC_fake_script() -- GodModeOn.LocalScript 
 	local script = Instance.new('LocalScript', GodModeOn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -341,24 +339,24 @@ local function HUTD_fake_script() -- GodModeOn.LocalScript
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 	end)
 end
-coroutine.wrap(HUTD_fake_script)()
-local function DJIIH_fake_script() -- WalkSpeed.LocalScript 
+coroutine.wrap(EQUXCC_fake_script)()
+local function MERW_fake_script() -- WalkSpeed.LocalScript 
 	local script = Instance.new('LocalScript', WalkSpeed)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.Parent.WalkSpeed_Value.Text
 	end)
 end
-coroutine.wrap(DJIIH_fake_script)()
-local function AWII_fake_script() -- JumpPower.LocalScript 
+coroutine.wrap(MERW_fake_script)()
+local function VVZDDJ_fake_script() -- JumpPower.LocalScript 
 	local script = Instance.new('LocalScript', JumpPower)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = script.Parent.Parent.JumpPower_Value.Text
 	end)
 end
-coroutine.wrap(AWII_fake_script)()
-local function SEWWTM_fake_script() -- Tp_To_Player.LocalScript 
+coroutine.wrap(VVZDDJ_fake_script)()
+local function QTOC_fake_script() -- Tp_To_Player.LocalScript 
 	local script = Instance.new('LocalScript', Tp_To_Player)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -371,8 +369,8 @@ local function SEWWTM_fake_script() -- Tp_To_Player.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SEWWTM_fake_script)()
-local function BDSUAQ_fake_script() -- Mod_Bat.LocalScript 
+coroutine.wrap(QTOC_fake_script)()
+local function FNZWEN_fake_script() -- Mod_Bat.LocalScript 
 	local script = Instance.new('LocalScript', Mod_Bat)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -401,8 +399,8 @@ local function BDSUAQ_fake_script() -- Mod_Bat.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BDSUAQ_fake_script)()
-local function CLFDVLQ_fake_script() -- UI.Draggable 
+coroutine.wrap(FNZWEN_fake_script)()
+local function EHEK_fake_script() -- UI.Draggable 
 	local script = Instance.new('LocalScript', UI)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -445,8 +443,8 @@ local function CLFDVLQ_fake_script() -- UI.Draggable
 		end
 	end)
 end
-coroutine.wrap(CLFDVLQ_fake_script)()
-local function MIFO_fake_script() -- Loop_Kill_Plr.LocalScript 
+coroutine.wrap(EHEK_fake_script)()
+local function BKNAN_fake_script() -- Loop_Kill_Plr.LocalScript 
 	local script = Instance.new('LocalScript', Loop_Kill_Plr)
 
 	_G.Run = true
@@ -510,19 +508,31 @@ local function MIFO_fake_script() -- Loop_Kill_Plr.LocalScript
 		_G.Run = false
 	end)
 end
-coroutine.wrap(MIFO_fake_script)()
-local function VFZCYB_fake_script() -- BypassAC.LocalScript 
-	local script = Instance.new('LocalScript', BypassAC)
+coroutine.wrap(BKNAN_fake_script)()
+local function RPDQUQK_fake_script() -- UI.LocalScript 
+	local script = Instance.new('LocalScript', UI)
 
 	_G.Run = true
-	script.Parent.MouseButton1Down:Connect(function()
-		while true do wait()
-			game.Players.LocalPlayer.Character:WaitForChild("Input").Disabled = true
-			game.Players.LocalPlayer.Character:WaitForChild("input"):Destroy()
-			game.Players.LocalPlayer.Character:WaitForChild("Character"):Destroy()
-			game.Players.LocalPlayer.Character:WaitForChild("Health"):Destroy()
-			game.Players.LocalPlayer.Character:WaitForChild("ManScript"):WaitForChild("Stun"):Destroy()
+	
+	if _G.Run == true then
+	local MT = getrawmetatable(game)
+	local odlNamecall = MT.__namecall
+	setreadonly(MT,false)
+	
+	MT.__namecall = newcclosure(function(self, ...)
+		local method = getnamecallmethod()
+		local args = {...}
+	
+		if method:lower() == "fireserver" and self.Name == "event" then
+			return "fuck you bitch"--odlNamecall(self,1000)
 		end
+	
+		return odlNamecall(self, ...)
 	end)
+	
+		setreadonly(MT,true)
+		warn("Bypassed A-C")
+	end
+	
 end
-coroutine.wrap(VFZCYB_fake_script)()
+coroutine.wrap(RPDQUQK_fake_script)()
