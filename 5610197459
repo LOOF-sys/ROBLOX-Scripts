@@ -166,8 +166,13 @@ end})
 window:AddBox({text = "Teleport To Player",value = "Players Name Here",callback = function (text,confirmed)
     for i,v in pairs(game.Players:GetChildren()) do
         if v.Name == text then
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
-            wait(0.05)
+            local timeRemaining = 15
+
+            while timeRemaining > 0 do
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+                wait(0.05)
+                timeRemaining = timeRemaining - 1	
+            end
         end
     end
 end})
