@@ -1,4 +1,4 @@
--- Manly Infection
+-- manly infection
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/uwuware-ui/main/main.lua",true))()
 
@@ -23,6 +23,7 @@ end)
 --
 
 local window = ui:CreateWindow("Main")
+local window2 = ui:CreateWindow("Telelports")
 
 window:AddButton({text = "Bypass Anti Cheat",callback = function ()
 local MT = getrawmetatable(game)
@@ -140,6 +141,10 @@ window:AddSlider({text = "Gravity",min = 0,max = 192,dual = true,callback = func
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
 end})
 
+window:AddButton({text = "Force Reset",callback = function ()
+    game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end})
+
 window:AddBox({text = "Tp To player",value = "Player Name",callback = function (text,confirmed)
     for i,v in pairs(game.Players:GetChildren()) do
         if v.Name == text then
@@ -147,6 +152,18 @@ window:AddBox({text = "Tp To player",value = "Player Name",callback = function (
             print("Tped")
         end
     end
+end})
+
+window:AddButton({text = "Alt Delete",callback = function ()
+local Plr = game:GetService("Players").LocalPlayer
+local Mouse = Plr:GetMouse()
+
+Mouse.Button1Down:connect(function()
+    if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftAlt) then
+        return end
+    if not Mouse.Target then return end
+    Mouse.Target:Destroy()
+end)
 end})
 
 window:AddBox({text = "Loop Kill Infected",value = "Player Name",callback = function (text,confirmed)
@@ -170,6 +187,24 @@ end
 end
 end})
 
+window:AddToggle({text = "Noclip",flag = "NoclipChecked",callback = function (checked)
+    while wait() do
+        if ui.flags.NoclipChecked then
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+        end
+    end
+end})
+
+window:AddToggle({text = "Infinite Jump",flag = "InfJumpChecked",callback = function (checked)
+    while wait() do
+        if ui.flags.InfJumpChecked then
+            game:GetService("UserInputService").JumpRequest:connect(function()
+                game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")		
+            end)
+        end
+    end
+end})
+
 window:AddToggle({text = "Anti Gravity Gun",flag = "AntiGravChecked",callback = function (checked)
 while wait() do
     if ui.flags.AntiGravChecked then
@@ -182,6 +217,51 @@ end})
 
 window:AddBind({text = "Close/Open UI",key = Enum.KeyCode.P,hold = false,callback = function ()
     ui:Close()
+end})
+
+window2:AddButton({text = "Lobby Tp",callback = function ()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-174.734711, 38.2799988, -296.916809, 0.999657989, 5.81231134e-08, -0.0261563715, -5.97023515e-08, 1, -5.9596605e-08, 0.0261563715, 6.11378326e-08, 0.999657989))
+end})
+
+
+window2:AddButton({text = "1st Hall Tp",callback = function ()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-119.559143, 38.2399979, -298.890198, 0.0261096638, 4.66591139e-08, -0.999659061, -3.21576579e-08, 1, 4.58351117e-08, 0.999659061, 3.09499555e-08, 0.0261096638))
+end})
+
+window2:AddButton({text = "1st Manly Infected Area",callback = function ()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-62.2254982, 38.2399979, -294.311981, -0.945509434, 5.77672949e-08, -0.325594634, 5.35557554e-08, 1, 2.18978435e-08, 0.325594634, 3.26715144e-09, -0.945509434))
+end})
+
+window2:AddButton({text = "Storage Unit 1",callback = function ()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-130.613724, 38.4112968, -216.152176, 0.664146602, -2.48210767e-08, 0.747602344, 8.91783447e-09, 1, 2.5278581e-08, -0.747602344, -1.01216902e-08, 0.664146602))
+end})
+
+window2:AddButton({text = "Storage Unit 2",callback = function ()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(103.804161, 38.2299843, -185.144638, 0.293661773, 1.84225399e-08, 0.955909371, -7.08247043e-08, 1, 2.48555843e-09, -0.955909371, -6.8431909e-08, 0.293661773))
+end})
+
+window2:AddButton({text = "Leak Shelter",callback = function ()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-22.7565746, 38.460453, -221.9021, 0.649751008, 9.65577911e-08, -0.760147154, -8.48760777e-08, 1, 5.44756098e-08, 0.760147154, 2.91227309e-08, 0.649751008))
+end})
+
+window2:AddButton({text = "Security",callback = function ()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-116.60244, 38.3988304, -105.090958, 0.361540228, -6.00003247e-09, 0.932356417, 3.9827448e-08, 1, -9.008569e-09, -0.932356417, 4.03903329e-08, 0.361540228))
+end})
+
+window2:AddButton({text = "Obby Start",callback = function ()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-48.0686188, 38.2299843, 16.3612747, -0.0698557869, -1.30995419e-08, -0.997557104, 1.04899016e-07, 1, -2.04773691e-08, 0.997557104, -1.06073223e-07, -0.0698557869))
+end})
+
+window2:AddButton({text = "Obby End",callback = function ()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(52.8163681, 38.2299843, 15.8563404, -0.159230858, 1.12514613e-07, 0.987241387, -1.66589125e-08, 1, -1.16655592e-07, -0.987241387, -3.50215359e-08, -0.159230858))
+end})
+
+window2:AddButton({text = "Manly Room",callback = function ()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(84.179985, 38.4174919, -88.4865112, 0.999963701, -6.972585e-08, 0.00852041226, 6.9992339e-08, 1, -3.09788781e-08, -0.00852041226, 3.15741175e-08, 0.999963701))
+end})
+
+window2:AddButton({text = "Epic Area",callback = function ()
+    game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-124.896156, 65.6200104, 6.76752138, -0.147805288, 1.05822791e-08, -0.989016473, -1.14546328e-08, 1, 1.24116575e-08, 0.989016473, 1.31633291e-08, -0.147805288))
 end})
 
 ui:Init()
