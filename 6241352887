@@ -1,6 +1,26 @@
--- manly infection
+-- Manly Infection
 
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/uwuware-ui/main/main.lua",true))()
+
+-- AC BYPASS
+local MT = getrawmetatable(game)
+local odlNamecall = MT.__namecall
+setreadonly(MT,false)
+
+MT.__namecall = newcclosure(function(self, ...)
+	local method = getnamecallmethod()
+	local args = {...}
+
+	if method:lower() == "fireserver" and self.Name == "event" then
+		return "fuck you bitch"--odlNamecall(self,1000)
+	end
+
+	return odlNamecall(self, ...)
+end)
+
+	setreadonly(MT,true)
+	warn("Bypassed A-C")
+--
 
 local window = ui:CreateWindow("Main")
 
@@ -88,6 +108,24 @@ window:AddButton({text = "Mod Bat",callback = function ()
 			end
 		end
 	end
+end})
+
+window:AddButton({text = "Anti Stun [Infected]",callback = function ()
+    for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+        if v.ClassName == "Humanoid" then
+            print(v)
+        if v.Name == "Humanoid" then
+            if v.Health == 0 then
+                warn("Player Died")
+                warn("Restarting Anti Stun Instance")
+                wait(8)
+            else
+                local rt = game.Players.LocalPlayer.Character:WaitForChild("ManScript"):WaitForChild("Stun")
+                rt:Destroy()
+            end
+        end
+    end
+end
 end})
 
 window:AddSlider({text = "WalkSpeed",min = 16,max = 2000,dual = true,callback = function (value)
