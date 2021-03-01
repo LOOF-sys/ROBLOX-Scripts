@@ -110,6 +110,34 @@ window:AddButton({text = "Force Reset",callback = function ()
     game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
 end})
 
+window:AddButton({text = "Ctrl Click Tp",callback = function ()
+    local Plr = game:GetService("Players").LocalPlayer
+    local Mouse = Plr:GetMouse()
+
+    Mouse.Button1Down:connect(function()
+    if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftControl) then return end
+    if not Mouse.Target then return end
+    Plr.Character:MoveTo(Mouse.Hit.p)
+    end)
+end})
+
+window:AddButton({text = "Alt Delete",callback = function ()
+    local Plr = game:GetService("Players").LocalPlayer
+    local Mouse = Plr:GetMouse()
+    
+    Mouse.Button1Down:connect(function()
+        if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftAlt) then
+            return end
+        if not Mouse.Target then return end
+        Mouse.Target:Destroy()
+    end)
+end})
+
+
+window:AddButton({text = "Infinite Yield",callback = function ()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end})
+
 window:AddSlider({text = "Speed",min = 0,max = 4000000,dual = true,callback = function (value)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
 end})
