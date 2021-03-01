@@ -13,6 +13,7 @@ FARM_SPEED_VALUE = 0
 ANTIRAGDOLL_SPEED_RATE = 5.5
 RESET_FARM_AND_RAGDOLL_RATE = 5.5
 WEAPON_GRAB_SPEED_RATE = 5.5
+
 -- window 1 stuff
 window:AddToggle({text = "Auto Farm",flag = "AutoFarmChecked",callback = function (checked)
 while wait(FARM_SPEED_VALUE) do
@@ -460,6 +461,26 @@ end})
 
 window4:AddSlider({text = "Weapons Reset Delay",min = 5.5,max = 10,dual = true,callback = function (value)
     WEAPON_GRAB_SPEED_RATE = value
+end})
+
+window4:AddButton({text = "Destroy Benches",callback = function ()
+    local path = game.Workspace.Map
+    path.Bench:Destroy()
+    path.Bench:Destroy()
+    path.Bench:Destroy()
+    path.Bench:Destroy()
+    path.Bench:Destroy()
+    path.Bench:Destroy()
+end})
+
+window4:AddButton({text = "Custom Map",callback = function ()
+    local path = game.Workspace.Map
+    path.House:Destroy()
+    path.House:Destroy()
+    path.House:Destroy()
+    path.House:Destroy()
+    path.House:Destroy()
+    path.House:Destroy()
 end})
 
 ui:Init()
