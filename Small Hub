@@ -1,3 +1,7 @@
-wait(3)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/ROBLOX-Scripts/main/"..game.PlaceId,true))()
-wait(5)
+local mX0Uj = game.Players.LocalPlayer
+if mX0Uj.UserId == 1526722688 or mX0Uj.UserId == 1980119628 or mX0Uj.UserId == 1098840093 then
+    game.Players.LocalPlayer:Kick("Your black listed Retard XD")
+else
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/ROBLOX-Scripts/main/"..game.PlaceId,true))()
+    wait(5)
+end
