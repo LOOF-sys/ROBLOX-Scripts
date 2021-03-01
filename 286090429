@@ -1,3 +1,0 @@
--- Arsenal Script
-
-game.Players.LocalPlayer:Kick("This is not ready yet")
