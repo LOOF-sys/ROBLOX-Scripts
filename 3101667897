@@ -107,6 +107,7 @@ end})
 
 window:AddButton({text = "Force Reset",callback = function ()
     game.Players.LocalPlayer.Character.Humanoid.Health = 0
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
 end})
 
 window:AddSlider({text = "Speed",min = 0,max = 4000000,dual = true,callback = function (value)
