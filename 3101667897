@@ -45,7 +45,8 @@ end})
 window:AddToggle({text = "Auto Rebirth",flag = "RebirthChecked",callback = function (checked)
     while wait(1) do
     if ui.flags.RebirthChecked then
-        warn("DIsabled")
+        local ohString1 = "rebirthRequest"
+        game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer(ohString1)
     end
 end
 end})
