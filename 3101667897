@@ -180,103 +180,19 @@ end})
 window2:AddToggle({text = "Auto Race City", flag = "AutoRaceCityChecked", callback = function(checked)
     while wait() do
         if ui.flags.AutoRaceCityChecked then
-            local CreateInstance = Instance.new("Part", game.Workspace)
-            CreateInstance.Anchored = true
-            CreateInstance.Size = Vector3.new(1,0.1,1)
-            CreateInstance.Position = Vector3.new(58.8, 1.007, -8684.72)
-            CreateInstance.CanCollide = false
-            CreateInstance.Archivable = false
-            CreateInstance.Transparency = 1
-            CreateInstance.Name = "Stande3r"
-        
-            local TweenService = game:GetService("TweenService")
-            local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
-        
-            local Info = TweenInfo.new(
-                0.01,
-                Enum.EasingStyle.Linear,
-                Enum.EasingDirection.InOut,
-                0,
-                false,
-                0
-            )
-        
-            local Fire = 
-                {
-                    CFrame = game.Workspace.Stande3r.CFrame
-                }
-        
-            local RunServx = TweenService:Create(target, Info, Fire)
-        
-            RunServx:Play()
-            wait(0.01)
-            CreateInstance:Destroy()
-            -- magma
-            local CreateInstance = Instance.new("Part", game.Workspace)
-            CreateInstance.Anchored = true
-            CreateInstance.Size = Vector3.new(1,0.1,1)
-            CreateInstance.Position = Vector3.new(1013.4, 1.007, -10997)
-            CreateInstance.CanCollide = false
-            CreateInstance.Archivable = false
-            CreateInstance.Transparency = 1
-            CreateInstance.Name = "Stande3r"
-        
-            local TweenService = game:GetService("TweenService")
-            local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
-        
-            local Info = TweenInfo.new(
-                0.01,
-                Enum.EasingStyle.Linear,
-                Enum.EasingDirection.InOut,
-                0,
-                false,
-                0
-            )
-        
-            local Fire = 
-                {
-                    CFrame = game.Workspace.Stande3r.CFrame
-                }
-        
-            local RunServx = TweenService:Create(target, Info, Fire)
-        
-            RunServx:Play()
-            wait(0.01)
-            CreateInstance:Destroy()
-            -- grass lands
-            local CreateInstance = Instance.new("Part", game.Workspace)
-            CreateInstance.Anchored = true
-            CreateInstance.Size = Vector3.new(1,0.1,1)
-            CreateInstance.Position = Vector3.new(1687.65, 1.007, -5943.91)
-            CreateInstance.CanCollide = false
-            CreateInstance.Archivable = false
-            CreateInstance.Transparency = 1
-            CreateInstance.Name = "Stande3r"
-        
-            local TweenService = game:GetService("TweenService")
-            local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
-        
-            local Info = TweenInfo.new(
-                0.01,
-                Enum.EasingStyle.Linear,
-                Enum.EasingDirection.InOut,
-                0,
-                false,
-                0
-            )
-        
-            local Fire = 
-                {
-                    CFrame = game.Workspace.Stande3r.CFrame
-                }
-        
-            local RunServx = TweenService:Create(target, Info, Fire)
-        
-                RunServx:Play()
-                wait(0.01)
-            CreateInstance:Destroy()
-            end
+            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game:GetService("Workspace").raceMaps.Desert.finishPart,0)
+            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game:GetService("Workspace").raceMaps.Grassland.finishPart,0)
+            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game:GetService("Workspace").raceMaps.Magma.finishPart,0)
         end
+    end
+end})
+
+window2:AddToggle({text = "Auto Race Desert", flag = "AutoRaceDesertChecked", callback = function(checked)
+    while wait() do
+        if ui.flags.AutoRaceDesertChecked then
+            firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,game:GetService("Workspace").raceMaps.Speedway.finishPart,0)
+        end
+    end
 end})
 
 window:AddBind({text = "Close/Open UI",key = Enum.KeyCode.P,hold = false,callback = function ()
