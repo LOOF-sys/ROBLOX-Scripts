@@ -7,10 +7,12 @@ local window2 = ui:CreateWindow("Teleports")
 local window3 = ui:CreateWindow("Fun Stuff")
 local window4 = ui:CreateWindow("Misc")
 
+-- rate = delay
+
 FARM_SPEED_VALUE = 0
-ANTIRAGDOLL_SPEED_VALUE = 1
-RESET_FARM_AND_RAGDOLL_RATE = 8
-WEAPON_GRAB_SPEED_VALUE = 8
+ANTIRAGDOLL_SPEED_RATE = 5.5
+RESET_FARM_AND_RAGDOLL_RATE = 5.5
+WEAPON_GRAB_SPEED_RATE = 5.5
 -- window 1 stuff
 window:AddToggle({text = "Auto Farm",flag = "AutoFarmChecked",callback = function (checked)
 while wait(FARM_SPEED_VALUE) do
@@ -448,8 +450,8 @@ window3:AddBox({text = "Kill Player [Pistol Required]",value = "Players Name Her
 end})
 
 -- window 4
-window4:AddSlider({text = "Anti Rag Reset Delay",min = 0,max = 5,dual = true,callback = function (value)
-    ANTIRAGDOLL_SPEED_VALUE = value
+window4:AddSlider({text = "Ragdoll Reset Delay",min = 5.5,max = 10,dual = true,callback = function (value)
+    ANTIRAGDOLL_SPEED_RATE = value
 end})
 
 window4:AddSlider({text = "Farm Reset Delay",min = 5.5,max = 10,dual = true,callback = function (value)
@@ -457,7 +459,7 @@ window4:AddSlider({text = "Farm Reset Delay",min = 5.5,max = 10,dual = true,call
 end})
 
 window4:AddSlider({text = "Weapons Reset Delay",min = 5.5,max = 10,dual = true,callback = function (value)
-    WEAPON_GRAB_SPEED_VALUE = value
+    WEAPON_GRAB_SPEED_RATE = value
 end})
 
 ui:Init()
