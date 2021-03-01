@@ -5,10 +5,15 @@ local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx
 local window = ui:CreateWindow("Main")
 local window2 = ui:CreateWindow("Teleports")
 local window3 = ui:CreateWindow("Fun Stuff")
+local window4 = ui:CreateWindow("Misc")
 
+FARM_SPEED_VALUE = 0
+ANTIRAGDOLL_SPEED_VALUE = 1
+RESET_FARM_AND_RAGDOLL_RATE = 8
+WEAPON_GRAB_SPEED_VALUE = 8
 -- window 1 stuff
 window:AddToggle({text = "Auto Farm",flag = "AutoFarmChecked",callback = function (checked)
-while wait() do
+while wait(FARM_SPEED_VALUE) do
     if ui.flags.AutoFarmChecked then
     for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
         if v.Name == "Humanoid" then
@@ -17,14 +22,14 @@ while wait() do
                 wait(1)
                 warn("Player Has Died")
                 warn("Resetting Auto Farm")
-                wait(8)
+                wait(RESET_FARM_AND_RAGDOLL_RATE)
             else
             for i,v in pairs(game.Workspace.Particles:GetChildren()) do
 			    if v.Name == "Money" then
 				    wait(0.1)
 				if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
                     warn("Player Has Died")
-                    wait(8)
+                    wait(RESET_FARM_AND_RAGDOLL_RATE)
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
                 else
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
@@ -36,7 +41,7 @@ while wait() do
 	                wait(0.1)
 				    if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
                     warn("Player Has Died")
-                    wait(8)
+                    wait(RESET_FARM_AND_RAGDOLL_RATE)
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
                 else
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
@@ -50,7 +55,7 @@ while wait() do
 				wait(0.1)
 				if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
                     warn("Player Has Died")
-                    wait(8)
+                    wait(RESET_FARM_AND_RAGDOLL_RATE)
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
                 else
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
@@ -62,7 +67,7 @@ while wait() do
 	            wait(0.1)
 	            if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
                     warn("Player Has Died")
-                    wait(8)
+                    wait(RESET_FARM_AND_RAGDOLL_RATE)
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
                 else
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Bundle.CFrame
@@ -76,7 +81,7 @@ end
 end})
 
 window:AddToggle({text = "Anti Ragdoll",flag = "AntiRagdollChecked",callback = function (checked)
-    while wait(1) do
+    while wait(ANTIRAGDOLL_SPEED_VALUE) do
         if ui.flags.AntiRagdollChecked then
             for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
                 if v.ClassName == "Humanoid" then
@@ -86,7 +91,7 @@ window:AddToggle({text = "Anti Ragdoll",flag = "AntiRagdollChecked",callback = f
                     if v.Health == 0 then
                         warn("Player Has Died")
                         warn("Resetting Anti Ragdoll...")
-                        wait(8)
+                        wait(RESET_FARM_AND_RAGDOLL_RATE)
                         for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
 		                    if v.Name == "Ragdoll" then
 			                    v.RagdollInput.Disabled = true
@@ -163,6 +168,10 @@ window:AddSlider({text = "Gravity",min = 0,max = 192,float = 3,callback = functi
     game.Workspace.Gravity = value
 end})
 
+window:AddSlider({text = "Auto Farm Delay",min = 0,max = 5,dual = true,callback = function (value)
+    FARM_SPEED_VALUE = value
+end})
+
 window:AddBox({text = "Teleport To Player",value = "Players Name Here",callback = function (text,confirmed)
     for i,v in pairs(game.Players:GetChildren()) do
         if v.Name == text then
@@ -173,6 +182,33 @@ window:AddBox({text = "Teleport To Player",value = "Players Name Here",callback 
                 wait(0.05)
                 timeRemaining = timeRemaining - 1	
             end
+        end
+    end
+end})
+
+window:AddButton({text = "Infinite Jump",callback = function ()
+    game:GetService("UserInputService").JumpRequest:Connect(function()
+		game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")		
+	end)
+end})
+
+window:AddToggle({text = "Noclip",flag = "NoclipChecked",callback = function (checked)
+    while wait() do
+        if ui.flags.NoclipChecked then
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
         end
     end
 end})
@@ -306,7 +342,7 @@ window3:AddToggle({text = "Auto Pistol Grabber",flag = "PistolGrabChecked",callb
             local pistol = game:GetService("Workspace").Map.GunSpawner:WaitForChild("GunCollector").Handle
             if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
                 warn("Player Has Died... Resetting Auto GRab")
-                wait(8)
+                wait(WEAPON_GRAB_SPEED_VALUE)
             else
             firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("GunSpawner"):WaitForChild("GunCollector").Handle,1) 
             firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("GunSpawner"):WaitForChild("GunCollector").Handle,0)        
@@ -318,7 +354,7 @@ window3:AddToggle({text = "Auto Pistol Grabber",flag = "PistolGrabChecked",callb
     end
 end})
 
-window3:AddToggle({text = "Auto SHotgun Grabber",flag = "ShotgunGrabChecked",callback = function (checked)
+window3:AddToggle({text = "Auto Shotgun Grabber",flag = "ShotgunGrabChecked",callback = function (checked)
     while wait() do
         if ui.flags.ShotgunGrabChecked then
             for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
@@ -329,7 +365,7 @@ window3:AddToggle({text = "Auto SHotgun Grabber",flag = "ShotgunGrabChecked",cal
             local shotgun = game:GetService("Workspace").Map.ShotgunSpawner:WaitForChild("ShotgunCollector").Handle
             if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
                     warn("Player Has Died... Resetting Auto GRab")
-                    wait(8)
+                    wait(WEAPON_GRAB_SPEED_VALUE)
                 else
             firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("ShotgunSpawner"):WaitForChild("ShotgunCollector").Handle,1) 
             firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("ShotgunSpawner"):WaitForChild("ShotgunCollector").Handle,0)
@@ -352,7 +388,7 @@ window3:AddToggle({text = "Auto Knife Grabber",flag = "KnifeGrabChecked",callbac
             local knife = game:GetService("Workspace").Map.KnifeHouse.KnifeSpawner:WaitForChild("KnifeCollector").Handle
             if game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Health == 0 then
                 warn("Player Has Died... Resetting Auto GRab")
-                wait(8)
+                wait(WEAPON_GRAB_SPEED_VALUE)
             else
             firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("KnifeSpawner"):WaitForChild("KnifeCollector").Handle,1) 
             firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),game.Workspace.Map:WaitForChild("KnifeSpawner"):WaitForChild("KnifeCollector").Handle,0)
@@ -409,6 +445,19 @@ window3:AddBox({text = "Kill Player [Pistol Required]",value = "Players Name Her
             end
         end
     end
+end})
+
+-- window 4
+window4:AddSlider({text = "Anti Rag Reset Delay",min = 0,max = 5,dual = true,callback = function (value)
+    ANTIRAGDOLL_SPEED_VALUE = value
+end})
+
+window4:AddSlider({text = "Farm Reset Delay",min = 5.5,max = 10,dual = true,callback = function (value)
+    RESET_FARM_AND_RAGDOLL_RATE = value
+end})
+
+window4:AddSlider({text = "Weapons Reset Delay",min = 5.5,max = 10,dual = true,callback = function (value)
+    WEAPON_GRAB_SPEED_VALUE = value
 end})
 
 ui:Init()
