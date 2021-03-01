@@ -1,680 +1,256 @@
--- Legends_Of_Speed_GUI
+-- legends of speed gui
 
-game.Players.LocalPlayer:Kick("Script Disabled") -- remove this when undisabled
+local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/uwuware-ui/main/main.lua",true))()
 
-game:GetService("Workspace").areaCircles.areaCircle:Destroy()
-game:GetService("Workspace").areaCircles.areaCircle:Destroy()
--- Gui to Lua
--- Version: 3.2
+local window = ui:CreateWindow("Main")
+local window2 = ui:CreateWindow("Raceing")
 
--- Instances:
+-- variables
+local A_10 = "collectOrb" local A_11 = "Blue Orb" local A_12 = "Magma City" local Event = game:GetService("ReplicatedStorage").rEvents.orbEvent
+local F_1 = "collectOrb" local F_2 = "Gem" local F_3 = "Magma City" local EventGem = game:GetService("ReplicatedStorage").rEvents.orbEvent
 
-local MainGui = Instance.new("ScreenGui")
-local UI = Instance.new("Frame")
-local Title = Instance.new("TextLabel")
-local TopBorder = Instance.new("Frame")
-local Glitch_Pets = Instance.new("TextButton")
-local Auto_Racing_Menu = Instance.new("TextButton")
-local Eye_Protection = Instance.new("TextButton")
-local Open_Crystals = Instance.new("TextButton")
-local Settings = Instance.new("TextButton")
-local Set_Speed = Instance.new("TextButton")
-local Set_Gravity = Instance.new("TextButton")
-local Jump_Power = Instance.new("TextButton")
-local Jump_Power_Value = Instance.new("TextBox")
-local Close = Instance.new("TextButton")
-local Title_2 = Instance.new("TextLabel")
-local Speed_Value = Instance.new("TextBox")
-local Gravity_Value = Instance.new("TextBox")
-local Glitch_Pets_UI = Instance.new("Frame")
-local Title_3 = Instance.new("TextLabel")
-local TopBorder_2 = Instance.new("Frame")
-local Glitch_Pets_2 = Instance.new("TextButton")
-local On_Off_Label = Instance.new("TextLabel")
-local Close_2 = Instance.new("TextButton")
-local OpenUI = Instance.new("TextButton")
-local Auto_Race_UI = Instance.new("Frame")
-local Title_4 = Instance.new("TextLabel")
-local TopBorder_3 = Instance.new("Frame")
-local City_Auto_Race = Instance.new("TextButton")
-local Space_Auto_Race = Instance.new("TextButton")
-local Desert_Auto_Race = Instance.new("TextButton")
-local Close_3 = Instance.new("TextButton")
-local Auto_Join_Race = Instance.new("TextButton")
-
---Properties:
-
-MainGui.Name = "MainGui"
-MainGui.Parent = game.CoreGui
-
-UI.Name = "UI"
-UI.Parent = MainGui
-UI.BackgroundColor3 = Color3.fromRGB(194, 124, 255)
-UI.BorderSizePixel = 6
-UI.Position = UDim2.new(0.457409412, 0, 0.506082773, 0)
-UI.Size = UDim2.new(0.31972006, 0, 0.316301823, 0)
-
-Title.Name = "Title"
-Title.Parent = UI
-Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title.BackgroundTransparency = 1.000
-Title.Position = UDim2.new(0.377483398, 0, 0.0309640355, 0)
-Title.Size = UDim2.new(0.370860875, 0, 0.0900900885, 0)
-Title.Font = Enum.Font.PermanentMarker
-Title.Text = "Legends Of Light Speed"
-Title.TextColor3 = Color3.fromRGB(0, 0, 0)
-Title.TextSize = 44.000
-
-TopBorder.Name = "TopBorder"
-TopBorder.Parent = UI
-TopBorder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TopBorder.Position = UDim2.new(0, 0, 0.162162155, 0)
-TopBorder.Size = UDim2.new(0.99999994, 0, 0, 0)
-
-Glitch_Pets.Name = "Glitch_Pets"
-Glitch_Pets.Parent = UI
-Glitch_Pets.BackgroundColor3 = Color3.fromRGB(237, 162, 255)
-Glitch_Pets.BorderSizePixel = 2
-Glitch_Pets.Position = UDim2.new(0.0264900625, 0, 0.189189166, 0)
-Glitch_Pets.Size = UDim2.new(0.322295755, 0, 0.112648085, 0)
-Glitch_Pets.Font = Enum.Font.PermanentMarker
-Glitch_Pets.Text = "Glitch Pets"
-Glitch_Pets.TextColor3 = Color3.fromRGB(0, 0, 0)
-Glitch_Pets.TextSize = 33.000
-
-Auto_Racing_Menu.Name = "Auto_Racing_Menu"
-Auto_Racing_Menu.Parent = UI
-Auto_Racing_Menu.BackgroundColor3 = Color3.fromRGB(237, 162, 255)
-Auto_Racing_Menu.BorderSizePixel = 2
-Auto_Racing_Menu.Position = UDim2.new(0.660044074, 0, 0.189189196, 0)
-Auto_Racing_Menu.Size = UDim2.new(0.322295755, 0, 0.144144148, 0)
-Auto_Racing_Menu.Font = Enum.Font.PermanentMarker
-Auto_Racing_Menu.Text = "Auto Racing Menu"
-Auto_Racing_Menu.TextColor3 = Color3.fromRGB(0, 0, 0)
-Auto_Racing_Menu.TextSize = 20.000
-
-Eye_Protection.Name = "Eye_Protection"
-Eye_Protection.Parent = UI
-Eye_Protection.BackgroundColor3 = Color3.fromRGB(237, 162, 255)
-Eye_Protection.BorderSizePixel = 2
-Eye_Protection.Position = UDim2.new(0.0264900625, 0, 0.329431742, 0)
-Eye_Protection.Size = UDim2.new(0.322295755, 0, 0.12445911, 0)
-Eye_Protection.Font = Enum.Font.PermanentMarker
-Eye_Protection.Text = "Eye Protection"
-Eye_Protection.TextColor3 = Color3.fromRGB(0, 0, 0)
-Eye_Protection.TextSize = 26.000
-
-Open_Crystals.Name = "Open_Crystals"
-Open_Crystals.Parent = UI
-Open_Crystals.BackgroundColor3 = Color3.fromRGB(237, 162, 255)
-Open_Crystals.BorderSizePixel = 2
-Open_Crystals.Position = UDim2.new(0.660044074, 0, 0.364864856, 0)
-Open_Crystals.Size = UDim2.new(0.322295755, 0, 0.144144148, 0)
-Open_Crystals.Font = Enum.Font.PermanentMarker
-Open_Crystals.Text = "Open Crystals Menu"
-Open_Crystals.TextColor3 = Color3.fromRGB(0, 0, 0)
-Open_Crystals.TextSize = 19.000
-
-Settings.Name = "Settings"
-Settings.Parent = UI
-Settings.BackgroundColor3 = Color3.fromRGB(237, 162, 255)
-Settings.BorderSizePixel = 2
-Settings.Position = UDim2.new(0.660044074, 0, 0.540540516, 0)
-Settings.Size = UDim2.new(0.322295755, 0, 0.144144148, 0)
-Settings.Font = Enum.Font.PermanentMarker
-Settings.Text = "Settings"
-Settings.TextColor3 = Color3.fromRGB(0, 0, 0)
-Settings.TextSize = 40.000
-
-Set_Speed.Name = "Set_Speed"
-Set_Speed.Parent = UI
-Set_Speed.BackgroundColor3 = Color3.fromRGB(237, 162, 255)
-Set_Speed.BorderSizePixel = 2
-Set_Speed.Position = UDim2.new(0.0264900625, 0, 0.47754842, 0)
-Set_Speed.Size = UDim2.new(0.322295755, 0, 0.100837059, 0)
-Set_Speed.Font = Enum.Font.PermanentMarker
-Set_Speed.Text = "WalkSpeed"
-Set_Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
-Set_Speed.TextSize = 32.000
-
-Set_Gravity.Name = "Set_Gravity"
-Set_Gravity.Parent = UI
-Set_Gravity.BackgroundColor3 = Color3.fromRGB(237, 162, 255)
-Set_Gravity.BorderSizePixel = 2
-Set_Gravity.Position = UDim2.new(0.0264900625, 0, 0.606547415, 0)
-Set_Gravity.Size = UDim2.new(0.322295755, 0, 0.108711079, 0)
-Set_Gravity.Font = Enum.Font.PermanentMarker
-Set_Gravity.Text = "Gravity"
-Set_Gravity.TextColor3 = Color3.fromRGB(0, 0, 0)
-Set_Gravity.TextSize = 33.000
-
-Jump_Power.Name = "Jump_Power"
-Jump_Power.Parent = UI
-Jump_Power.BackgroundColor3 = Color3.fromRGB(237, 162, 255)
-Jump_Power.BorderSizePixel = 2
-Jump_Power.Position = UDim2.new(0.0264900625, 0, 0.740405679, 0)
-Jump_Power.Size = UDim2.new(0.322295755, 0, 0.108711079, 0)
-Jump_Power.Font = Enum.Font.PermanentMarker
-Jump_Power.Text = "Jump Power"
-Jump_Power.TextColor3 = Color3.fromRGB(0, 0, 0)
-Jump_Power.TextSize = 30.000
-
-Jump_Power_Value.Name = "Jump_Power_Value"
-Jump_Power_Value.Parent = UI
-Jump_Power_Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Jump_Power_Value.Position = UDim2.new(0.364238352, 0, 0.740157485, 0)
-Jump_Power_Value.Size = UDim2.new(0, 127, 0, 27)
-Jump_Power_Value.Font = Enum.Font.SourceSans
-Jump_Power_Value.Text = ""
-Jump_Power_Value.TextColor3 = Color3.fromRGB(0, 0, 0)
-Jump_Power_Value.TextSize = 14.000
-
-Close.Name = "Close"
-Close.Parent = UI
-Close.BackgroundColor3 = Color3.fromRGB(237, 162, 255)
-Close.BackgroundTransparency = 1.000
-Close.BorderSizePixel = 2
-Close.Size = UDim2.new(0.110375233, 0, 0.16216214, 0)
-Close.Font = Enum.Font.PermanentMarker
-Close.Text = "X"
-Close.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close.TextSize = 66.000
-
-Title_2.Name = "Title"
-Title_2.Parent = UI
-Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title_2.BackgroundTransparency = 1.000
-Title_2.Position = UDim2.new(0.316481173, 0, 0.886824131, 0)
-Title_2.Size = UDim2.new(0.370860875, 0, 0.109785587, 0)
-Title_2.Font = Enum.Font.PermanentMarker
-Title_2.Text = "Made By: IScripterV & CRIMSON_CR0WN"
-Title_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Title_2.TextSize = 24.000
-
-Speed_Value.Name = "Speed_Value"
-Speed_Value.Parent = UI
-Speed_Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Speed_Value.Position = UDim2.new(0.364238352, 0, 0.476377964, 0)
-Speed_Value.Size = UDim2.new(0, 127, 0, 25)
-Speed_Value.Font = Enum.Font.SourceSans
-Speed_Value.Text = ""
-Speed_Value.TextColor3 = Color3.fromRGB(0, 0, 0)
-Speed_Value.TextSize = 14.000
-
-Gravity_Value.Name = "Gravity_Value"
-Gravity_Value.Parent = UI
-Gravity_Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Gravity_Value.Position = UDim2.new(0.364238352, 0, 0.606299222, 0)
-Gravity_Value.Size = UDim2.new(0, 127, 0, 27)
-Gravity_Value.Font = Enum.Font.SourceSans
-Gravity_Value.Text = ""
-Gravity_Value.TextColor3 = Color3.fromRGB(0, 0, 0)
-Gravity_Value.TextSize = 14.000
-
-Glitch_Pets_UI.Name = "Glitch_Pets_UI"
-Glitch_Pets_UI.Parent = MainGui
-Glitch_Pets_UI.BackgroundColor3 = Color3.fromRGB(255, 149, 247)
-Glitch_Pets_UI.BackgroundTransparency = 0.200
-Glitch_Pets_UI.BorderSizePixel = 3
-Glitch_Pets_UI.Position = UDim2.new(0.205367565, 0, 0.335766435, 0)
-Glitch_Pets_UI.Size = UDim2.new(0.27421236, 0, 0.272506088, 0)
-Glitch_Pets_UI.Visible = false
-
-Title_3.Name = "Title"
-Title_3.Parent = Glitch_Pets_UI
-Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title_3.BackgroundTransparency = 1.000
-Title_3.Position = UDim2.new(0.314469725, 0, 0.047357481, 0)
-Title_3.Size = UDim2.new(0.370860875, 0, 0.0900900885, 0)
-Title_3.Font = Enum.Font.PermanentMarker
-Title_3.Text = "Glitch Pets GUI"
-Title_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-Title_3.TextSize = 44.000
-
-TopBorder_2.Name = "TopBorder"
-TopBorder_2.Parent = Glitch_Pets_UI
-TopBorder_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TopBorder_2.Position = UDim2.new(0, 0, 0.189484566, 0)
-TopBorder_2.Size = UDim2.new(0.99999994, 0, 0, 0)
-
-Glitch_Pets_2.Name = "Glitch_Pets"
-Glitch_Pets_2.Parent = Glitch_Pets_UI
-Glitch_Pets_2.BackgroundColor3 = Color3.fromRGB(165, 129, 255)
-Glitch_Pets_2.BorderSizePixel = 2
-Glitch_Pets_2.Position = UDim2.new(0.0593667626, 0, 0.380445957, 0)
-Glitch_Pets_2.Size = UDim2.new(0.870240986, 0, 0.517019808, 0)
-Glitch_Pets_2.Font = Enum.Font.PermanentMarker
-Glitch_Pets_2.Text = "Glitch Pets"
-Glitch_Pets_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Glitch_Pets_2.TextSize = 66.000
-
-On_Off_Label.Name = "On_Off_Label"
-On_Off_Label.Parent = Glitch_Pets_UI
-On_Off_Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-On_Off_Label.BackgroundTransparency = 1.000
-On_Off_Label.Position = UDim2.new(0.314469725, 0, 0.2440788, 0)
-On_Off_Label.Size = UDim2.new(0.370860875, 0, 0.0900900885, 0)
-On_Off_Label.Font = Enum.Font.PatrickHand
-On_Off_Label.Text = "Glitching Pets = Off"
-On_Off_Label.TextColor3 = Color3.fromRGB(0, 0, 0)
-On_Off_Label.TextSize = 33.000
-
-Close_2.Name = "Close"
-Close_2.Parent = Glitch_Pets_UI
-Close_2.BackgroundColor3 = Color3.fromRGB(237, 162, 255)
-Close_2.BackgroundTransparency = 1.000
-Close_2.BorderSizePixel = 2
-Close_2.Position = UDim2.new(0, 0, 0.0109289614, 0)
-Close_2.Size = UDim2.new(0.110375233, 0, 0.16216214, 0)
-Close_2.Font = Enum.Font.PermanentMarker
-Close_2.Text = "X"
-Close_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close_2.TextSize = 55.000
-
-OpenUI.Name = "OpenUI"
-OpenUI.Parent = MainGui
-OpenUI.BackgroundColor3 = Color3.fromRGB(255, 134, 207)
-OpenUI.BackgroundTransparency = 0.300
-OpenUI.BorderSizePixel = 3
-OpenUI.Position = UDim2.new(0.00816802774, 0, 0.501216531, 0)
-OpenUI.Size = UDim2.new(0.0991831943, 0, 0.0491371974, 0)
-OpenUI.Visible = false
-OpenUI.Font = Enum.Font.RobotoMono
-OpenUI.Text = "Open"
-OpenUI.TextColor3 = Color3.fromRGB(0, 0, 0)
-OpenUI.TextSize = 33.000
-
-Auto_Race_UI.Name = "Auto_Race_UI"
-Auto_Race_UI.Parent = MainGui
-Auto_Race_UI.BackgroundColor3 = Color3.fromRGB(150, 142, 255)
-Auto_Race_UI.BorderSizePixel = 3
-Auto_Race_UI.Position = UDim2.new(0.323220551, 0, 0.386861324, 0)
-Auto_Race_UI.Size = UDim2.new(0.276546091, 0, 0.299270064, 0)
-Auto_Race_UI.Visible = false
-
-Title_4.Name = "Title"
-Title_4.Parent = Auto_Race_UI
-Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title_4.BackgroundTransparency = 1.000
-Title_4.Position = UDim2.new(0.313234419, 0, 0.0506659187, 0)
-Title_4.Size = UDim2.new(0.370860875, 0, 0.109785587, 0)
-Title_4.Font = Enum.Font.PermanentMarker
-Title_4.Text = "Auto Race"
-Title_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-Title_4.TextSize = 44.000
-
-TopBorder_3.Name = "TopBorder"
-TopBorder_3.Parent = Auto_Race_UI
-TopBorder_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TopBorder_3.Position = UDim2.new(0, 0, 0.201710179, 0)
-TopBorder_3.Size = UDim2.new(0.99999994, 0, 0, 0)
-
-City_Auto_Race.Name = "City_Auto_Race"
-City_Auto_Race.Parent = Auto_Race_UI
-City_Auto_Race.BackgroundColor3 = Color3.fromRGB(190, 178, 255)
-City_Auto_Race.BackgroundTransparency = 0.200
-City_Auto_Race.BorderSizePixel = 3
-City_Auto_Race.Position = UDim2.new(0.0264900513, 0, 0.279584646, 0)
-City_Auto_Race.Size = UDim2.new(0.40671134, 0, 0.135246992, 0)
-City_Auto_Race.Font = Enum.Font.PermanentMarker
-City_Auto_Race.Text = "City Auto Race"
-City_Auto_Race.TextColor3 = Color3.fromRGB(0, 0, 0)
-City_Auto_Race.TextSize = 22.000
-
-Space_Auto_Race.Name = "Space_Auto_Race"
-Space_Auto_Race.Parent = Auto_Race_UI
-Space_Auto_Race.BackgroundColor3 = Color3.fromRGB(190, 178, 255)
-Space_Auto_Race.BackgroundTransparency = 0.200
-Space_Auto_Race.BorderSizePixel = 3
-Space_Auto_Race.Position = UDim2.new(0.0264900513, 0, 0.477324754, 0)
-Space_Auto_Race.Size = UDim2.new(0.40671134, 0, 0.135246992, 0)
-Space_Auto_Race.Font = Enum.Font.PermanentMarker
-Space_Auto_Race.Text = "Space Auto Race"
-Space_Auto_Race.TextColor3 = Color3.fromRGB(0, 0, 0)
-Space_Auto_Race.TextSize = 21.000
-
-Desert_Auto_Race.Name = "Desert_Auto_Race"
-Desert_Auto_Race.Parent = Auto_Race_UI
-Desert_Auto_Race.BackgroundColor3 = Color3.fromRGB(190, 178, 255)
-Desert_Auto_Race.BackgroundTransparency = 0.200
-Desert_Auto_Race.BorderSizePixel = 3
-Desert_Auto_Race.Position = UDim2.new(0.0264900513, 0, 0.675064862, 0)
-Desert_Auto_Race.Size = UDim2.new(0.40671134, 0, 0.135246992, 0)
-Desert_Auto_Race.Font = Enum.Font.PermanentMarker
-Desert_Auto_Race.Text = "Desert Auto Race"
-Desert_Auto_Race.TextColor3 = Color3.fromRGB(0, 0, 0)
-Desert_Auto_Race.TextSize = 19.000
-
-Close_3.Name = "Close"
-Close_3.Parent = Auto_Race_UI
-Close_3.BackgroundColor3 = Color3.fromRGB(237, 162, 255)
-Close_3.BackgroundTransparency = 1.000
-Close_3.BorderSizePixel = 2
-Close_3.Size = UDim2.new(0.152583018, 0, 0.201710179, 0)
-Close_3.Font = Enum.Font.PermanentMarker
-Close_3.Text = "X"
-Close_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close_3.TextSize = 66.000
-
-Auto_Join_Race.Name = "Auto_Join_Race"
-Auto_Join_Race.Parent = Auto_Race_UI
-Auto_Join_Race.BackgroundColor3 = Color3.fromRGB(190, 178, 255)
-Auto_Join_Race.BackgroundTransparency = 0.200
-Auto_Join_Race.BorderSizePixel = 3
-Auto_Join_Race.Position = UDim2.new(0.0264900513, 0, 0.861505568, 0)
-Auto_Join_Race.Size = UDim2.new(0.40671134, 0, 0.135246992, 0)
-Auto_Join_Race.Font = Enum.Font.PermanentMarker
-Auto_Join_Race.Text = "Auto Join Race"
-Auto_Join_Race.TextColor3 = Color3.fromRGB(0, 0, 0)
-Auto_Join_Race.TextSize = 22.000
-
--- Scripts:
-
-local function SXWJFA_fake_script() -- Glitch_Pets.LocalScript 
-	local script = Instance.new('LocalScript', Glitch_Pets)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Parent.Glitch_Pets_UI.Visible = true
-	end)
+window:AddToggle({text = "Auto Farm",flag = "FarmChecked",callback = function (checked)
+    while wait() do
+    if ui.flags.FarmChecked then
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+        Event:FireServer(A_10, A_11, A_12)
+    end
 end
-coroutine.wrap(SXWJFA_fake_script)()
-local function SPIHRIG_fake_script() -- Auto_Racing_Menu.LocalScript 
-	local script = Instance.new('LocalScript', Auto_Racing_Menu)
+end})
 
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Parent.Auto_Race_UI.Visible = true
-	end)
+window:AddToggle({text = "Auto Rebirth",flag = "RebirthChecked",callback = function (checked)
+    while wait(1) do
+    if ui.flags.RebirthChecked then
+        warn("DIsabled")
+    end
 end
-coroutine.wrap(SPIHRIG_fake_script)()
-local function ZRRPXK_fake_script() -- Set_Speed.LocalScript 
-	local script = Instance.new('LocalScript', Set_Speed)
+end})
 
-	script.Parent.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.Parent.Speed_Value.Text
-	end)
-	
-	script.Parent.MouseButton2Down:Connect(function()
-		print("Cannot Set the Value of speed to itself!")
-	end)
+window:AddToggle({text = "Auto Teleport",flag = "AutoTpChecked",callback = function (checked)
+    while wait(1) do
+    if ui.flags.AutoTpChecked then
+        for i,v in pairs(game.workspace.areaCircles:GetChildren()) do
+            if v.Name == "areaCircle" then
+                for k,q in pairs(v:GetChildren()) do
+                    if q.Name == "areaName" then
+                        if q.Value == "Magma City" then
+                            local ohString1 = "travelToArea"
+                            local ohInstance2 = q.Parent
+                            game:GetService("ReplicatedStorage").rEvents.areaTravelRemote:InvokeServer(ohString1, ohInstance2)
+                            game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+                        end
+                    end
+                end
+            end
+        end
+    end
 end
-coroutine.wrap(ZRRPXK_fake_script)()
-local function XFMO_fake_script() -- Set_Gravity.LocalScript 
-	local script = Instance.new('LocalScript', Set_Gravity)
+end})
 
-	script.Parent.MouseButton1Down:Connect(function()
-		game.Workspace.Gravity = script.Parent.Parent.Gravity_Value.Text
-	end)
-end
-coroutine.wrap(XFMO_fake_script)()
-local function RWPPH_fake_script() -- Jump_Power.LocalScript 
-	local script = Instance.new('LocalScript', Jump_Power)
+window:AddToggle({text = "Gems Farm",flag = "FarmChecked",callback = function (checked)
+    while wait() do
+        if ui.flags.FarmChecked then
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+            EventGem:FireServer(F_1, F_2, F_3)
+        end
+    end
+end})
 
-	script.Parent.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = script.Parent.Parent.Jump_Power_Value.Text
-	end)
-end
-coroutine.wrap(RWPPH_fake_script)()
-local function MYQJX_fake_script() -- Close.LocalScript 
-	local script = Instance.new('LocalScript', Close)
+window:AddButton({text = "Force Reset",callback = function ()
+    game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end})
 
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Visible = false
-		script.Parent.Parent.Parent.OpenUI.Visible = true
-	end)
-end
-coroutine.wrap(MYQJX_fake_script)()
-local function WAFZK_fake_script() -- Glitch_Pets_2.LocalScript 
-	local script = Instance.new('LocalScript', Glitch_Pets_2)
+window:AddSlider({text = "Speed",min = 0,max = 4000000,dual = true,callback = function (value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end})
 
-	local ohString1 = "travelToArea"
-	local ohInstance2 = game:GetService("Workspace").areaCircles.areaCircle
-	_G.RunService = true
-	script.Parent.MouseButton1Down:Connect(function()
-		_G.RunService = true
-		-- goto legends highway
-		game:GetService("ReplicatedStorage").rEvents.areaTravelRemote:InvokeServer(ohString1, ohInstance2)
-		wait(1)
-		-- tween
-		local CreateInstance = Instance.new("Part", game.Workspace)
-		CreateInstance.Anchored = true
-		CreateInstance.Size = Vector3.new(1,0.1,1)
-		CreateInstance.Position = Vector3.new(3678.62549, 110.7405548, 5592.35254)
-		CreateInstance.CanCollide = false
-		CreateInstance.Archivable = false
-		CreateInstance.Transparency = 1
-		CreateInstance.Name = "Stande3r"
-	
-		local TweenService = game:GetService("TweenService")
-		local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
-		
-		target.Anchored = true
-	
-		local Info = TweenInfo.new(
-			3,
-			Enum.EasingStyle.Linear,
-			Enum.EasingDirection.InOut,
-			0,
-			false,
-			0
-		)
-	
-		local Fire = 
-			{
-				CFrame = game.Workspace.Stande3r.CFrame
-			}
-	
-		local RunServx = TweenService:Create(target, Info, Fire)
-	
-		RunServx:Play()
-		wait(3.1)
-		CreateInstance:Destroy()
-		-- start glitching
-		local A_10 = "collectOrb" local A_11 = "Blue Orb" local A_12 = "Legends Highway" local Event = game:GetService("ReplicatedStorage").rEvents.orbEvent
-		_G.RunService = true
-	
-		while _G.RunService == true do
-			game:GetService("RunService").Heartbeat:Wait()
-			coroutine.resume(coroutine.create(function()
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-				Event:FireServer(A_10, A_11, A_12)
-			end))
-		end
-	end)
-	
-	script.Parent.MouseButton2Down:Connect(function()
-		_G.RunService = false
-		game.Players.LocalPlayer.Character.Humanoid.Health = 50
-		game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-	end)
-end
-coroutine.wrap(WAFZK_fake_script)()
-local function HHEWB_fake_script() -- Close_2.LocalScript 
-	local script = Instance.new('LocalScript', Close_2)
+window:AddSlider({text = "JumpPower",min = 50,max = 14000,float = 3,callback = function (value)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+end})
 
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(HHEWB_fake_script)()
-local function HMDCY_fake_script() -- OpenUI.LocalScript 
-	local script = Instance.new('LocalScript', OpenUI)
+window:AddSlider({text = "Gravity",min = 0,max = 192,dual = true,callback = function (value)
+    game.Workspace.Gravity = value
+end})
 
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.UI.Visible = true
-		script.Parent.Visible = false
-	end)
-end
-coroutine.wrap(HMDCY_fake_script)()
-local function PIJGW_fake_script() -- City_Auto_Race.LocalScript 
-	local script = Instance.new('LocalScript', City_Auto_Race)
+window:AddSlider({text = "HipHeight",min = 0,max = 300,dual = true,callback = function (value)
+    game.Players.LocalPlayer.Character.Humanoid.HipHeight = value
+end})
 
-	_G.LoopService = true
-	script.Parent.MouseButton1Down:Connect(function()
-		_G.LoopService = true
-		while _G.LoopService == true do
-		-- desert tp
-		local CreateInstance = Instance.new("Part", game.Workspace)
-		CreateInstance.Anchored = true
-		CreateInstance.Size = Vector3.new(1,0.1,1)
-		CreateInstance.Position = Vector3.new(58.8, 1.007, -8684.72)
-		CreateInstance.CanCollide = false
-		CreateInstance.Archivable = false
-		CreateInstance.Transparency = 1
-		CreateInstance.Name = "Stande3r"
-	
-		local TweenService = game:GetService("TweenService")
-		local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
-	
-		local Info = TweenInfo.new(
-			0.01,
-			Enum.EasingStyle.Linear,
-			Enum.EasingDirection.InOut,
-			0,
-			false,
-			0
-		)
-	
-		local Fire = 
-			{
-				CFrame = game.Workspace.Stande3r.CFrame
-			}
-	
-		local RunServx = TweenService:Create(target, Info, Fire)
-	
-		RunServx:Play()
-		wait(0.01)
-		CreateInstance:Destroy()
-		-- magma
-		local CreateInstance = Instance.new("Part", game.Workspace)
-		CreateInstance.Anchored = true
-		CreateInstance.Size = Vector3.new(1,0.1,1)
-		CreateInstance.Position = Vector3.new(1013.4, 1.007, -10997)
-		CreateInstance.CanCollide = false
-		CreateInstance.Archivable = false
-		CreateInstance.Transparency = 1
-		CreateInstance.Name = "Stande3r"
-	
-		local TweenService = game:GetService("TweenService")
-		local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
-	
-		local Info = TweenInfo.new(
-			0.01,
-			Enum.EasingStyle.Linear,
-			Enum.EasingDirection.InOut,
-			0,
-			false,
-			0
-		)
-	
-		local Fire = 
-			{
-				CFrame = game.Workspace.Stande3r.CFrame
-			}
-	
-		local RunServx = TweenService:Create(target, Info, Fire)
-	
-		RunServx:Play()
-		wait(0.01)
-		CreateInstance:Destroy()
-		-- grass lands
-		local CreateInstance = Instance.new("Part", game.Workspace)
-		CreateInstance.Anchored = true
-		CreateInstance.Size = Vector3.new(1,0.1,1)
-		CreateInstance.Position = Vector3.new(1687.65, 1.007, -5943.91)
-		CreateInstance.CanCollide = false
-		CreateInstance.Archivable = false
-		CreateInstance.Transparency = 1
-		CreateInstance.Name = "Stande3r"
-	
-		local TweenService = game:GetService("TweenService")
-		local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
-	
-		local Info = TweenInfo.new(
-			0.01,
-			Enum.EasingStyle.Linear,
-			Enum.EasingDirection.InOut,
-			0,
-			false,
-			0
-		)
-	
-		local Fire = 
-			{
-				CFrame = game.Workspace.Stande3r.CFrame
-			}
-	
-		local RunServx = TweenService:Create(target, Info, Fire)
-	
-			RunServx:Play()
-			wait(0.01)
-		CreateInstance:Destroy()
-			wait()
-		end
-	end)
-	
-	script.Parent.MouseButton2Down:Connect(function()
-		_G.LoopService = false
-	end)
-end
-coroutine.wrap(PIJGW_fake_script)()
-local function LSJQH_fake_script() -- Space_Auto_Race.LocalScript 
-	local script = Instance.new('LocalScript', Space_Auto_Race)
+window:AddList({text = "Tp to Player",values = game.Players:GetChildren(),callback = function (selected)
+    for i,v in pairs(game.Players:GetChildren()) do
+        if v.Name == selected then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame
+        end
+    end
+end})
 
-	script.Parent.MouseButton1Down:Connect(function()
-		
-	end)
-end
-coroutine.wrap(LSJQH_fake_script)()
-local function EZCXSU_fake_script() -- Desert_Auto_Race.LocalScript 
-	local script = Instance.new('LocalScript', Desert_Auto_Race)
+window:AddButton({text = "Infinite Jump",callback = function ()
+    game:GetService("UserInputService").JumpRequest:Connect(function()
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
+    end)
+end})
 
-	script.Parent.MouseButton1Down:Connect(function()
-		
-	end)
-end
-coroutine.wrap(EZCXSU_fake_script)()
-local function FCKECYU_fake_script() -- Close_3.LocalScript 
-	local script = Instance.new('LocalScript', Close_3)
+window2:AddToggle({text = "Auto Join Race", flag = "AutoJoinRaceChecked", callback = function(checked)
+    while wait(2) do
+        if ui.flags.AutoJoinRaceChecked then
+            local ohString1 = "joinRace"
+            game:GetService("ReplicatedStorage").rEvents.raceEvent:FireServer(ohString1)
+        end
+    end
+end})
 
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Visible = false
-		script.Parent.Parent.Parent.OpenUI.Visible = true
-	end)
-end
-coroutine.wrap(FCKECYU_fake_script)()
-local function WDFBKZU_fake_script() -- Auto_Join_Race.LocalScript 
-	local script = Instance.new('LocalScript', Auto_Join_Race)
+window2:AddToggle({text = "Auto Race City", flag = "AutoRaceCityChecked", callback = function(checked)
+    while wait() do
+        if ui.flags.AutoRaceCityChecked then
+            local CreateInstance = Instance.new("Part", game.Workspace)
+            CreateInstance.Anchored = true
+            CreateInstance.Size = Vector3.new(1,0.1,1)
+            CreateInstance.Position = Vector3.new(58.8, 1.007, -8684.72)
+            CreateInstance.CanCollide = false
+            CreateInstance.Archivable = false
+            CreateInstance.Transparency = 1
+            CreateInstance.Name = "Stande3r"
+        
+            local TweenService = game:GetService("TweenService")
+            local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+        
+            local Info = TweenInfo.new(
+                0.01,
+                Enum.EasingStyle.Linear,
+                Enum.EasingDirection.InOut,
+                0,
+                false,
+                0
+            )
+        
+            local Fire = 
+                {
+                    CFrame = game.Workspace.Stande3r.CFrame
+                }
+        
+            local RunServx = TweenService:Create(target, Info, Fire)
+        
+            RunServx:Play()
+            wait(0.01)
+            CreateInstance:Destroy()
+            -- magma
+            local CreateInstance = Instance.new("Part", game.Workspace)
+            CreateInstance.Anchored = true
+            CreateInstance.Size = Vector3.new(1,0.1,1)
+            CreateInstance.Position = Vector3.new(1013.4, 1.007, -10997)
+            CreateInstance.CanCollide = false
+            CreateInstance.Archivable = false
+            CreateInstance.Transparency = 1
+            CreateInstance.Name = "Stande3r"
+        
+            local TweenService = game:GetService("TweenService")
+            local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+        
+            local Info = TweenInfo.new(
+                0.01,
+                Enum.EasingStyle.Linear,
+                Enum.EasingDirection.InOut,
+                0,
+                false,
+                0
+            )
+        
+            local Fire = 
+                {
+                    CFrame = game.Workspace.Stande3r.CFrame
+                }
+        
+            local RunServx = TweenService:Create(target, Info, Fire)
+        
+            RunServx:Play()
+            wait(0.01)
+            CreateInstance:Destroy()
+            -- grass lands
+            local CreateInstance = Instance.new("Part", game.Workspace)
+            CreateInstance.Anchored = true
+            CreateInstance.Size = Vector3.new(1,0.1,1)
+            CreateInstance.Position = Vector3.new(1687.65, 1.007, -5943.91)
+            CreateInstance.CanCollide = false
+            CreateInstance.Archivable = false
+            CreateInstance.Transparency = 1
+            CreateInstance.Name = "Stande3r"
+        
+            local TweenService = game:GetService("TweenService")
+            local target = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+        
+            local Info = TweenInfo.new(
+                0.01,
+                Enum.EasingStyle.Linear,
+                Enum.EasingDirection.InOut,
+                0,
+                false,
+                0
+            )
+        
+            local Fire = 
+                {
+                    CFrame = game.Workspace.Stande3r.CFrame
+                }
+        
+            local RunServx = TweenService:Create(target, Info, Fire)
+        
+                RunServx:Play()
+                wait(0.01)
+            CreateInstance:Destroy()
+            end
+        end
+end})
 
-	local ohString1 = "joinRace"
-	_G.LoopService = true
-	script.Parent.MouseButton1Down:Connect(function()
-		_G.LoopService = true
-		while _G.LoopService == true do wait(3)
-			game:GetService("ReplicatedStorage").rEvents.raceEvent:FireServer(ohString1)
-		end	
-	end)
-	
-	script.Parent.MouseButton2Down:Connect(function()
-		_G.LoopService = false
-	end)
-end
-coroutine.wrap(WDFBKZU_fake_script)()
+window:AddBind({text = "Close/Open UI",key = Enum.KeyCode.P,hold = false,callback = function ()
+    ui:Close()
+end})
+
+ui:Init()
