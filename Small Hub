@@ -3,6 +3,7 @@ if mX0Uj.UserId == 1526722688 or mX0Uj.UserId == 1980119628 or mX0Uj.UserId == 1
     game.Players.LocalPlayer:Kick("Your black listed Retard XD")
 else
     wait(3)
+    print(game.PlaceId)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/ROBLOX-Scripts/main/"..game.PlaceId,true))()
     wait(5)
 end
