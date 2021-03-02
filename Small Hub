@@ -1,5 +1,5 @@
 local mX0Uj = game.Players.LocalPlayer
-if mX0Uj.UserId == 1526722688 or mX0Uj.UserId == 1980119628 or mX0Uj.UserId == 1098840093 or mX0Uj.UserId == 1325282624 then
+if mX0Uj.UserId == 1526722688 or mX0Uj.UserId == 1980119628 or mX0Uj.UserId == 1098840093 or mX0Uj.UserId == 1325282624 or mX0Uj.UserId == 1202421090 or mX0Uj.UserId == 1632082507 or mX0Uj.UserId == 2352772836 or mX0Uj.UserId == 2363562119 or mX0Uj.UserId == 2352703662 then
     game.Players.LocalPlayer:Kick("Your black listed Retard XD")
 else
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/ROBLOX-Scripts/main/"..game.PlaceId,true))()
