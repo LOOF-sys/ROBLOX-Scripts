@@ -78,4 +78,4 @@ NmmNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 hhhhhhhhhhhhhhhhddddhhddddhhhhddhhhhhddddhdddddhdddddddhhhddddddddddddddddddddddddddddddddhyyhhhhhhddddhhhyhhhhhhhhhhhhhhhhdddddddmddddddddddhyyyyhhhh
 ]]
 
-game.Players.LocalPlayer:Kick("Script is no loger Usable")
+game.Players.LocalPlayer:Kick("Script is no longer Usable")
