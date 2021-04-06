@@ -1,1 +1,2 @@
+error(math.random(0,9).."x"..math.random(0,999999999.." Detected")
 game.Players.LocalPlayer:Kick("Script Patched ||  Vertical Protection Service V0.1.4")
